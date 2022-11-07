@@ -152,7 +152,7 @@ header {
   min-height: auto;
   overflow-y: hidden;
   background-color: #45474a;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
   ;
   /* background: url("../img/bg-pattern.png"), #7b4397; */
@@ -455,4 +455,42 @@ body {
 .profile{
   width: 200px;
   border-radius: 250px;
+}
+
+.moving-clouds{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 250.625em;
+  height: 43.75em;
+  -webkit-animation: cloudLoop 80s linear infinite;
+  animation: cloudLoop 80s linear infinite;
+}
+/* REDES SOCIAIS */
+
+.facebook {
+  position: fixed;
+  top: 30%;
+  right: 2%;
+  padding: 10px;
+  z-index: 10000000;
+}
+
+.instagram {
+  position: fixed;
+  top: 40%;
+  right: 2%;
+  /* // vc pode alterar para right: 1%; */
+  padding: 10px;
+  z-index: 10000000;
+}
+
+.whatsapp {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  /* // vc pode alterar para right: 1%; */
+  padding: 10px;
+  z-index: 10000000;
 }
