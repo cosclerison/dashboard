@@ -45,15 +45,15 @@ function showSlides() {
   slides[slideIndex - 1].classList.add("active");
   dots[slideIndex - 1].classList.add("active");
 
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 5000);
 }
 
 // Eventos
-[menuBtn, closeMenuBtn].forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    menu.classList.toggle("menu-active");
-  });
-});
+// [menuBtn, closeMenuBtn].forEach((btn) => {
+//   btn.addEventListener("click", (e) => {
+//     menu.classList.toggle("menu-active");
+//   });
+// });
 
 allLinks.forEach((link) => {
   link.addEventListener("click", smoothScroll);
