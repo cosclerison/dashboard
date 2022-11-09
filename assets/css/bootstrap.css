@@ -114,12 +114,21 @@ body {
 }
 
 .img-profile {
-  width: 25%;
-	height: 45%;
+  /* width: 15rem; */
+	height: 10rem;
 	border-radius: 50%;
 	overflow: hidden;
 	margin: 15px;
 	transition: 0.3s ease;
+}
+
+.img-git-status {
+  /* width: 100%; */
+	height: 10rem;
+}
+.img-git-language {
+  /* width: 100%; */
+	height: 10rem;
 }
 
 .slide-text {
@@ -196,6 +205,7 @@ h1, .h1 {
 
 h2, .h2 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
