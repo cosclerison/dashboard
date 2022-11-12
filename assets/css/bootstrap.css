@@ -78,6 +78,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -122,19 +123,44 @@ body {
 	transition: 0.3s ease;
 }
 
-.img-git-status {
-  /* width: 100%; */
-	height: 10rem;
+#quem-sou {
+  min-height: 90vh;
+  color: #fff;
+  background-color: #45474a;
+  background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-.img-git-language {
-  /* width: 100%; */
-	height: 10rem;
+
+.quem-sou-eu {
+  padding-top: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+.title-quem-sou h2 {
+  /* margin: 1rem; */
+  font-weight: bold;
+
+}
+
+.title-quem-sou p {
+  margin: 1rem;
+  font-style: italic;
+
+}
+.title-quem-sou svg {
 }
 
 .slide-text {
-  padding-top: 20%;
- 
- 
+  margin-top: 10rem;
+  margin-bottom: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner.active {
@@ -142,21 +168,24 @@ body {
 }
 
 .banner {
-  max-width: 50%;
+  max-width: 90%;
   opacity: 0;
   position: absolute;
+  text-align: center;
   transition: 0.6s;
 }
 
 .banner h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1.2rem;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
 .banner p {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .dots {
@@ -175,6 +204,16 @@ body {
 
 .dot.active {
   background-color: var(--main-color);
+}
+
+/* Quem sou */
+
+.quem-sou-eu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
 }
 
 /* ///////////////////////////////////////////////////////////////////////////////////// */
@@ -728,6 +767,19 @@ progress {
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
+  }
+  .quem-sou-eu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-text {
+    padding-top: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 768px) {
