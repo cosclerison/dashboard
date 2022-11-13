@@ -124,7 +124,55 @@ body {
 }
 
 #quem-sou {
-  min-height: 90vh;
+  margin-top : 2rem;
+  min-height: 80vh;
+  max-width: 100%;
+  color: #fff;
+  /* background-color: #45474a; */
+  /* background-image: linear-gradient(62deg, #1a1b1d 0%, #000); */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.quem-sou-eu {
+  min-height: 80vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: linear-gradient(62deg, #1a1b1d 0%, #45474a);
+}
+
+.title-quem-sou h2 {
+  margin: 1rem;
+  font-weight: bold;
+
+}
+
+
+.title-quem-sou p {
+  margin: 1rem;
+  font-style: italic;
+  
+}
+
+.title-meu-curriculo h3 {
+  margin: 1rem;
+  font-weight: bold;
+
+}
+
+.title-meu-curriculo p {
+  margin: 1rem;
+  font-style: italic;
+
+}
+.title-quem-sou svg {
+}
+
+#curriculo {
+  min-height: 95vh;
   color: #fff;
   background-color: #45474a;
   background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
@@ -133,34 +181,24 @@ body {
   flex-direction: row;
 }
 
-.quem-sou-eu {
-  padding-top: 4rem;
+
+
+.meu-curriculo {
+  padding-top: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
 }
 
-.title-quem-sou h2 {
-  /* margin: 1rem; */
-  font-weight: bold;
-
-}
-
-.title-quem-sou p {
-  margin: 1rem;
-  font-style: italic;
-
-}
-.title-quem-sou svg {
-}
-
 .slide-text {
-  margin-top: 10rem;
+  max-width: 100%;
+  margin-top: 15rem;
   margin-bottom: 4rem;
   padding-top: 6rem;
   padding-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #000 ;
 }
 
 .banner.active {
@@ -177,6 +215,7 @@ body {
 
 .banner h2 {
   font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 1.2rem;
   text-align: center;
   position: relative;
