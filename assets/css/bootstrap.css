@@ -104,6 +104,7 @@ body {
 
 #header {
   min-height: 90vh;
+  overflow: hidden;
   color: #fff;
   background-color: #45474a;
   background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
