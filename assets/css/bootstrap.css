@@ -124,11 +124,11 @@ body {
 }
 
 #quem-sou {
-  margin-top : 2rem;
+  /* margin-top : 2rem; */
   min-height: 80vh;
   max-width: 100%;
   color: #fff;
-  /* background-color: #45474a; */
+  background-color: #45474a;
   /* background-image: linear-gradient(62deg, #1a1b1d 0%, #000); */
   align-items: center;
   justify-content: center;
@@ -144,7 +144,8 @@ body {
 }
 
 .quem-sou-eu {
-  min-height: 80vh;
+  min-height: 90vh;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
@@ -169,6 +170,7 @@ body {
 .title-meu-curriculo h3 {
   margin: 1rem;
   font-weight: bold;
+  text-transform: uppercase;
 
 }
 
@@ -181,7 +183,7 @@ body {
 }
 
 #curriculo {
-  min-height: 95vh;
+  min-height: 90vh;
   color: #fff;
   background-color: #45474a;
   background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
