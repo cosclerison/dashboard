@@ -25,54 +25,599 @@
 
 <body>
     <!-- start navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container justify-content-between">
-          <a class="navbar-brand" href="#">Dashboard</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container justify-content-between">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#quem-sou">Quem sou</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#curriculo">Currículo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#formacoes">Formações</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- End navbar Code -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#quem-sou">Quem sou</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculo">Currículo</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#formacoes">Formações</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatos</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- End navbar Code -->
       
-      <!-- Start Projetos -->
-      <div class="header" id="header">
-        <div class="row text-center">
-          <div class="profile-auth">
-            <h1>Clerison Oliveira</h1>
-            <img  class="img-profile" src="./assets/img/clerison02.jpg" alt="Clerison">
-            <p>Analista e Desenvolvedor de Sistemas</p>
-            <h2>Força Foco e 
-              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
-                <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
-              </svg> 
-            </h2>
-            <img id="git" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cosclerison&layout=compact&langs_count=7&theme=gotham"/>
+    <!-- Start Projetos -->
+    <section class="header" id="header">
+      <div class="container align-items-center">
+        <div class="row justify-content-between">
+          
+          <div class="col-sm-6">
+            <div class="meu-perfil">
+              <div class="title-meu-perfil">
+                <div class="profile-auth">
+                  <h1>Clerison Oliveira</h1>
+                  <img  class="img-profile" src="./assets/img/clerison02.jpg" alt="Clerison">
+                  <p>Analista e Desenvolvedor de Sistemas</p>
+                  <h2>Força Foco e 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+                      <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+                    </svg> 
+                  </h2>
+                  <img id="git" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cosclerison&layout=compact&langs_count=7&theme=gotham"/>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-4">
+            <div class="minha-formacao">
+              <div class="title-minha-formacao">
+                <div class="formacoes-auth">
+                <h3 class="text-center">Formações Profissionais</h3>
+                  
+                  <div class="accordion accordion-flush">
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uninove" aria-expanded="false" aria-controls="uninove">
+                          <strong>
+                            Uninove
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="uninove" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="dropdown mb-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Semestres
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quintoSemestre">
+                                <strong>
+                                  5º Semestre
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quartoSemestre">
+                                <strong>
+                                  4º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#terceiroSemestre">
+                                <strong>
+                                  3º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#segundoSemestre">
+                                <strong>
+                                  2º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#primeiroSemestre">
+                                <strong>
+                                  1º Semestre
+                                </strong>
+                              </a></li>
+                            </ul>
+                          </div>
+                          <p>
+                            <strong>Grade de Ensino: </strong>
+                            Conhecimentos e estudos adquiridos nesta graduação. Universidade Nove de Julho.
+                          </p>
+                            
+                            <div class="modal fade" id="quintoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      5º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      DESENVOLVIMENTO DE SISTEMAS MÓVEIS<br />
+                                      DESENVOLVIMENTO DE SERVIÇOS WEB<br />
+                                      PROGRAMAÇÃO DE PORTAIS CORPORATIVOS<br />
+                                      PROGRAMAÇÃO PARA WEB EM AMBIENTE PROPRIETÁRIO<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="quartoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      4º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      PROGRAMAÇÃO PARA WEB EM AMBIENTE LIVRE<br />
+                                      RECURSOS DE APOIO À PROGRAMAÇÃO<br />
+                                      PROGRAMAÇÃO DE COMÉRCIO ELETRÔNICO<br />
+                                      SERVIDORES DE APLICAÇÃO<br />
+                                      PROGRAMAÇÃO DE INTERFACES RESPONSIVAS<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="terceiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      3º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      EPVA - INFORMÁTICA<br />
+                                      DESENVOLVIMENTO DE INTERFACES ESTÁTICAS<br />
+                                      INTERAÇÃO HUMANO COMPUTADOR<br />
+                                      ARQUITETURA DE SOFTWARE<br />
+                                      GESTÃO DE PROJETOS DE SOFTWARE<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="segundoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      2º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      QUALIDADE DE SOFTWARE<br />
+                                      ENGENHARIA DE SOFTWARE<br />
+                                      ARQUITETURA DA INFORMAÇÃO<br />
+                                      SISTEMAS DISTRIBUÍDOS<br />
+                                      FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="primeiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      1º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS<br />
+                                      LÓGICA DE PROGRAMAÇÃO<br />
+                                      MODELAGEM DE INTERFACES<br />
+                                      DESENVOLVIMENTO DE INTERFACES DINÂMICAS<br />
+                                      PROGRAMAÇÃO DE INTERFACES<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#senai" aria-expanded="false" aria-controls="senai">
+                          <strong>
+                            SENAI
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="senai" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="dropdown mb-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Módulos
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#programacao">
+                                <strong>
+                                  Programação
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#infraestrutura">
+                                <strong>
+                                  Infraestrutura
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#sistemaead">
+                                <strong>
+                                  Tecnologia (EAD)
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#logicadeprogramacao">
+                                <strong>
+                                  Lógica de Programação (EAD)
+                                </strong>
+                              </a></li>
+                            </ul>
+                          </div>
+                          <p>
+                            <strong>Grade de Ensino: </strong>
+                            Estudo Técnico Mantenedor e Programador de Microcomputadores SENAI
+                          </p>
+                            
+                            <div class="modal fade" id="programacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      SISTEMAS E PROGRAMAÇÃO
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      INF - Informática<br />
+                                      LOP - Logica de Programação<br />
+                                      LIP - Linguagem de Programação<br />
+                                      BCD - Banco de Dados<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="infraestrutura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      MANUTENÇÃO E INFRAESTRUTURA
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      INF - Informática<br />
+                                      ELB - Eletrônica Basica<br />
+                                      SOP - Sistemas Operacionais<br />
+                                      MIB - Microcomputador Básico<br />
+                                      MSM - Manutenção de Sistemas de Microcomputador<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="modal fade" id="sistemaead" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      TECNOLOGIA DA INFORMAÇÃO
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      O que são as TIC<br />
+                                      Conceitos de ambiente virtual, comunidade virtual, internet.<br />
+                                      Conceitos de SOFTWARE e HARDWARE<br />
+                                      Evolução e tendencia das TIC<br />
+                                      Uso de ferramentas da internet para pesquisa e importância da seleção e organização das Informações<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="logicadeprogramacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      LÓGICA DE PROGRAMAÇÃO
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      Introdução - Representações<br />
+                                      Tipos de Dados (Inteiro, Real, Literal, Lógico)<br />
+                                      Variáveis<br />
+                                      Expressões Aritméticas<br />
+                                      Expressões Lógicas<br />
+                                      Estrutura de Repetição<br />
+                                      Estrutura de Condição<br />
+                                      Variáveis Indexadas<br />
+                                      Revisão - Sub-Algoritimo<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#udemy" aria-expanded="false" aria-controls="udemy">
+                          <strong>
+                            Udemy
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="udemy" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="dropdown mb-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Cursos
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#phpCompleto">
+                                <strong>
+                                  Curso de PHP
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#cursoAngular">
+                                <strong>
+                                  Curso de Angular 10
+                                </strong>
+                              </a></li>
+                              <!-- <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#sistemaead">
+                                <strong>
+                                  Tecnologia (EAD)
+                                </strong>
+                              </a></li> -->
+                              <!-- <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#logicadeprogramacao">
+                                <strong>
+                                  Lógica de Programação (EAD)
+                                </strong>
+                              </a></li> -->
+                            </ul>
+                          </div>
+                          <p>
+                            <strong>Grade de Ensino: </strong>
+                            Cursos de Desenvolvimento e Programação (EAD) Udemy.
+                          </p>
+                            
+                            <div class="modal fade" id="phpCompleto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      PHP Completo
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      Curso de PHP Completo<br />
+                                      Projeto E-Commerce<br />
+                                      Administração e Site<br />
+                                      Estrutura de controle e laços de repetição, Arrays, Sessão, Funções, Date.<br />
+                                      Banco de dados MYSQL<br />
+                                      Banco de dados PDO<br />
+                                      Banco de dados PDO<br />
+                                      E-mail com PHPMailer<br />
+                                      Segurança No PHP 7<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="modal fade" id="cursoAngular" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      ANGULAR 10
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>Curso administrado com desenvolvimento de projetos</p>
+                                    <p>
+                                      Primeiro Projeto - Olá Mundo<br />
+                                      Segundo Projeto - Calculadora<br />
+                                      Terceiro Projeto - Gerenciador de Tarefas<br />
+                                      Quarto Projeto - Jogo da Velha<br />
+                                      Quinto Projeto - Conversor de Moedas<br />
+                                      Sexto Projeto - Dashboard<br />
+                                      Primeiro Projeto - Unificação dos projetos<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cursosLivres" aria-expanded="false" aria-controls="cursosLivres">
+                          <strong>
+                            Cursos Livres
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="cursosLivres" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="dropdown mb-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Cursos
+                            </button>
+                            <!-- <ul class="dropdown-menu">
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#phpCompleto">
+                                <strong>
+                                  Curso de PHP
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#cursoAngular">
+                                <strong>
+                                  Curso de Angular 10
+                                </strong>
+                              </a></li> -->
+                              
+                            </ul>
+                          </div>
+                          <p>
+                            <strong>Grade de Ensino: </strong>
+                            Cursos concluídos através de estudos por sites e eventos de instituições de ensino e tecnologia.
+                          </p>
+                            
+                            <!-- <div class="modal fade" id="phpCompleto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      PHP Completo
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      Curso de PHP Completo<br />
+                                      Projeto E-Commerce<br />
+                                      Administração e Site<br />
+                                      Estrutura de controle e laços de repetição, Arrays, Sessão, Funções, Date.<br />
+                                      Banco de dados MYSQL<br />
+                                      Banco de dados PDO<br />
+                                      Banco de dados PDO<br />
+                                      E-mail com PHPMailer<br />
+                                      Segurança No PHP 7<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+
+                            <!-- <div class="modal fade" id="cursoAngular" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      ANGULAR 10
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>Curso administrado com desenvolvimento de projetos</p>
+                                    <p>
+                                      Primeiro Projeto - Olá Mundo<br />
+                                      Segundo Projeto - Calculadora<br />
+                                      Terceiro Projeto - Gerenciador de Tarefas<br />
+                                      Quarto Projeto - Jogo da Velha<br />
+                                      Quinto Projeto - Conversor de Moedas<br />
+                                      Sexto Projeto - Dashboard<br />
+                                      Primeiro Projeto - Unificação dos projetos<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> -->
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <!-- end header Code -->
+    </section>
+    <!-- end Formações -->
+    <!-- end header Code -->
       
       <!-- <img height="125" src="https://github-readme-stats.vercel.app/api?username=cosclerison&show_icons=true&theme=gotham&include_all_commits=true&count_private=true"/> -->
       <!-- <div>
@@ -83,1000 +628,519 @@
       </div> -->
 
       <!-- start quem sou -->
-      <section id="quem-sou">
-        <div class="container align-items-center">
-          <div class="row justify-content-between">
-            
-            <div class="col-sm-6">
-              <div class="quem-sou-eu">
-                <div class="title-quem-sou">
-                  <h2>
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
-                      class="bi bi-file-earmark-code" viewBox="0 0 16 16">
-                      <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
-                      <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
-                    </svg>&#160;&#160;&#160;&#160;
-                    Clerison Oliveira
-                  </h2>
-                  <p>
-                    Nasci dia 01/04/1984. Casado e uma filha linda.
-                  </p>
-                  <p>
-                    Desde pequeno tinha curiosidade sobre a tecnologia, e foi em meio a isso que veio o desejo de entende o funcionamento dos equipamentos e assim veio a inclusão da informática em meio aos meus estudos.
-                  </p>
-                  <p>
-                    Minha primeira formação na área de tecnologia foi em 2001. Contudo foi passeando por vários setores da tecnologia. Como a tecnologia existem vários setores profissionais para se atuar, e em meio a diversos trabalhos migrei várias vezes pelos setores da tecnologia, contudo buscando e estudando para exercer tais funções ao qual me trouxe um amplo conhecimento, ou seja, obtendo várias profissões na área tecnológica.
-                  </p>
-                  <p>
-                    Conhecendo vários setores conquistei não só nos estudos, mas na experiencia profissional a vivencia como Analista de Suporte Técnico Pleno, e Analista e Desenvolvimento de Sistemas. Não desmerecendo as demais profissões que tenho, por que como um todo faz parte da minha grade curricular, ao qual também foram degraus para alcançar meus estudos e minhas metas.
-                  </p>
-                  <p>
-                    Hoje com uma visão e conhecimentos mais amplos alcanço não só o entendimento do meu setor de atuação como também setores administrativos, ao qual necessitam de uma análise, sendo verificado o seu pleno funcionamento e eliminando redundâncias ou resistências no seu funcionamento. O qual tem a chance de evoluir e melhorar o seu desempenho, qualidade, e maturidade profissional, assim tornando uma empresa completamente preparada para um funcionamento robusto e evitando falhas ou erros que a maioria dos profissionais tem vivenciado, desde um funcionário de cargo inicial ao SEO da empresa.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-4">
-              <div class="slide-text">
-                <div class="banner active">
-                    <h2>Força Foco e 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
-                      <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
-                    </svg> 
-                  </h2>
-                  <p>
-                      Se almeja alcançar algo, é ficando de pé e continuando a caminhar.
-                  </p>
-                </div>
-                <div class="banner">
-                    <h2>Profissionalismo</h2>
-                    <p>
-                        Não é o que você faz, e sim como você faz a sua PROFISSÃO. 🤨
-                    </p>
-                </div>
-                <div class="banner">
-                    <h2>Qualidade de vida</h2>
-                    <p>
-                      Desfrutar daquilo que você buscou e conquistou. Viver!!!
-                    </p>
-                </div>
-                <div class="dots">
-                  <div class="dot active"></div>
-                  <div class="dot"></div>
-                  <div class="dot"></div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!-- end quem sou -->
-
-       <!-- start currículo -->
-       <section id="curriculo">
-        <div class="container align-items-center">
-          <div class="row justify-content-between">
-            <div class="title-meu-curriculo">
-              <h3 class="text-center">
-                Meu perfil Curricular e o caminho para alcançar meus estudos e objetivos.
-              </h3>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="meu-curriculo">
-                <div class="title-meu-curriculo">
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
-                      <strong>
-                        2022 - Vacinar Clinica de Imunização
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Desenvolvimento Junior: </strong>
-                      ( MYSQL – PHP – ANGULAR – CSS – HTML – Bootstrap - GIT - DOCKER ) <br />
-                      Atuação nas tarefas de manutenção dos sistemas administrativos e clientes, participação ativa nos projetos de desenvolvimento dos sistemas administrativos, clientes e documentação. Sistemas desenvolvidos = Sistema Administrativo, Acesso Clientes Administrativos, Adesão de Clientes, Sistema de Aplicação VMS.
-                    </p>
-                    
-                    <div class="modal fade" id="clinica-vacinar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2022 - Vacinar Clinica de Imunização
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                          Não só uma empresa onde atender todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#engefogo">
-                      <strong>
-                        2020 - ENGEFOGO – Soluções Contra Incêndios
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Desenvolvimento Junior: </strong>
-                      ( MYSQL – PHP – HTML - CSS - GIT - DOCKER )
-	                    Freelance - Atuação em tarefas no desenvolvimento no back-end e front-end, sistema administrativo de cadastros e gerenciamentos.
-                    </p>
-                     
-                     <div class="modal fade" id="engefogo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2020 - ENGEFOGO – Soluções Contra Incêndios
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                          Freelance ao qual estava auxiliando no desenvolvimento do sistema administrativo, onde o mesmo abordava toda a administração e estoque dos produtos, peças e equipamentos utilizados pela empresa e clientes.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#profissionais-sa">
-                      <strong>
-                        2020 - PROFISSIONAIS - SA – Palestras
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Desenvolvimento Junior: </strong>
-                      ( ANGULAR - HTML - CSS - GIT - DOCKER )
-	                    Freelance - Participação de tarefas no desenvolvimento do front-end.
-                    </p>
-                    
-                    <div class="modal fade" id="profissionais-sa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2020 - PROFISSIONAIS - SA – Palestras
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                          Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvimentos do web designer.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#contern">
-                      <strong>
-                        2017 - Contern Construção e Comercio LTDA
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Suporte Técnico Pleno: </strong>
-                      Coordenação de analistas TI em filiais (OBRAS) gerenciamento switches Cisco, telefonia IP, Access Point, servidores, acompanhamento de chamado e recursos de rede, atendimento direto e indireto aos colaboradores da empresa, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, rotina de Backup, Aplicativos diversos, Atualização de sistemas, help-desk, acesso remoto, desenvolvimento de tutoriais, gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios), negociação e análise de contratos, controle de equipamentos e patrimônio.
-                    </p>
-                    
-                    <div class="modal fade" id="contern" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2017 - Contern Construção e Comercio LTDA
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer de 2012 a 2017.<br />Quando fui dispensado da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico.  Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#icomon">
-                      <strong>
-                        2012 - ICOMON Tecnologia LTDA.
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>IRLA - Instalador e Reparador de Linhas e Aparelhos: </strong>
-                      Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
-                      Executando ordens de Instalação, Reparos ou Chamados de urgência com ordens da ANATEL.
-                    </p>
-                    
-                    <div class="modal fade" id="icomon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2012 - ICOMON Tecnologia LTDA.
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Empresa que competiu usar meus conhecimentos tecnológicos em redes, e aplicando seus conceitos na área de telefonia, possui ótimas experiencias em atendimentos aos clientes. Atuando no dia a dia aprendi os conceitos e aplicações da infraestrutura da operadora de telefonia e internet em varias cidades por onde atuei como técnico em telefonia.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#pumaHardSoft">
-                      <strong>
-                        2008 - Puma Hard & Soft
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Suporte Técnico Junior: </strong>
-                      Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
-                      Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento balcão.
-                    </p>
-                    
-                    <div class="modal fade" id="pumaHardSoft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2008 - Puma Hard & Soft
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Projeto de futuro montado enquanto eu estudava tecnologia, juntamente com um amigo seguimos uma sociedade buscando o nosso desenvolvimento profissional e pessoal. Está loja demostrou o quanto eu estava disposto e capacitado para enfrentar o mercado e suas dificuldades, atendimento a clientes físicos e empresas, trouxe não só um fortalecimento profissional e também por sua vez um ótimo crescimento pessoal. Investimentos e administração da mesma.<br />
-                            A primeira decepção e uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="meu-curriculo">
-                <div class="title-quem-sou">
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#cyberSapoDjow">
-                      <strong>
-                        2005 - Cyber sapo D´Jow
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Atendimento e manutenção: </strong>
-                      Tarefas diárias de atendimento ao cliente, efetuando manutenção e instalação dos jogos solicitados pelos clientes, auxiliando em duvidas e usabilidade dos usuários.
-                    </p>
-                    
-                    <div class="modal fade" id="cyberSapoDjow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2005 - Cyber sapo D´Jow
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Hoje em dia só os lendários lembram de utilizar Cyber Café, Lan House e etc..., participei de uma sociedade com um amigo onde usufruíamos de um espaço em uma empresa para disponibilizar equipamentos para clientes utilizar internet, Office e games.
-                            <br />Foi uma ótima experiencia com clientes e aprendendo juntamente com os mesmos com as dúvidas e dificuldades que aparecia no dia a dia, tanto na área tecnológica como auxílio aos usuários.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#locadoraLianVideos">
-                      <strong>
-                        2004 - Locadora Lian Videos
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Atendimento: </strong>
-                      Atendimento ao Cliente, tarefas diárias de organização e higienização do local de trabalho e DVD's e Fitas Cassete. Auxilio nas indicações de filmes, analise do cliente e indicação através das sinopses dos filmes 
-                    </p>
-                    
-                    <div class="modal fade" id="locadoraLianVideos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2004 - Locadora Lian Videos
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Trabalhar em uma locadora de vídeos e games, trouxe um crescimento maravilhoso no relacionamento com pessoas, isto fez com que aprendesse no dia a dia como abordar ou auxiliar cada um de acordo com o seu perfil e gostos, procurar compreender e entender este tipo de empresa foi muito bom, e a experiência de usar um sistema rodando em Windows 95. 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#saoInformatica">
-                      <strong>
-                        2003 - SAO Informática LTDA.
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Analista Suporte Técnico: </strong>
-                      Atendimento ao cliente, tarefas efetuadas no atendimento de chamados de pessoas físicas e empresas, manutenção e auxilio ao usuário.
-                    </p>
-                    
-                    <div class="modal fade" id="saoInformatica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2003 - SAO Informática LTDA.
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Primeira experiencia atuando como técnico em informática, aprendendo e crescendo profissionalmente, atendimento de chamados a clientes e empresas. Usufruindo dos meios que tinha na época para executar as tarefas diárias com meus estudos e trabalho.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#retificaVilkas">
-                      <strong>
-                        2003 - Retifica Vilkas
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Retificador: </strong>
-                      Atendimento ao cliente, auxiliando na manutenção e retifica de cabeçote e blocos de motores de veículos leves, Atuando na organização e limpeza das maquinas
-                    </p>
-                    
-                    <div class="modal fade" id="retificaVilkas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2003 - Retifica Vilkas
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Empresa em que fui escalado para auxiliar nos serviços de mecânica retificadora, está por hora foi uma das empresas que atuei enquanto estava estudando no SENAI, estudava na parte da manha e na parte da tarde eu trabalhava e aprendia tudo sobre o setor de atuação. 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#eliteCursos">
-                      <strong>
-                        2002 - Elit Cursos Profissionalizantes
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Instrutor: </strong>
-                      Elaboração de apostila e atuando como instrutor de Manutenção de Microcomputadores.
-                    </p>
-                    
-                    <div class="modal fade" id="eliteCursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2002 - Elit Cursos Profissionalizantes
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Foi rápida, mas foi legal, estudar e estruturar apostila do curso de manutenção de micro, com esses conhecimentos pude lecionar utilizando os equipamentos, matérias e peças utilizadas na época, que hoje em dia pode se dizer que é relíquia KKKKK.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#mecanicaAlvorada">
-                      <strong>
-                        2000 - Mecânica - Funilaria e Pintura - Alvorada
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Ajudante: </strong>
-                      Auxiliar na desmontagem de peças e limpeza, Sistema de busca e entrega de veículos, auxilio na compra de peças. Organização e higienização do local de trabalho.
-                    </p>
-                    
-                    <div class="modal fade" id="mecanicaAlvorada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              2000 - Mecânica - Funilaria e Pintura - Alvorada
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Oficina mecânica do meu pai, trabalhar auxiliando na empresa da família, mesmo não me identificando com o setor pude aprender muito sobre está área.
-                            <br />
-                            Juntamente aprendendo os conceitos da ética profissional e responsabilidades desta profissão.
-                            <br />Neste período meus estudos eram somente por livros, por não ter computador eu aproveitava os finais de semana para fazer trabalhos de escola no computador da minha prima onde me deixava e me incentivava nos estudos e é claro aproveitava para jogar RSRSR, comprava na banca e utilizava o que aprendia aos finais de semana.
-                            <br />O que eu ganhava eu comprava revistas e livros de tecnologia.
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                  <article>
-                    <a href=""  data-bs-toggle="modal" data-bs-target="#papelariaYoshimoto">
-                      <strong>
-                        1998 - Papelaria Marli Yoshimoto ME.
-                      </strong>
-                    </a>
-                    <p>
-                      <strong>Atendente: </strong>
-                      Atendimento ao cliente, verificação de estoque e serviços de office boy, tarefas de higienização do local de trabalho e auxilio nas encomendas de enfeites para eventos.
-                    </p>
-                    
-                    <div class="modal fade" id="papelariaYoshimoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <strong>
-                              1998 - Papelaria Marli Yoshimoto ME.
-                            </strong>
-                          </div>
-                          <div class="modal-body">
-                            Meu primeiro emprego, muito bom, aprendi o que era responsabilidade com patrão, com empresa e com os clientes. Minha primeira professora no ramo de atendimento e relação com clientes, ela tinha elaborado uma apostila de como era o funcionamento da papelaria desde sua administração ate o atendimento.
-                            <br />Ela por sua vez tinha amplo conhecimento em administração por ter atuado trabalhando em banco. E com isso obtive um conhecimento diferenciado com esta experiencia profissional
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-
-                </div>
+    <section id="quem-sou">
+      <div class="container align-items-center">
+        <div class="row justify-content-between">
+          
+          <div class="col-sm-6">
+            <div class="quem-sou-eu">
+              <div class="title-quem-sou">
+                <h2>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                    class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                    <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                  </svg>&#160;&#160;&#160;&#160;
+                  Clerison Oliveira
+                </h2>
+                <p>
+                  Nasci dia 01/04/1984. Casado e uma filha linda.
+                </p>
+                <p>
+                  Desde pequeno tinha curiosidade sobre a tecnologia, e foi em meio a isso que veio o desejo de entende o funcionamento dos equipamentos e assim veio a inclusão da informática em meio aos meus estudos.
+                </p>
+                <p>
+                  Minha primeira formação na área de tecnologia foi em 2001. Contudo foi passeando por vários setores da tecnologia. Como a tecnologia existem vários setores profissionais para se atuar, e em meio a diversos trabalhos migrei várias vezes pelos setores da tecnologia, contudo buscando e estudando para exercer tais funções ao qual me trouxe um amplo conhecimento, ou seja, obtendo várias profissões na área tecnológica.
+                </p>
+                <p>
+                  Conhecendo vários setores conquistei não só nos estudos, mas na experiencia profissional a vivencia como Analista de Suporte Técnico Pleno, e Analista e Desenvolvimento de Sistemas. Não desmerecendo as demais profissões que tenho, por que como um todo faz parte da minha grade curricular, ao qual também foram degraus para alcançar meus estudos e minhas metas.
+                </p>
+                <p>
+                  Hoje com uma visão e conhecimentos mais amplos alcanço não só o entendimento do meu setor de atuação como também setores administrativos, ao qual necessitam de uma análise, sendo verificado o seu pleno funcionamento e eliminando redundâncias ou resistências no seu funcionamento. O qual tem a chance de evoluir e melhorar o seu desempenho, qualidade, e maturidade profissional, assim tornando uma empresa completamente preparada para um funcionamento robusto e evitando falhas ou erros que a maioria dos profissionais tem vivenciado, desde um funcionário de cargo inicial ao SEO da empresa.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- end currículo -->
 
-      <!--############################################################################  -->
-
-      <!-- start Formações -->
-      <section id="formacoes">
-        <div class="container align-items-center">
-          <div class="row justify-content-between">
-            <div class="title-meu-curriculo">
-              <h3 class="text-center">
-                formações - Conhecimento é a base que sustenta os teus passos!
-              </h3>
-            </div>
-
-            <div class="col-sm-6">
-              <div class="minha-formacao">
-                <div class="title-minha-formacao">
-                  <div class="container">
-                    
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uninove" aria-expanded="false" aria-controls="uninove">
-                           Uninove
-                          </button>
-                        </h2>
-                        <div id="uninove" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">
-                            <div class="dropdown mb-2">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Semestres
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quintoSemestre">
-                                  <strong>
-                                    5º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quartoSemestre">
-                                  <strong>
-                                    4º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#terceiroSemestre">
-                                  <strong>
-                                    3º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#segundoSemestre">
-                                  <strong>
-                                    2º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#primeiroSemestre">
-                                  <strong>
-                                    1º Semestre
-                                  </strong>
-                                </a></li>
-
-                              </ul>
-                            </div>
-                            <p>
-                              <strong>Grade de Ensino: </strong>
-                              Conhecimentos e estudos adquiridos nesta graduação. Universidade Nove de Julho.
-                            </p>
-                              
-                              <div class="modal fade" id="quintoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        5º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        DESENVOLVIMENTO DE SISTEMAS MÓVEIS<br />
-                                        DESENVOLVIMENTO DE SERVIÇOS WEB<br />
-                                        PROGRAMAÇÃO DE PORTAIS CORPORATIVOS<br />
-                                        PROGRAMAÇÃO PARA WEB EM AMBIENTE PROPRIETÁRIO<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="modal fade" id="quartoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        4º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        PROGRAMAÇÃO PARA WEB EM AMBIENTE LIVRE<br />
-                                        RECURSOS DE APOIO À PROGRAMAÇÃO<br />
-                                        PROGRAMAÇÃO DE COMÉRCIO ELETRÔNICO<br />
-                                        SERVIDORES DE APLICAÇÃO<br />
-                                        PROGRAMAÇÃO DE INTERFACES RESPONSIVAS<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="modal fade" id="terceiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        3º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        EPVA - INFORMÁTICA<br />
-                                        DESENVOLVIMENTO DE INTERFACES ESTÁTICAS<br />
-                                        INTERAÇÃO HUMANO COMPUTADOR<br />
-                                        ARQUITETURA DE SOFTWARE<br />
-                                        GESTÃO DE PROJETOS DE SOFTWARE<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="modal fade" id="segundoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        2º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        QUALIDADE DE SOFTWARE<br />
-                                        ENGENHARIA DE SOFTWARE<br />
-                                        ARQUITETURA DA INFORMAÇÃO<br />
-                                        SISTEMAS DISTRIBUÍDOS<br />
-                                        FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="modal fade" id="primeiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        1º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS<br />
-                                        LÓGICA DE PROGRAMAÇÃO<br />
-                                        MODELAGEM DE INTERFACES<br />
-                                        DESENVOLVIMENTO DE INTERFACES DINÂMICAS<br />
-                                        PROGRAMAÇÃO DE INTERFACES<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#senai" aria-expanded="false" aria-controls="senai">
-                           SENAI
-                          </button>
-                        </h2>
-                        <div id="senai" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">
-                            <div class="dropdown mb-2">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Módulos
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quintoSemestre">
-                                  <strong>
-                                    5º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quartoSemestre">
-                                  <strong>
-                                    4º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#terceiroSemestre">
-                                  <strong>
-                                    3º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#segundoSemestre">
-                                  <strong>
-                                    2º Semestre
-                                  </strong>
-                                </a></li>
-                                
-                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#primeiroSemestre">
-                                  <strong>
-                                    1º Semestre
-                                  </strong>
-                                </a></li>
-
-                              </ul>
-                            </div>
-                            <p>
-                              <strong>Grade de Ensino: </strong>
-                              Conhecimentos e estudos adquiridos nesta graduação. Universidade Nove de Julho.
-                            </p>
-                              
-                              <div class="modal fade" id="quintoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        5º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        DESENVOLVIMENTO DE SISTEMAS MÓVEIS<br />
-                                        DESENVOLVIMENTO DE SERVIÇOS WEB<br />
-                                        PROGRAMAÇÃO DE PORTAIS CORPORATIVOS<br />
-                                        PROGRAMAÇÃO PARA WEB EM AMBIENTE PROPRIETÁRIO<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-
-                              <!-- <div class="modal fade" id="quartoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        4º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        PROGRAMAÇÃO PARA WEB EM AMBIENTE LIVRE<br />
-                                        RECURSOS DE APOIO À PROGRAMAÇÃO<br />
-                                        PROGRAMAÇÃO DE COMÉRCIO ELETRÔNICO<br />
-                                        SERVIDORES DE APLICAÇÃO<br />
-                                        PROGRAMAÇÃO DE INTERFACES RESPONSIVAS<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-
-                              <!-- <div class="modal fade" id="terceiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        3º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        EPVA - INFORMÁTICA<br />
-                                        DESENVOLVIMENTO DE INTERFACES ESTÁTICAS<br />
-                                        INTERAÇÃO HUMANO COMPUTADOR<br />
-                                        ARQUITETURA DE SOFTWARE<br />
-                                        GESTÃO DE PROJETOS DE SOFTWARE<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-
-                              <!-- <div class="modal fade" id="segundoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        2º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        QUALIDADE DE SOFTWARE<br />
-                                        ENGENHARIA DE SOFTWARE<br />
-                                        ARQUITETURA DA INFORMAÇÃO<br />
-                                        SISTEMAS DISTRIBUÍDOS<br />
-                                        FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-
-                              <!-- <div class="modal fade" id="primeiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <strong>
-                                        1º - SEMESTRE UNINOVE
-                                      </strong>
-                                    </div>
-                                    <div class="modal-body">
-                                      <h5><strong>Módulos Estudados</strong></h5>
-                                      <p>
-                                        FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS<br />
-                                        LÓGICA DE PROGRAMAÇÃO<br />
-                                        MODELAGEM DE INTERFACES<br />
-                                        DESENVOLVIMENTO DE INTERFACES DINÂMICAS<br />
-                                        PROGRAMAÇÃO DE INTERFACES<br />
-                                      </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div> -->
-                          
-                          </div>
-                        </div>
-                      </div>
-                      
-                      
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            Accordion Item #2
-                          </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                      </div>
-                       -->
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Accordion Item #3
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                      </div> -->
-
-                      <!-- <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            Accordion Item #3
-                          </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                      </div> -->
-
-
-
-                    </div>
-                  </div>
-                </div>
+          <div class="col-sm-4">
+            <div class="slide-text">
+              <div class="banner active">
+                  <h2>Força Foco e 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+                    <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+                  </svg> 
+                </h2>
+                <p>
+                    Se almeja alcançar algo, é ficando de pé e continuando a caminhar.
+                </p>
               </div>
-            </div>
+              <div class="banner">
+                  <h2>Profissionalismo</h2>
+                  <p>
+                      Não é o que você faz, e sim como você faz a sua PROFISSÃO. 🤨
+                  </p>
+              </div>
+              <div class="banner">
+                  <h2>Qualidade de vida</h2>
+                  <p>
+                    Desfrutar daquilo que você buscou e conquistou. Viver!!!
+                  </p>
+              </div>
+              <div class="banner">
+                  <h2>Se nada der certo hoje</h2>
+                  <p>
+                    Amanhã eu levanto mais cedo e tento de novo!
+                  </p>
+              </div>
+              <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    <!-- end Formações -->
-    
 
-    <!-- start Projetos -->
-    <!-- <div class="projetos" id="projetos">
-      <div class="row text-center">
-        <div class="profile-auth">
-
-          <div id="carousel-header" class="carousel slide" data-bs-ride="false">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carousel-header" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img 
-                  src="./assets/img/projetos/pumaHardSoft.jpg"
-                  width="500px"
-                  height="600px"
-                  class="d-block w-100" 
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img 
-                  src="./assets/img/projetos/vmsVacinar.jpg"
-                  width="500px"
-                  height="600px"
-                  class="d-block w-100" 
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img 
-                  src="./assets/img/projetos/ecommerce.jpg"
-                  width="500px"
-                  height="600px"
-                  class="d-block w-100" 
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-header" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-header" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        
         </div>
       </div>
-    </div> -->
+    </section>
+    <!-- end quem sou -->
+
+    <!-- start currículo -->
+    <section id="curriculo">
+      <div class="container align-items-center">
+        <div class="row justify-content-between">
+          <div class="title-meu-curriculo">
+            <h3 class="text-center">
+              Meu perfil Curricular e o caminho para alcançar meus estudos e objetivos.
+            </h3>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="meu-curriculo">
+              <div class="list-curriculo">
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    <strong>
+                      2022 - Vacinar Clinica de Imunização
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Desenvolvimento Junior: </strong>
+                    ( MYSQL – PHP – ANGULAR – CSS – HTML – Bootstrap - GIT - DOCKER ) <br />
+                    Atuação nas tarefas de manutenção dos sistemas administrativos e clientes, participação ativa nos projetos de desenvolvimento dos sistemas administrativos, clientes e documentação. Sistemas desenvolvidos = Sistema Administrativo, Acesso Clientes Administrativos, Adesão de Clientes, Sistema de Aplicação VMS.
+                  </p>
+                  
+                  <div class="modal fade" id="clinica-vacinar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2022 - Vacinar Clinica de Imunização
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Não só uma empresa onde atender todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#engefogo">
+                    <strong>
+                      2020 - ENGEFOGO – Soluções Contra Incêndios
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Desenvolvimento Junior: </strong>
+                    ( MYSQL – PHP – HTML - CSS - GIT - DOCKER )
+                    Freelance - Atuação em tarefas no desenvolvimento no back-end e front-end, sistema administrativo de cadastros e gerenciamentos.
+                  </p>
+                    
+                    <div class="modal fade" id="engefogo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2020 - ENGEFOGO – Soluções Contra Incêndios
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Freelance ao qual estava auxiliando no desenvolvimento do sistema administrativo, onde o mesmo abordava toda a administração e estoque dos produtos, peças e equipamentos utilizados pela empresa e clientes.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#profissionais-sa">
+                    <strong>
+                      2020 - PROFISSIONAIS - SA – Palestras
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Desenvolvimento Junior: </strong>
+                    ( ANGULAR - HTML - CSS - GIT - DOCKER )
+                    Freelance - Participação de tarefas no desenvolvimento do front-end.
+                  </p>
+                  
+                  <div class="modal fade" id="profissionais-sa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2020 - PROFISSIONAIS - SA – Palestras
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvimentos do web designer.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#contern">
+                    <strong>
+                      2017 - Contern Construção e Comercio LTDA
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Suporte Técnico Pleno: </strong>
+                    Coordenação de analistas TI em filiais (OBRAS) gerenciamento switches Cisco, telefonia IP, Access Point, servidores, acompanhamento de chamado e recursos de rede, atendimento direto e indireto aos colaboradores da empresa, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, rotina de Backup, Aplicativos diversos, Atualização de sistemas, help-desk, acesso remoto, desenvolvimento de tutoriais, gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios), negociação e análise de contratos, controle de equipamentos e patrimônio.
+                  </p>
+                  
+                  <div class="modal fade" id="contern" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2017 - Contern Construção e Comercio LTDA
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer de 2012 a 2017.<br />Quando fui dispensado da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico.  Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#icomon">
+                    <strong>
+                      2012 - ICOMON Tecnologia LTDA.
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>IRLA - Instalador e Reparador de Linhas e Aparelhos: </strong>
+                    Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
+                    Executando ordens de Instalação, Reparos ou Chamados de urgência com ordens da ANATEL.
+                  </p>
+                  
+                  <div class="modal fade" id="icomon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2012 - ICOMON Tecnologia LTDA.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Empresa que competiu usar meus conhecimentos tecnológicos em redes, e aplicando seus conceitos na área de telefonia, possui ótimas experiencias em atendimentos aos clientes. Atuando no dia a dia aprendi os conceitos e aplicações da infraestrutura da operadora de telefonia e internet em varias cidades por onde atuei como técnico em telefonia.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#pumaHardSoft">
+                    <strong>
+                      2008 - Puma Hard & Soft
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Suporte Técnico Junior: </strong>
+                    Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
+                    Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento balcão.
+                  </p>
+                  
+                  <div class="modal fade" id="pumaHardSoft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2008 - Puma Hard & Soft
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Projeto de futuro montado enquanto eu estudava tecnologia, juntamente com um amigo seguimos uma sociedade buscando o nosso desenvolvimento profissional e pessoal. Está loja demostrou o quanto eu estava disposto e capacitado para enfrentar o mercado e suas dificuldades, atendimento a clientes físicos e empresas, trouxe não só um fortalecimento profissional e também por sua vez um ótimo crescimento pessoal. Investimentos e administração da mesma.<br />
+                          A primeira decepção e uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="meu-curriculo">
+              <div class="title-quem-sou">
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#cyberSapoDjow">
+                    <strong>
+                      2005 - Cyber sapo D´Jow
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Atendimento e manutenção: </strong>
+                    Tarefas diárias de atendimento ao cliente, efetuando manutenção e instalação dos jogos solicitados pelos clientes, auxiliando em duvidas e usabilidade dos usuários.
+                  </p>
+                  
+                  <div class="modal fade" id="cyberSapoDjow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2005 - Cyber sapo D´Jow
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Hoje em dia só os lendários lembram de utilizar Cyber Café, Lan House e etc..., participei de uma sociedade com um amigo onde usufruíamos de um espaço em uma empresa para disponibilizar equipamentos para clientes utilizar internet, Office e games.
+                          <br />Foi uma ótima experiencia com clientes e aprendendo juntamente com os mesmos com as dúvidas e dificuldades que aparecia no dia a dia, tanto na área tecnológica como auxílio aos usuários.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#locadoraLianVideos">
+                    <strong>
+                      2004 - Locadora Lian Videos
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Atendimento: </strong>
+                    Atendimento ao Cliente, tarefas diárias de organização e higienização do local de trabalho e DVD's e Fitas Cassete. Auxilio nas indicações de filmes, analise do cliente e indicação através das sinopses dos filmes 
+                  </p>
+                  
+                  <div class="modal fade" id="locadoraLianVideos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2004 - Locadora Lian Videos
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Trabalhar em uma locadora de vídeos e games, trouxe um crescimento maravilhoso no relacionamento com pessoas, isto fez com que aprendesse no dia a dia como abordar ou auxiliar cada um de acordo com o seu perfil e gostos, procurar compreender e entender este tipo de empresa foi muito bom, e a experiência de usar um sistema rodando em Windows 95. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#saoInformatica">
+                    <strong>
+                      2003 - SAO Informática LTDA.
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Analista Suporte Técnico: </strong>
+                    Atendimento ao cliente, tarefas efetuadas no atendimento de chamados de pessoas físicas e empresas, manutenção e auxilio ao usuário.
+                  </p>
+                  
+                  <div class="modal fade" id="saoInformatica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2003 - SAO Informática LTDA.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Primeira experiencia atuando como técnico em informática, aprendendo e crescendo profissionalmente, atendimento de chamados a clientes e empresas. Usufruindo dos meios que tinha na época para executar as tarefas diárias com meus estudos e trabalho.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#retificaVilkas">
+                    <strong>
+                      2003 - Retifica Vilkas
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Retificador: </strong>
+                    Atendimento ao cliente, auxiliando na manutenção e retifica de cabeçote e blocos de motores de veículos leves, Atuando na organização e limpeza das maquinas
+                  </p>
+                  
+                  <div class="modal fade" id="retificaVilkas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2003 - Retifica Vilkas
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Empresa em que fui escalado para auxiliar nos serviços de mecânica retificadora, está por hora foi uma das empresas que atuei enquanto estava estudando no SENAI, estudava na parte da manha e na parte da tarde eu trabalhava e aprendia tudo sobre o setor de atuação. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#eliteCursos">
+                    <strong>
+                      2002 - Elit Cursos Profissionalizantes
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Instrutor: </strong>
+                    Elaboração de apostila e atuando como instrutor de Manutenção de Microcomputadores.
+                  </p>
+                  
+                  <div class="modal fade" id="eliteCursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2002 - Elit Cursos Profissionalizantes
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Foi rápida, mas foi legal, estudar e estruturar apostila do curso de manutenção de micro, com esses conhecimentos pude lecionar utilizando os equipamentos, matérias e peças utilizadas na época, que hoje em dia pode se dizer que é relíquia KKKKK.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#mecanicaAlvorada">
+                    <strong>
+                      2000 - Mecânica - Funilaria e Pintura - Alvorada
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Ajudante: </strong>
+                    Auxiliar na desmontagem de peças e limpeza, Sistema de busca e entrega de veículos, auxilio na compra de peças. Organização e higienização do local de trabalho.
+                  </p>
+                  
+                  <div class="modal fade" id="mecanicaAlvorada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2000 - Mecânica - Funilaria e Pintura - Alvorada
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Oficina mecânica do meu pai, trabalhar auxiliando na empresa da família, mesmo não me identificando com o setor pude aprender muito sobre está área.
+                          <br />
+                          Juntamente aprendendo os conceitos da ética profissional e responsabilidades desta profissão.
+                          <br />Neste período meus estudos eram somente por livros, por não ter computador eu aproveitava os finais de semana para fazer trabalhos de escola no computador da minha prima onde me deixava e me incentivava nos estudos e é claro aproveitava para jogar RSRSR, comprava na banca e utilizava o que aprendia aos finais de semana.
+                          <br />O que eu ganhava eu comprava revistas e livros de tecnologia.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article>
+                  <a href=""  data-bs-toggle="modal" data-bs-target="#papelariaYoshimoto">
+                    <strong>
+                      1998 - Papelaria Marli Yoshimoto ME.
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Atendente: </strong>
+                    Atendimento ao cliente, verificação de estoque e serviços de office boy, tarefas de higienização do local de trabalho e auxilio nas encomendas de enfeites para eventos.
+                  </p>
+                  
+                  <div class="modal fade" id="papelariaYoshimoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            1998 - Papelaria Marli Yoshimoto ME.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Meu primeiro emprego, muito bom, aprendi o que era responsabilidade com patrão, com empresa e com os clientes. Minha primeira professora no ramo de atendimento e relação com clientes, ela tinha elaborado uma apostila de como era o funcionamento da papelaria desde sua administração ate o atendimento.
+                          <br />Ela por sua vez tinha amplo conhecimento em administração por ter atuado trabalhando em banco. E com isso obtive um conhecimento diferenciado com esta experiencia profissional
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end currículo -->
+
+    <!-- start Projetos -->
     <!-- end projetos -->
 
   </body>
