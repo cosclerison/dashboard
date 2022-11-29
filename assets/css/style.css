@@ -204,6 +204,23 @@ font-size: calc(1.325rem + 0.9vw);
   font-style: italic;
 }
 
+/* Contatos */
+.whatsapp{
+  position: fixed;
+  top: 40%;
+  right: 2%;
+  padding: 10px;
+  z-index: 10000000;
+}
+.whatsapp svg{
+  color: rgb(58, 248, 58);
+}
+.whatsapp a img{
+  color: rgb(58, 248, 58);
+}
+
+
+
 /* 3333333333333333333333333333333333333333333333333333333333333333 */
 
 
