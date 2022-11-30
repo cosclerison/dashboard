@@ -137,11 +137,15 @@ font-size: calc(1.325rem + 0.9vw);
 /* quem sou */
 #quem-sou {
   /* margin-top : 2rem; */
-  min-height: 80vh;
+  min-height: 100vh;
   max-width: 100%;
   color: #fff;
-  background-color: #45474a;
+  background-color: #373738;
+  background-image: url(../img/hexagon.svg);
   /* background-image: linear-gradient(62deg, #1a1b1d 0%, #000); */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  background-size: 100%;  
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -153,10 +157,11 @@ font-size: calc(1.325rem + 0.9vw);
   justify-content: center;
 }
 .quem-sou-eu {
-  min-height: 90vh;
-  margin-top: 4rem;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  min-height: 60vh;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 20px;
   margin-bottom: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
@@ -233,7 +238,7 @@ font-size: calc(1.325rem + 0.9vw);
   max-width: 100%;
   overflow: hidden;
   color: #fff;
-  background-color: #5d1776;
+  background-color: #000;
   background-image: url(../img/projetos/wallpaper-001.jpg);
   align-items: center;
   justify-content: center;
@@ -405,7 +410,7 @@ font-size: calc(1.325rem + 0.9vw);
 /* Contatos */
 .whatsapp{
   position: fixed;
-  top: 73%;
+  top: 85%;
   right: 2%;
   padding: 2rem;
   z-index: 10000000;
