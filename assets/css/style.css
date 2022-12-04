@@ -358,7 +358,7 @@ font-size: calc(1.325rem + 0.9vw);
 
 /* Currículo */
 #curriculo {
-  min-height: 90vh;
+  min-height: 95vh;
   overflow: hidden;
   color: #fff;
   background-color: #45474a;
