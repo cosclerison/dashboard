@@ -103,6 +103,7 @@
 .minha-formacao {
   min-height: 90vh;
   margin-top: 5rem;
+  overflow: hidden;
   margin-bottom: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: justify;
@@ -139,6 +140,7 @@ font-size: calc(1.325rem + 0.9vw);
   /* margin-top : 2rem; */
   min-height: 100vh;
   max-width: 100%;
+  overflow: hidden;
   color: #fff;
   background-color: #373738;
   background-image: url(../img/hexagon.svg);
@@ -357,6 +359,7 @@ font-size: calc(1.325rem + 0.9vw);
 /* Currículo */
 #curriculo {
   min-height: 90vh;
+  overflow: hidden;
   color: #fff;
   background-color: #45474a;
   background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
@@ -368,14 +371,15 @@ font-size: calc(1.325rem + 0.9vw);
   text-decoration: none;
   border-radius: 2rem;
   padding: 0.2rem;
-  color: #fff;
+  color: #1438a4;
+  background-color: #fff;
   transition: 0.5s;
 }
 #curriculo a:hover {
   text-decoration: none;
   border-width: 2rem;
-  color: #1438a4;
-  background-color: #fff;
+  color: #fff;
+  background-color: #1438a4;
 }
 .meu-curriculo {
   margin-top: 0;
@@ -408,6 +412,75 @@ font-size: calc(1.325rem + 0.9vw);
 }
 
 /* Contatos */
+#contatos {
+  min-height: 95vh;
+  color: #fff;
+  overflow: hidden;
+  background-color: #45474a;
+  background-image: linear-gradient(62deg, #1a1b1d 0%, #1b1010ce);
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#contatos a {
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.2rem;
+  color: #fff;
+  transition: 0.5s;
+}
+/* #contatos a:hover {
+  text-decoration: none;
+  border-width: 2rem;
+  color: #1438a4;
+  background-color: #fff;
+} */
+.meu-contatos {
+  margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+.title-meu-contatos {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+.list-contatos h3 {
+  margin: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-contatos p {
+  margin: 1rem;
+  size: 4rem;
+  font-style: italic;
+}
+.list-contatos label {
+  margin-bottom: 2rem;
+}
+.list-contatos svg {
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+#modalcontatos {
+  color: #000;
+}
+.modal-header {
+  background-color: #c6c3c3;
+  /* background-image: linear-gradient(62deg, #fff 0%, #1a1b1d); */
+}
+.modal-dialog {
+  color: #000;
+}
+
+
+
+
 .whatsapp{
   position: fixed;
   top: 85%;
@@ -422,7 +495,7 @@ font-size: calc(1.325rem + 0.9vw);
   color: rgb(58, 248, 58);
 }
 
-.instagram{
+/* .instagram{
   position: fixed;
   top: 80%;
   right: 2%;
@@ -448,4 +521,4 @@ font-size: calc(1.325rem + 0.9vw);
 }
 .facebook a img{
   color: rgb(58, 248, 58);
-}
+} */
