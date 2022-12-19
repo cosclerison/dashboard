@@ -498,6 +498,9 @@ font-size: calc(1.325rem + 0.9vw);
   align-content: center;
   justify-content: center;
   justify-items: center;
+  /* background-color: #45474a;
+  border-radius: 1rem;
+  border: 5px transparent #585a5d; */
 }
 #modalcontatos {
   color: #000;
