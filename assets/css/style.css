@@ -87,6 +87,13 @@
 .formacoes-auth {
   padding-top: 5%;
 }
+.icon-profile{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
 .accordion-item{
   background-color: transparent;
   border: none;
