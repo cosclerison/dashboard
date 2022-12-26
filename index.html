@@ -20,6 +20,7 @@
 
     <script src="assets/js/scripts.js" defer></script>
     <!-- Style -->
+    <link href="assets/css/calculadora.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -47,14 +48,71 @@
           <li class="nav-item">
             <a class="nav-link" href="#contatos">Contatos</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" disabled href="#bonus">Bonus</a>
-          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bonus
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item"data-bs-toggle="modal" data-bs-target="#calculadora">Calculadora</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
         </ul>
       </div>
-
     </nav>
     <!-- End navbar Code -->
+
+    <!-- start bonus -->
+    <!-- Calculadora feita em HTML CSS JS -->
+    <div class="modal fade" id="calculadora" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <strong>
+              Calculadora HTML CSS JS
+            </strong>
+          </div>
+          <div class="modal-body-calculator">
+            <div id="calc">
+              <h3><strong>Calculador</strong></h3>
+              <div id="operation">
+                <div id="previous-operation"></div>
+                <div id="current-operation"></div>
+              </div>
+              <div id="buttons-container">
+                <button>CE</button>
+                <button>C</button>
+                <button>DEL</button>
+                <button>/</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button>*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button>-</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button>+</button>
+                <button class="number">0</button>
+                <button class="number">.</button>
+                <button id="equal-btn">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End bonus -->
       
     <!-- Start perfil -->
     <section class="header" id="header">
@@ -825,6 +883,8 @@
           <div class="title-meu-curriculo">
             <h3 class="text-center"><strong>Meu perfil Curricular e o caminho para alcançar meus estudos e objetivos.</strong></h3>
           </div>
+
+         
 
           <div class="col-sm-6">
             <div class="meu-curriculo">

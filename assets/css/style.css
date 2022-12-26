@@ -408,15 +408,21 @@ font-size: calc(1.325rem + 0.9vw);
   background-color: #c6c3c3;
   /* background-image: linear-gradient(62deg, #fff 0%, #1a1b1d); */
 }
+.modal-body-calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
 .modal-dialog {
   color: #000;
 }
-.modal-content button {
+/* .modal-content button {
   text-align: center;
   width: 20%;
   background-color: #c6c3c3;
   color: #000;
-}
+} */
 
 /* Contatos */
 #contatos {
