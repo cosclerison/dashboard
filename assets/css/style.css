@@ -3,14 +3,28 @@
   min-height: 90vh;
   overflow: hidden;
   color: #fff;
-  background-color: #45474a;
-  background-image: linear-gradient(62deg, #1a1b1d 0%, #1438a4);
+  background: linear-gradient(90deg, #1a1b1d, #1438a4);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .title-portifolio{
   margin-top: 5rem;
   border-radius: 20px;
 }
+
 
 
 /* perfil */
