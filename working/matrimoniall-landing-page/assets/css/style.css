@@ -1,0 +1,103 @@
+
+#header {
+  min-height: 90vh;
+  /* overflow: hidden; */
+  background-color: #000;
+  color: #fff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+font{
+  /* font title */
+  font-family: 'Forum', cursive; 
+  /* font text */
+  font-family: 'Lato', cursive;
+}
+
+.color{
+  BLACK: #191a1a;
+  GOLD:			#c4a800;
+  BROWN:			#4c412a;
+  LIGHT-GREY:		#f1f1f1;
+  GREEN-WHATSAPP:	#00b451;
+}
+
+.awards-2023{
+  display: flex;
+  background-color: #191a1a;
+  width: 100%;
+  height: 2.5rem;
+  color: #f1f1f1;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+}
+
+.navbar{
+  display: flex;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 5rem;
+  color: #f1f1f1;
+  /* border-bottom: 1px solid #000 ; */
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+}
+
+.banner{
+  background-color: red;
+}
+
+#banner-casal{
+  min-height: 50vh;
+  max-width: 100%;
+  overflow: hidden;
+  color: #fff;
+  background-color: #373738;
+  background-image: url(../files/banners/banner.jpg);
+  background-size: 100%;  
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.vai-casar h1{
+  font-size: 4.5rem;
+}
+.vai-casar h5{
+  font-size: 1.3rem;
+  font-family: 'Lato', cursive;
+}
+
+.vai-casar{
+  margin-top: 8rem;
+  color: #000;
+  font-family: 'Forum', cursive;
+}
+
+.vinte-anos{
+  display: flex;
+  background-color: #c4a800;
+  color: #f1f1f1;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+  font-weight: lighter;
+  /* font-weight: 100; */
+}
