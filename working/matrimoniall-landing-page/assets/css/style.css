@@ -1,10 +1,10 @@
 
-#header {
+/* #header {
   min-height: 90vh;
-  /* overflow: hidden; */
+  overflow: hidden;
   background-color: #000;
   color: #fff;
-}
+} */
 
 @keyframes gradient {
   0% {
@@ -42,7 +42,12 @@ font{
   font-size: 0.9rem;
   align-items: center;
   justify-content: center;
-  font-family: 'Forum', cursive;
+  font-family: 'Lato', cursive;
+}
+
+.awards-2023 a{
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 .navbar{
@@ -58,6 +63,89 @@ font{
   font-family: 'Forum', cursive;
 }
 
+/* Redes Sociais */
+.matrimoniall{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15rem;
+}
+
+.social-redes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 1rem; */
+}
+
+.icons-svg{
+  margin: 0.2rem;
+  border: none;
+  text-decoration: none;
+}
+
+.facebook-1 {
+  fill: #fff;
+}
+
+.facebook-2 {
+  fill: #1677ef;
+}
+
+.instagram-1 {
+  fill: #fff;
+}
+
+.instagram-2 {
+  clip-path: url(#clippath-2);
+}
+
+.instagram-3 {
+  clip-path: url(#clippath-1);
+}
+
+.instagram-4 {
+  clip-path: url(#clippath);
+}
+
+.instagram-5 {
+  fill: none;
+}
+
+.youtube-1 {
+  fill: #fff;
+}
+
+.youtube-2 {
+  fill: #fc0000;
+}
+
+.contact-1 {
+  fill-rule: evenodd;
+}
+
+.contact-1, .contact-2 {
+  fill: #fff;
+}
+
+.contact-2 {
+  font-family: Lato-Black, Lato;
+  font-size: 12.6px;
+  font-weight: 800;
+}
+
+.contact-3 {
+  fill: none;
+}
+
+.contact-4 {
+  letter-spacing: -.08em;
+}
+
+.contact-5 {
+  fill: #00b451;
+}
+
 .banner{
   background-color: red;
 }
@@ -69,15 +157,17 @@ font{
   color: #fff;
   background-color: #373738;
   background-image: url(../files/banners/banner.jpg);
-  background-size: 100%;  
+  background-size: cover; /* Alterando para 'cover' para manter a proporção da imagem em diferentes tamanhos de tela */
+  background-position: center; /* Centralizando a imagem na div */
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column; /* Alterando para 'column' para empilhar os elementos verticalmente em dispositivos de tela pequena */
 }
 
 .vai-casar h1{
   font-size: 4.5rem;
 }
+
 .vai-casar h5{
   font-size: 1.3rem;
   font-family: 'Lato', cursive;
@@ -100,4 +190,103 @@ font{
   font-family: 'Forum', cursive;
   font-weight: lighter;
   /* font-weight: 100; */
+}
+
+
+/* START QUEM É MATRIMONIALL */
+#quem-e-matrimoniall {
+  min-height: 70vh;
+  max-width: 100%;
+  overflow: hidden;
+  color: #000;
+  background-color: #f1f1f1;
+  background-size: cover; /* Alterando para 'cover' para manter a proporção da imagem em diferentes tamanhos de tela */
+  background-position: center; /* Centralizando a imagem na div */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alterando para 'column' para empilhar os elementos verticalmente em dispositivos de tela pequena */
+}
+
+.title-quem-e-matrimoniall {
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+}
+
+.title-quem-e-matrimoniall h2 {
+  font-size: 3rem;
+  border-bottom: 0.2rem solid #c4a800;
+  margin-bottom: 8rem;
+}
+
+ /* Estilos CSS para o contêiner do vídeo */
+ .video-container {
+  display: flex;
+  max-width: 640px;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  width: 25rem;
+  height: 20rem; /* Defina a altura do vídeo de acordo com suas preferências */
+  border-radius: 2.1rem;
+  border: none; /* Remova a borda padrão do iframe, se necessário */
+}
+
+.quem-e-matrimoniall h5 {
+  font-size: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2rem;
+  /* font-family: 'Lato', cursive; */
+}
+
+.quem-e-matrimoniall p {
+  font-size: 1.1rem;
+  font-weight: normal; /* ou font-weight: 400; */
+  font-family: 'Lato', cursive;
+}
+
+/* START NOSSOS PLANOS */
+#nossos-planos {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+  color: #f1f1f1;
+  background-image: url(../files/background/background.jpg );
+  background-size: cover; /* Alterando para 'cover' para manter a proporção da imagem em diferentes tamanhos de tela */
+  background-position: center; /* Centralizando a imagem na div */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Alterando para 'column' para empilhar os elementos verticalmente em dispositivos de tela pequena */
+}
+
+.title-nossos-planos {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Forum', cursive;
+}
+
+.title-nossos-planos h2{
+  color: #c4a800;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  font-family: 'Forum', cursive;
+  border-bottom: 0.2rem solid #c4a800;
+}
+
+.nossos-planos p{
+  color: #f1f1f1;
+  font-size: 0.8rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  font-family: 'Lato', cursive;
+  align-items: center;
+  justify-content: center;
 }
