@@ -9,6 +9,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('#nav-menu a');
+
+  navToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (window.innerWidth <= 768) {
+        navMenu.classList.remove('active');
+      }
+    });
+  });
+});
+
 // Highlight active navigation item
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('nav ul li a');
