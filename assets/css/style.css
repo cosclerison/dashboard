@@ -399,24 +399,24 @@ footer {
   /* padding-top: 4rem 0; */
   height: 100%;
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
 #experiencia {
   padding: 4rem 0;
   height: 100%;
-  margin-top: 4rem;
-  margin-bottom: 8rem;
-}
+  /* margin-top: 4rem; */
+  /* margin-bottom: 4rem; */
+} 
 
 .text-center {
   text-align: center;
 }
 
 #habilidades {
-  padding: 2rem 0;
+  padding: 4rem 0;
   height: 100%;
-  margin-top: 4rem;
+  margin-top: 1rem;
   margin-bottom: 8rem;
 }
 
