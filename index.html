@@ -2,562 +2,1598 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>Clerison Oliveira</title>
+    <title>Clerison Oliveira</title>
+    
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
 
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Script -->
-  <script src="assets/js/scripts.js" defer></script>
-
+    <script src="assets/js/scripts.js" defer></script>
+    <!-- Style -->
+    <link href="assets/css/calculadora.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <button id="nav-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul id="nav-menu">
-        <li><a href="#sobre"><i class="fas fa-user"></i><span>Inicio</span></a></li>
-        <li><a href="#quem-sou-eu"><i class="fas fa-id-card"></i><span>Quem Sou Eu</span></a></li>
-        <li><a href="#experiencia"><i class="fas fa-briefcase"></i><span>Experiência</span></a></li>
-        <li><a href="#habilidades"><i class="fas fa-cogs"></i><span>Habilidades</span></a></li>
-        <li><a href="#formacao"><i class="fas fa-graduation-cap"></i><span>Formação</span></a></li>
-        <li><a href="#projetos"><i class="fas fa-project-diagram"></i><span>Projetos</span></a></li>
-        <li><a href="#contato"><i class="fas fa-envelope"></i><span>Contato</span></a></li>
-      </ul>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container justify-content-between">
+        <a class="navbar-brand" href="#"> <strong><em>Inicio</em></strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-center" aria-current="page" href="#quem-sou">Quem sou</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculo">Currículo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contatos">Contatos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bonus
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item"data-bs-toggle="modal" data-bs-target="#calculadora">Calculadora</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
-  </header>
+    <!-- End navbar Code -->
 
-  <main class="container">
-
-    <section id="sobre" class="profile-section">
-      <img src="./assets-old/img/profile/profile-001.jpg" alt="Foto de Clerison Oliveira" class="profile-image">
-      <div class="profile-info">
-        <h1>Clerison Oliveira</h1>
-        <h2>Analista e Desenvolvedor de Sistemas</h2>
-        <p>Profissional apaixonado por tecnologia, com experiência em desenvolvimento web e análise de sistemas.
-          Buscando constantemente aprender e aplicar novas tecnologias para criar soluções inovadoras.</p>
-      </div>
-    </section>
-
-    <section id="programming-languages" class="programming-languages-section">
-      <div class="language-icons">
-
-        <img class="col-1 language-icon" alt="Linux" height="40" width="40"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-        <img class="language-icon" alt="n8n" height="30" width="40"
-          src="https://avatars.githubusercontent.com/u/45487711?s=200&amp;v=4">
-        <!-- <img class="col-1" alt="HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> -->
-        <!-- <img class="col-1" alt="CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> -->
-        <!-- <img class="col-1" alt="JavaScript" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> -->
-        <!-- <img class="col-1" alt="MYSQL" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> -->
-        <!-- <img class="col-1" alt="PHP" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" /> -->
-        <!-- <img class="col-1" alt="Bootstrap" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" /> -->
-        <!-- <img class="col-1" alt="DOCKER" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" /> -->
-        <!-- <img class="col-1" alt="GIT" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /> -->
-        <!-- <img class="col-1" alt="angular" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" /> -->
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="language-icon">
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54"
-            d="M20 96.9v-8.1c0-1.1.7-1.9 1.8-1.9h.3c1.1 0 1.8.9 1.8 1.9v17c0 4.1-2 7.4-5.6 9.5-1.7 1-3.5 1.5-5.4 1.5h-.8c-4.1 0-7.4-2-9.5-5.6-1-1.7-1.5-3.5-1.5-5.4v-.8c0-4.1 2-7.4 5.6-9.5 1.7-1 3.5-1.5 5.4-1.5h.8c2.7.1 5.1 1.1 7.1 2.9zm-15.1 8.5c0 3 1.5 5.2 4.1 6.7 1.1.6 2.2.9 3.4.9 2.9 0 5.1-1.4 6.6-3.9.7-1.2 1-2.4 1-3.8 0-2.6-1.2-4.6-3.3-6.1-1.3-.9-2.7-1.4-4.2-1.4-3.2 0-5.5 1.6-6.9 4.5-.5 1-.7 2.1-.7 3.1zm32.2-11.3h.5c4.4 0 7.8 2.1 9.9 6 .9 1.5 1.3 3.2 1.3 5v.8c0 4.1-2 7.4-5.6 9.5-1.7 1-3.5 1.5-5.4 1.5H37c-4.1 0-7.4-2-9.5-5.6-1-1.7-1.5-3.5-1.5-5.4v-.8c0-4.1 2.1-7.4 5.6-9.5 1.7-1.1 3.6-1.5 5.5-1.5zm-7.2 11.3c0 2.9 1.4 5 3.9 6.5 1.2.7 2.4 1 3.8 1 2.9 0 5-1.5 6.5-3.9.7-1.2 1-2.4 1-3.8 0-2.7-1.3-4.8-3.5-6.3-1.2-.8-2.6-1.2-4-1.2-3.2 0-5.5 1.6-6.9 4.5-.6 1.1-.8 2.2-.8 3.2zm34.8-7.2c-.6-.3-1.7-.4-2.3-.4-3.2-.1-5.5 1.7-6.9 4.5-.5 1-.7 2-.7 3.1 0 3.3 1.7 5.6 4.6 7 1.1.5 2.4.6 3.6.6 1 0 2.5-.6 3.4-1.1l.2-.1h.8c.9.2 1.5.7 1.5 1.7v.4c0 2.3-4.3 2.9-5.9 3-5.7.4-10-2.7-11.6-8.2-.3-.9-.4-1.9-.4-2.9v-.8c0-4.1 2.1-7.4 5.6-9.5 1.7-1 3.5-1.5 5.4-1.5h.8c2 0 3.9.6 5.6 1.7l.1.1.1.1c.2.3.3.6.3 1v.4c0 1-.7 1.5-1.6 1.7H67c-.5 0-1.8-.6-2.3-.8zm12.4 2.6c1.5-1.5 3-3 4.5-4.4.4-.4 2-2.1 2.6-2.1h.8c.9.2 1.5.7 1.5 1.7v.4c0 .6-.7 1.4-1.2 1.8l-2.7 2.7-4.6 4.7c2 2 4 4 5.9 6l1.6 1.7c.2.2.5.4.6.7.2.3.3.6.3.9v.5c-.2.9-.8 1.6-1.7 1.6h-.3c-.6 0-1.3-.7-1.8-1.1-.9-.8-1.8-1.7-2.6-2.6l-2.9-2.9v4.6c0 1.1-.7 1.9-1.8 1.9H75c-1.1 0-1.8-.9-1.8-1.9V88.9c0-1.1.7-1.9 1.8-1.9h.3c1.1 0 1.8.8 1.8 1.9v11.9zm47.6-6.6h.4c1.1 0 1.9.8 1.9 1.9 0 1.6-1.5 2-2.8 2-1.7 0-3.4 1-4.5 2.2-1.5 1.5-2.1 3.3-2.1 5.4v9.2c0 1.1-.7 1.9-1.8 1.9h-.3c-1.1 0-1.8-.9-1.8-1.9v-9.8c0-3.8 1.8-6.8 4.9-9 1.8-1.2 3.9-1.9 6.1-1.9zm-27.1 18.3c1.4.5 3 .4 4.4.2.7-.3 2.6-1.1 3.3-1h.2c.4.2.8.5 1 .9.5 1 .3 2-.7 2.6l-.3.2c-3.6 2.1-7.5 1.8-11.1-.2-1.7-.9-3-2.3-4-4l-.2-.4c-2.3-4-2-8.3.6-12.1.9-1.3 2.1-2.3 3.5-3.1l.5-.3c3.4-2 7.1-1.8 10.6-.1 1.9.9 3.4 2.3 4.5 4.1l.2.3c.8 1.3-.2 2.5-1.2 3.3-1.2.9-2.4 2-3.5 3-2.7 2.2-5.3 4.4-7.8 6.6zm-3.3-2.3l8.5-7.3c1-.8 2-1.7 3-2.6-.8-1-2.1-1.7-3.1-2.1-2.2-.8-4.4-.6-6.4.6-2.6 1.5-3.8 4-3.7 7 0 1.2.4 2.3 1 3.4.2.4.4.7.7 1M73.7 33.7H85v11.5h5.7c2.6 0 5.3-.5 7.8-1.3 1.2-.4 2.6-1 3.8-1.7-1.6-2.1-2.4-4.7-2.6-7.3-.3-3.5.4-8.1 2.8-10.8l1.2-1.4 1.4 1.1c3.6 2.9 6.5 6.8 7.1 11.4 4.3-1.3 9.3-1 13.1 1.2l1.5.9-.8 1.6c-3.2 6.2-9.9 8.2-16.4 7.8-9.8 24.3-31 35.8-56.8 35.8-13.3 0-25.5-5-32.5-16.8l-.1-.2-1-2.1c-2.4-5.2-3.1-10.9-2.6-16.6l.2-1.7h9.6V33.7h11.3V22.4h22.5V11.1h13.5v22.6z" />
-          <path fill="#00AADA"
-            d="M110.2 37.9c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7H18.4c-.6 6.2.5 11.9 3 16.8l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5 1.1-8.3 1.3h-.6c-1.3.1-2.7.1-4.2.1-1.6 0-3.1 0-4.9-.1 6 6.8 15.4 10.8 27.2 10.8 25 0 46.2-11.1 55.5-35.9 6.7.7 13.1-1 16-6.7-4.5-2.6-10.5-1.8-13.9-.1z" />
-          <path fill="#28B8EB"
-            d="M110.2 37.9c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7h-68c-.3 9.5 3.2 16.7 9.5 21 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4l-.1-.1c8.5 4.4 20.8 4.3 35-1.1 15.8-6.1 30.6-17.7 40.9-30.9-.2.1-.3.2-.5.2z" />
-          <path fill="#028BB8"
-            d="M18.5 54.6c.4 3.3 1.4 6.4 2.9 9.3l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4h-.4c-1.3.1-2.7.1-4.1.1-1.6 0-3.2 0-4.9-.1 6 6.8 15.5 10.8 27.3 10.8 21.4 0 40-8.1 50.8-26H18.5v-.1z" />
-          <path fill="#019BC6"
-            d="M23.3 54.6c1.3 5.8 4.3 10.4 8.8 13.5 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.6 1.4 8.5 4.4 20.8 4.3 34.9-1.1 8.5-3.3 16.8-8.2 24.2-14.1H23.3z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3"
-            d="M28.2 35.5H38v9.8h-9.8v-9.8zm.8.9h.8v8.1H29v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1H32v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm3.1-12.1h9.8V34h-9.8v-9.7zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE"
-            d="M39.5 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3"
-            d="M50.8 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1H53v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1H56v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE"
-            d="M50.8 24.3h9.8V34h-9.8v-9.7zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1H53v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1H56v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zM62 35.5h9.8v9.8H62v-9.8zm.9.9h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3"
-            d="M62 24.3h9.8V34H62v-9.7zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE"
-            d="M62 13h9.8v9.8H62V13zm.9.8h.8V22h-.8v-8.2zm1.4 0h.8V22h-.8v-8.2zm1.5 0h.8V22h-.8v-8.2zm1.5 0h.8V22h-.8v-8.2zm1.4 0h.8V22h-.8v-8.2zm1.5 0h.8V22h-.8v-8.2z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3"
-            d="M73.3 35.5h9.8v9.8h-9.8v-9.8zm.8.9h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1H80v-8.1zm1.5 0h.8v8.1h-.8v-8.1z" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#D4EEF1"
-            d="M48.6 61.2c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7.1-1.5 1.3-2.7 2.7-2.7" />
-          <path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54"
-            d="M48.6 61.9c.2 0 .5 0 .7.1-.2.1-.4.4-.4.7 0 .4.4.8.8.8.3 0 .6-.2.7-.4.1.2.1.5.1.7 0 1.1-.9 1.9-1.9 1.9-1.1 0-1.9-.9-1.9-1.9 0-1 .9-1.9 1.9-1.9M1 55.6h125.3c-2.7-.7-8.6-1.6-7.7-5.2-5 5.7-16.9 4-20 1.2-3.4 4.9-23 3-24.3-.8-4.2 5-17.3 5-21.5 0-1.4 3.8-21 5.7-24.3.8-3 2.8-15 4.5-20-1.2 1.1 3.5-4.8 4.5-7.5 5.2" />
-          <path fill="#BFDBE0"
-            d="M55.8 80.6c-6.7-3.2-10.3-7.5-12.4-12.2-2.5.7-5.5 1.2-8.9 1.4-1.3.1-2.7.1-4.1.1-1.7 0-3.4 0-5.2-.1 6.1 6.1 13.7 10.8 27.6 10.9 1-.1 2-.1 3-.1z" />
-          <path fill="#D4EEF1" d="M45.9 72.7c-.9-1.3-1.8-2.8-2.5-4.3-2.5.7-5.5 1.2-8.9 1.4 2.4 1.3 5.8 2.5 11.4 2.9z" />
-        </svg>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="language-icon">
-          <g fill="#fff">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M64 1.512c-23.493 0-42.545 19.047-42.545 42.545 0 18.797 12.19 34.745 29.095 40.37 2.126.394 2.907-.923 2.907-2.047 0-1.014-.04-4.366-.058-7.92-11.837 2.573-14.334-5.02-14.334-5.02-1.935-4.918-4.724-6.226-4.724-6.226-3.86-2.64.29-2.586.29-2.586 4.273.3 6.523 4.385 6.523 4.385 3.794 6.504 9.953 4.623 12.38 3.536.383-2.75 1.485-4.628 2.702-5.69-9.45-1.075-19.384-4.724-19.384-21.026 0-4.645 1.662-8.44 4.384-11.42-.442-1.072-1.898-5.4.412-11.26 0 0 3.572-1.142 11.7 4.363 3.395-.943 7.035-1.416 10.65-1.432 3.616.017 7.258.49 10.658 1.432 8.12-5.504 11.688-4.362 11.688-4.362 2.316 5.86.86 10.187.418 11.26 2.728 2.978 4.378 6.774 4.378 11.42 0 16.34-9.953 19.938-19.427 20.99 1.526 1.32 2.886 3.91 2.886 7.88 0 5.692-.048 10.273-.048 11.674 0 1.13.766 2.458 2.922 2.04 16.896-5.632 29.07-21.574 29.07-40.365C106.545 20.56 87.497 1.512 64 1.512z" />
-            <path
-              d="M37.57 62.596c-.095.212-.428.275-.73.13-.31-.14-.482-.427-.382-.64.09-.216.424-.277.733-.132.31.14.486.43.38.642zM39.293 64.52c-.203.187-.6.1-.87-.198-.278-.297-.33-.694-.124-.884.208-.188.593-.1.87.197.28.3.335.693.123.884zm1.677 2.448c-.26.182-.687.012-.95-.367-.262-.377-.262-.83.005-1.013.264-.182.684-.018.95.357.262.385.262.84-.005 1.024zm2.298 2.368c-.233.257-.73.188-1.093-.163-.372-.343-.475-.83-.242-1.087.237-.257.736-.185 1.102.163.37.342.482.83.233 1.086zm3.172 1.374c-.104.334-.582.485-1.064.344-.482-.146-.796-.536-.7-.872.1-.336.582-.493 1.067-.342.48.144.795.53.696.87zm3.48.255c.013.35-.396.642-.902.648-.508.012-.92-.272-.926-.618 0-.354.4-.642.908-.65.506-.01.92.272.92.62zm3.24-.551c.06.342-.29.694-.793.787-.494.092-.95-.12-1.014-.46-.06-.35.297-.7.79-.792.503-.088.953.118 1.017.466zm0 0" />
-          </g>
-          <path
-            d="M24.855 108.302h-10.7a.5.5 0 00-.5.5v5.232a.5.5 0 00.5.5h4.173v6.5s-.937.32-3.53.32c-3.056 0-7.327-1.116-7.327-10.508 0-9.393 4.448-10.63 8.624-10.63 3.614 0 5.17.636 6.162.943.31.094.6-.216.6-.492l1.193-5.055a.468.468 0 00-.192-.39c-.403-.288-2.857-1.66-9.058-1.66-7.144 0-14.472 3.038-14.472 17.65 0 14.61 8.39 16.787 15.46 16.787 5.854 0 9.405-2.502 9.405-2.502.146-.08.162-.285.162-.38v-16.316a.5.5 0 00-.5-.5zM79.506 94.81H73.48a.5.5 0 00-.498.503l.002 11.644h-9.392V95.313a.5.5 0 00-.497-.503H57.07a.5.5 0 00-.498.503v31.53c0 .277.224.503.498.503h6.025a.5.5 0 00.497-.504v-13.486h9.392l-.016 13.486c0 .278.224.504.5.504h6.038a.5.5 0 00.497-.504v-31.53a.497.497 0 00-.497-.502zm-47.166.717c-2.144 0-3.884 1.753-3.884 3.923 0 2.167 1.74 3.925 3.884 3.925 2.146 0 3.885-1.758 3.885-3.925 0-2.17-1.74-3.923-3.885-3.923zm2.956 9.608H29.29c-.276 0-.522.284-.522.56v20.852c0 .613.382.795.876.795h5.41c.595 0 .74-.292.74-.805v-20.899a.5.5 0 00-.498-.502zm67.606.047h-5.98a.5.5 0 00-.496.504v15.46s-1.52 1.11-3.675 1.11-2.727-.977-2.727-3.088v-13.482a.5.5 0 00-.497-.504h-6.068a.502.502 0 00-.498.504v14.502c0 6.27 3.495 7.804 8.302 7.804 3.944 0 7.124-2.18 7.124-2.18s.15 1.15.22 1.285c.07.136.247.273.44.273l3.86-.017a.502.502 0 00.5-.504l-.003-21.166a.504.504 0 00-.5-.502zm16.342-.708c-3.396 0-5.706 1.515-5.706 1.515V95.312a.5.5 0 00-.497-.503H107a.5.5 0 00-.5.503v31.53a.5.5 0 00.5.503h4.192c.19 0 .332-.097.437-.268.103-.17.254-1.454.254-1.454s2.47 2.34 7.148 2.34c5.49 0 8.64-2.784 8.64-12.502s-5.03-10.988-8.428-10.988zm-2.36 17.764c-2.073-.063-3.48-1.004-3.48-1.004v-9.985s1.388-.85 3.09-1.004c2.153-.193 4.228.458 4.228 5.594 0 5.417-.935 6.486-3.837 6.398zm-63.689-.118c-.263 0-.937.107-1.63.107-2.22 0-2.973-1.032-2.973-2.368v-8.866h4.52a.5.5 0 00.5-.504v-4.856a.5.5 0 00-.5-.502h-4.52l-.007-5.97c0-.227-.116-.34-.378-.34h-6.16c-.238 0-.367.106-.367.335v6.17s-3.087.745-3.295.805a.5.5 0 00-.36.48v3.877a.5.5 0 00.497.503h3.158v9.328c0 6.93 4.86 7.61 8.14 7.61 1.497 0 3.29-.48 3.586-.59.18-.067.283-.252.283-.453l.004-4.265a.51.51 0 00-.5-.502z"
-            fill="#100E0F" />
-        </svg>
-
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path>
-          <path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path>
-          <path fill="#EBEBEB"
-            d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z">
-          </path>
-          <path fill="#fff"
-            d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z">
-          </path>
-          <path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path>
-          <path fill="#fff"
-            d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path>
-          <path fill="#EBEBEB"
-            d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z">
-          </path>
-          <path fill="#fff"
-            d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path>
-          <path fill="#EBEBEB"
-            d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path>
-          <path fill="#323330"
-            d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#5B4282"
-            d="M75.701 65.603c-2.334-.768-5.694-.603-10.08-.603h-17.621v23h18.844c2.944 0 5.012-.315 6.203-.535 2.099-.376 3.854-1.104 5.264-1.982 1.409-.876 2.568-2.205 3.478-3.881.908-1.676 1.363-3.637 1.363-5.83 0-2.568-.658-4.54-1.975-6.436-1.316-1.896-3.141-2.965-5.476-3.733zM73.282 55.087c2.317-.688 4.064-1.89 5.239-3.487 1.176-1.598 1.763-3.631 1.763-6.044 0-2.286-.549-4.314-1.646-6.054s-2.662-2.413-4.699-3.056c-2.037-.641-5.53-.446-10.48-.446h-15.459v20h16.587c4.042 0 6.939-.38 8.695-.913zM126 18.625c0-9.182-7.443-16.625-16.625-16.625h-91.75c-9.182 0-16.625 7.443-16.625 16.625v91.75c0 9.182 7.443 16.625 16.625 16.625h91.75c9.182 0 16.625-7.443 16.625-16.625v-91.75zm-35.447 66.12c-1.362 2.773-3.047 4.911-5.052 6.415-2.006 1.504-4.521 2.78-7.544 3.548-3.022.769-6.728 1.292-11.113 1.292h-27.844v-69h27.42c5.264 0 9.485.609 12.665 2.002 3.181 1.395 5.671 3.497 7.474 6.395 1.801 2.898 2.702 5.907 2.702 9.071 0 2.945-.8 5.708-2.397 8.308-1.598 2.602-4.011 4.694-7.237 6.292 4.166 1.222 7.37 3.304 9.61 6.248 2.24 2.945 3.36 6.422 3.36 10.432 0 3.227-.681 6.225-2.044 8.997z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#6181B6"
-            d="M64 33.039c-33.74 0-61.094 13.862-61.094 30.961s27.354 30.961 61.094 30.961 61.094-13.862 61.094-30.961-27.354-30.961-61.094-30.961zm-15.897 36.993c-1.458 1.364-3.077 1.927-4.86 2.507-1.783.581-4.052.461-6.811.461h-6.253l-1.733 10h-7.301l6.515-34h14.04c4.224 0 7.305 1.215 9.242 3.432 1.937 2.217 2.519 5.364 1.747 9.337-.319 1.637-.856 3.159-1.614 4.515-.759 1.357-1.75 2.624-2.972 3.748zm21.311 2.968l2.881-14.42c.328-1.688.208-2.942-.361-3.555-.57-.614-1.782-1.025-3.635-1.025h-5.79l-3.731 19h-7.244l6.515-33h7.244l-1.732 9h6.453c4.061 0 6.861.815 8.402 2.231s2.003 3.356 1.387 6.528l-3.031 15.241h-7.358zm40.259-11.178c-.318 1.637-.856 3.133-1.613 4.488-.758 1.357-1.748 2.598-2.971 3.722-1.458 1.364-3.078 1.927-4.86 2.507-1.782.581-4.053.461-6.812.461h-6.253l-1.732 10h-7.301l6.514-34h14.041c4.224 0 7.305 1.215 9.241 3.432 1.935 2.217 2.518 5.418 1.746 9.39zM95.919 54h-5.001l-2.727 14h4.442c2.942 0 5.136-.29 6.576-1.4 1.442-1.108 2.413-2.828 2.918-5.421.484-2.491.264-4.434-.66-5.458-.925-1.024-2.774-1.721-5.548-1.721zM38.934 54h-5.002l-2.727 14h4.441c2.943 0 5.136-.29 6.577-1.4 1.441-1.108 2.413-2.828 2.917-5.421.484-2.491.264-4.434-.66-5.458s-2.772-1.721-5.546-1.721z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#F34F29"
-            d="M124.737 58.378l-55.116-55.114c-3.172-3.174-8.32-3.174-11.497 0l-11.444 11.446 14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679-3.78 3.78-9.901 3.78-13.683 0-2.842-2.844-3.545-7.019-2.105-10.521l-13.048-13.048-.002 34.341c.922.455 1.791 1.063 2.559 1.828 3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683.934-.933 2.014-1.638 3.167-2.11v-34.659c-1.153-.472-2.231-1.172-3.167-2.111-2.862-2.86-3.551-7.06-2.083-10.576l-14.313-14.313-37.792 37.79c-3.175 3.177-3.175 8.325 0 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858c3.174-3.176 3.174-8.327-.001-11.501z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#00618A"
-            d="M116.948 97.807c-6.863-.187-12.104.452-16.585 2.341-1.273.537-3.305.552-3.513 2.147.7.733.809 1.829 1.365 2.731 1.07 1.73 2.876 4.052 4.488 5.268 1.762 1.33 3.577 2.751 5.465 3.902 3.358 2.047 7.107 3.217 10.34 5.268 1.906 1.21 3.799 2.733 5.658 4.097.92.675 1.537 1.724 2.732 2.147v-.194c-.628-.8-.79-1.898-1.366-2.733l-2.537-2.537c-2.48-3.292-5.629-6.184-8.976-8.585-2.669-1.916-8.642-4.504-9.755-7.609l-.195-.195c1.892-.214 4.107-.898 5.854-1.367 2.934-.786 5.556-.583 8.585-1.365l4.097-1.171v-.78c-1.531-1.571-2.623-3.651-4.292-5.073-4.37-3.72-9.138-7.437-14.048-10.537-2.724-1.718-6.089-2.835-8.976-4.292-.971-.491-2.677-.746-3.318-1.562-1.517-1.932-2.342-4.382-3.511-6.633-2.449-4.717-4.854-9.868-7.024-14.831-1.48-3.384-2.447-6.72-4.293-9.756-8.86-14.567-18.396-23.358-33.169-32-3.144-1.838-6.929-2.563-10.929-3.513-2.145-.129-4.292-.26-6.438-.391-1.311-.546-2.673-2.149-3.902-2.927-4.894-3.092-17.448-9.817-21.072-.975-2.289 5.581 3.421 11.025 5.462 13.854 1.434 1.982 3.269 4.207 4.293 6.438.674 1.467.79 2.938 1.367 4.489 1.417 3.822 2.652 7.98 4.487 11.511.927 1.788 1.949 3.67 3.122 5.268.718.981 1.951 1.413 2.145 2.927-1.204 1.686-1.273 4.304-1.95 6.44-3.05 9.615-1.899 21.567 2.537 28.683 1.36 2.186 4.567 6.871 8.975 5.073 3.856-1.57 2.995-6.438 4.098-10.732.249-.973.096-1.689.585-2.341v.195l3.513 7.024c2.6 4.187 7.212 8.562 11.122 11.514 2.027 1.531 3.623 4.177 6.244 5.073v-.196h-.195c-.508-.791-1.303-1.119-1.951-1.755-1.527-1.497-3.225-3.358-4.487-5.073-3.556-4.827-6.698-10.11-9.561-15.609-1.368-2.627-2.557-5.523-3.709-8.196-.444-1.03-.438-2.589-1.364-3.122-1.263 1.958-3.122 3.542-4.098 5.854-1.561 3.696-1.762 8.204-2.341 12.878-.342.122-.19.038-.391.194-2.718-.655-3.672-3.452-4.683-5.853-2.554-6.07-3.029-15.842-.781-22.829.582-1.809 3.21-7.501 2.146-9.172-.508-1.666-2.184-2.63-3.121-3.903-1.161-1.574-2.319-3.646-3.124-5.464-2.09-4.731-3.066-10.044-5.267-14.828-1.053-2.287-2.832-4.602-4.293-6.634-1.617-2.253-3.429-3.912-4.683-6.635-.446-.968-1.051-2.518-.391-3.513.21-.671.508-.951 1.171-1.17 1.132-.873 4.284.29 5.462.779 3.129 1.3 5.741 2.538 8.392 4.294 1.271.844 2.559 2.475 4.097 2.927h1.756c2.747.631 5.824.195 8.391.975 4.536 1.378 8.601 3.523 12.292 5.854 11.246 7.102 20.442 17.21 26.732 29.269 1.012 1.942 1.45 3.794 2.341 5.854 1.798 4.153 4.063 8.426 5.852 12.488 1.786 4.052 3.526 8.141 6.05 11.513 1.327 1.772 6.451 2.723 8.781 3.708 1.632.689 4.307 1.409 5.854 2.34 2.953 1.782 5.815 3.903 8.586 5.855 1.383.975 5.64 3.116 5.852 4.879zM29.729 23.466c-1.431-.027-2.443.156-3.513.389v.195h.195c.683 1.402 1.888 2.306 2.731 3.513.65 1.367 1.301 2.732 1.952 4.097l.194-.193c1.209-.853 1.762-2.214 1.755-4.294-.484-.509-.555-1.147-.975-1.755-.556-.811-1.635-1.272-2.339-1.952z">
-          </path>
-        </svg>
-        <svg viewBox="0 0 128 128" class="language-icon">
-          <path fill="#B3B3B3" d="M63.81 1.026l-59.257 20.854 9.363 77.637 49.957 27.457 50.214-27.828 9.36-77.635z">
-          </path>
-          <path fill="#A6120D" d="M117.536 25.998l-53.864-18.369v112.785l45.141-24.983z"></path>
-          <path fill="#DD1B16" d="M11.201 26.329l8.026 69.434 44.444 24.651v-112.787z"></path>
-          <path fill="#F2F2F2"
-            d="M78.499 67.67l-14.827 6.934h-15.628l-7.347 18.374-13.663.254 36.638-81.508 14.827 55.946zm-1.434-3.491l-13.295-26.321-10.906 25.868h10.807l13.394.453z">
-          </path>
-          <path fill="#B3B3B3"
-            d="M63.671 11.724l.098 26.134 12.375 25.888h-12.446l-.027 10.841 17.209.017 8.042 18.63 13.074.242z"></path>
-        </svg>
-      </div>
-    </section>
-
-    <section id="quem-sou-eu">
-      <h2>Quem sou eu</h2>
-      <div class="quem-sou-eu-content">
-        <p>
-          Nasci dia 01/04/1984. Casado e tenho uma filha linda.
-        </p>
-        <p>
-          Desde pequeno tinha curiosidade sobre a tecnologia, e foi em meio a isso que veio o desejo de entender o
-          funcionamento dos equipamentos e assim, fiz a inclusão da informática em meus estudos.
-        </p>
-        <p>
-          Minha primeira formação na área de tecnologia foi em 2001. Contudo foi passeando por vários setores. Como a
-          tecnologia existem vários setores profissionais para se atuar, e em meio a diversos trabalhos migrei várias
-          vezes pelos setores ao qual obtive a oportunidade, contudo buscando e estudando para exercer tais funções ao
-          qual me trouxe um amplo conhecimento, ou seja, obtendo várias profissões na área tecnológica.
-        </p>
-        <p>
-          Conhecendo vários setores conquistei não só nos estudos, mas na experiencia profissional a vivencia como
-          Analista de Suporte Técnico Pleno, e Analista e Desenvolvimento de Sistemas. Não desmerecendo as demais
-          profissões que tenho, por que como um todo faz parte da minha grade curricular, ao qual também foram degraus
-          para alcançar meus estudos e minhas metas.
-        </p>
-        <p>
-          Hoje com uma visão e conhecimentos mais amplos alcanço não só o entendimento do meu setor de atuação como
-          também setores administrativos, ao qual necessitam de uma análise, sendo verificado o seu pleno funcionamento
-          e eliminando redundâncias ou resistências no seu funcionamento. O qual tem a chance de evoluir e melhorar o
-          seu desempenho, qualidade, e maturidade profissional, assim tornando uma empresa completamente preparada para
-          um funcionamento robusto e evitando falhas ou erros que a maioria dos profissionais tem vivenciado, desde um
-          funcionário de cargo inicial ao CEO da empresa.
-        </p>
-
-      </div>
-    </section>
-
-    <section id="experiencia">
-      <h2>Experiência Profissional</h2>
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Analista De Sistemas</h3>
-            <h4>Modelo Vencedor</h4>
-            <p>Abr 2023 - Presente</p>
-            <ul>
-              <li>Analise De Desenvolvimento De Sistemas WEB</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="analistaMV">Saiba mais</button>
+    <!-- start bonus -->
+    <!-- Calculadora feita em HTML CSS JS -->
+    <div class="modal fade" id="calculadora" tabindex="-10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <strong>
+              Calculadora desenvolvida em (HTML-CSS-JS)
+            </strong>
           </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Analista De Desenvolvimento De Sistemas FullStack</h3>
-            <h4>Vacinar Centro De Imunização</h4>
-            <p>Jan 2020 - Ativo</p>
-            <ul>
-              <li>Desenvolvimento de Sistemas Administrativos WEB</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="vacinarImunizacao">Saiba mais</button>
+          <div class="modal-body-calculator">
+            <div id="calc">
+              <h3><strong>Calculador</strong></h3>
+              <div id="operation">
+                <div id="previous-operation"></div>
+                <div id="current-operation"></div>
+              </div>
+              <div id="buttons-container">
+                <button>CE</button>
+                <button>C</button>
+                <button>DEL</button>
+                <button>/</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button>*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button>-</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button>+</button>
+                <button class="number">0</button>
+                <button class="number">.</button>
+                <button id="equal-btn">=</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Analista De Desenvolvimento Jr</h3>
-            <h4>Engefogo</h4>
-            <p>2020 - Freelance</p>
-            <ul>
-              <li>Analista Desenvolvimento Jr</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="engefogo">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Analista De Desenvolvimento Jr</h3>
-            <h4>Profissionais - SA – Palestras</h4>
-            <p>2020 - Freelance</p>
-            <ul>
-              <li>Analista Desenvolvimento Jr</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="profissionaisSA">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Analista de Suporte Técnico Pleno</h3>
-            <h4>Contern Construção e Comercio LTDA</h4>
-            <p>Fev 2013 - Dez 2017</p>
-            <ul>
-              <li>Gestão Tecnológica de Projetos e infraestrutura</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="contern">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Técnico em Telefonia - IRLA</h3>
-            <h4>ICOMON Tecnologia LTDA</h4>
-            <p>2011 - 2012</p>
-            <ul>
-              <li>Gestão Infraestrutura e Atendimento ao Cliente</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="icomon">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Técnico de Manutenção de Microcomputadores</h3>
-            <h4>Puma Hard & Soft</h4>
-            <p>2005 - 2008</p>
-            <ul>
-              <li>Manutenção de Microcomputadores</li>
-            </ul>
-            <button class="saiba-mais-btn" data-experience="puma_hard_soft">Saiba mais</button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
           </div>
         </div>
       </div>
-      <h4 class="text-center">
-        De maneira nenhuma desconsidero minhas outras experiencias de trabalho ao qual exerci em meio ao caminho por
-        onde passei e nem as oportunidade que me vieram a me ajudar a alcançar o que sou hoje como pessoa e
-        profissional, uma base solida só é eficaz quando se injeta materia prima o suficiente para aguentar toda uma
-        estrutura de vida e alicerçando um futuro de conquistas...
-      </h4>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <div class="skills-section">
-        <div class="skill-card">
-          <h3>Front-end</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Angular</li>
-            <li>Bootstrap</li>
-            <li>Material</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Back-end</h3>
-          <ul>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>Docker</li>
-            <li>Oracle</li>
-            <li>Node</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Ferramentas</h3>
-          <ul>
-            <li>GitLab</li>
-            <li>GitHub</li>
-            <li>VS Code</li>
-            <li>Trello</li>
-            <li>Notion</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h3>Sistema Operacionais</h3>
-          <ul>
-            <li>Linux</li>
-            <li>Windows</li>
-            <li>Mac OS</li>
-            <li>Chrome OS</li>
-          </ul>
-        </div>
-      </div>
-      <h4 class="text-center">
-        <p>
-          Tecnologia da informação é o caminho ao qual a evolução vem surfando!<br />
-          Ela vem brincando em meio as ondas do conhecimento, porem se não cair no percurso de sua rota...<br />
-          E mergulhar durante a queda nunca vai entender o que há por debaixo das ondas.<br />
-          <strong>
-            Clerison Oliveira da Silva.
-          </strong>
-        </p>
-      </h4>
-    </section>
-
-    <!-- <section id="formacao">
-      <h2>Formação Acadêmica</h2>
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Bacharelado em Sistemas de Informação</h3>
-            <h4>Universidade Federal do Estado</h4>
-            <p>2015 - 2019</p>
-            <button class="saiba-mais-btn" data-education="bacharelado">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Técnico em Informática</h3>
-            <h4>Instituto Técnico Estadual</h4>
-            <p>2013 - 2014</p>
-            <button class="saiba-mais-btn" data-education="tecnico">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Curso de Especialização em UX/UI Design</h3>
-            <h4>Instituto de Design Digital</h4>
-            <p>2020 - 2021</p>
-            <button class="saiba-mais-btn" data-education="uxui">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Certificação em Scrum Master</h3>
-            <h4>Scrum Alliance</h4>
-            <p>2019</p>
-            <button class="saiba-mais-btn" data-education="scrum">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="timeline-content">
-            <h3>Curso de Inglês Avançado</h3>
-            <h4>English School</h4>
-            <p>2016 - 2018</p>
-            <button class="saiba-mais-btn" data-education="ingles">Saiba mais</button>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="timeline-content">
-            <h3>Curso de Desenvolvimento Mobile</h3>
-            <h4>Tech Academy</h4>
-            <p>2017</p>
-            <button class="saiba-mais-btn" data-education="mobile">Saiba mais</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Vacinar" class="project-image">
-          <div class="project-info">
-            <h3>Sistema Vacinar</h3>
-            <p>Sistema de gerenciamento de vacinação desenvolvido para a Vacinar Clínica de Imunização.</p>
-            <button class="saiba-mais-btn" data-project="vacinar">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto E-commerce" class="project-image">
-          <div class="project-info">
-            <h3>E-commerce</h3>
-            <p>Plataforma de comércio eletrônico com funcionalidades completas de carrinho e pagamento.</p>
-            <button class="saiba-mais-btn" data-project="ecommerce">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Profissionais SA" class="project-image">
-          <div class="project-info">
-            <h3>Profissionais SA</h3>
-            <p>Site para empresa de palestras e treinamentos profissionais.</p>
-            <button class="saiba-mais-btn" data-project="profissionais">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto App Fitness" class="project-image">
-          <div class="project-info">
-            <h3>App Fitness</h3>
-            <p>Aplicativo móvel para acompanhamento de treinos e dieta.</p>
-            <button class="saiba-mais-btn" data-project="fitness">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Rede Social" class="project-image">
-          <div class="project-info">
-            <h3>Rede Social para Pets</h3>
-            <p>Plataforma web para compartilhamento de fotos e informações sobre animais de estimação.</p>
-            <button class="saiba-mais-btn" data-project="redepets">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Gestão Financeira" class="project-image">
-          <div class="project-info">
-            <h3>Sistema de Gestão Financeira</h3>
-            <p>Aplicação web para controle de despesas e investimentos pessoais.</p>
-            <button class="saiba-mais-btn" data-project="financas">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Blog Tech" class="project-image">
-          <div class="project-info">
-            <h3>Blog Tech</h3>
-            <p>Blog sobre tecnologia e programação com sistema de gerenciamento de conteúdo personalizado.</p>
-            <button class="saiba-mais-btn" data-project="blogtech">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Biblioteca Virtual" class="project-image">
-          <div class="project-info">
-            <h3>Biblioteca Virtual</h3>
-            <p>Sistema de gerenciamento de livros e empréstimos para bibliotecas.</p>
-            <button class="saiba-mais-btn" data-project="biblioteca">Saiba mais</button>
-          </div>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/300x200" alt="Projeto Quiz Educativo" class="project-image">
-          <div class="project-info">
-            <h3>Quiz Educativo</h3>
-            <p>Aplicativo de perguntas e respostas para auxiliar no estudo de diversas disciplinas.</p>
-            <button class="saiba-mais-btn" data-project="quiz">Saiba mais</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Entre em contato comigo através das redes sociais ou por e-mail:</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/cosclerison/" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
-        <a href="https://github.com/cosclerison" target="_blank" rel="noopener noreferrer">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-          </svg>
-        </a>
-        <a href="mailto:cosclerison@gmail.com">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <div id="modal-details"></div>
     </div>
-  </div>
 
-  <footer>
-    <p>&copy; 2023 Clerison Oliveira. Todos os direitos reservados.</p>
-  </footer>
+    <!-- End bonus -->
+      
+    <!-- Start perfil -->
+    <section class="header" id="header">
+      <div class="container align-items-center">
+        <div class="row justify-content-between text-center">
+          <h1 class="title-portifolio"><strong><em>Portfólio</em></strong></h1>
 
-</body>
+          <div class="col-sm-7">
+            <div class="meu-perfil">
+              <div class="title-meu-perfil">
+                <div class="profile-auth">
+                  <h2><strong>Clerison Oliveira</strong></h2>
+                  <img  class="img-profile" src="./assets/img/profile/clerison02.jpg" alt="Clerison">
+                  <p>Analista e Desenvolvedor de Sistemas</p>
+                  <h2>Força Foco e 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+                      <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+                    </svg> 
+                  </h2>
+                  <div class="row">
+                    <figure>
+                      <img class="col-md-6 git" src="https://github-readme-stats.vercel.app/api/top-langs/?username=cosclerison&layout=compact&langs_count=7&theme=gotham"/>
+                      <!-- <img class="col-md-6 git" src="https://github-readme-stats.vercel.app/api?username=cosclerison&show_icons=true&theme=gotham&include_all_commits=true&count_private=true"/> -->
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<!-- 
+          <div class="col-md-5">
+            <div class="minha-formacao">
+              <div class="title-minha-formacao">
+                <div class="formacoes-auth">
+                  <h2 class="text-center">Formações</h2>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const navToggle = document.getElementById('nav-toggle');
-      const navMenu = document.getElementById('nav-menu');
-      const navLinks = document.querySelectorAll('#nav-menu a');
+                  <div class="icon-profile">
+                    <img class="col-1" alt="HTML" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                    <img class="col-1" alt="HTML" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+                    <img class="col-1" alt="CSS" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+                    <img class="col-1" alt="JavaScript" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+                    <img class="col-1" alt="MYSQL" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                    <img class="col-1" alt="PHP" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                    <img class="col-1" alt="Bootstrap" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <img class="col-1" alt="DOCKER" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
+                    <img class="col-1" alt="GIT" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+                    <img class="col-1" alt="angular" height="40" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+                  </div>
 
-      navToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
-      });
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-uninove">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#uninove" aria-expanded="false" aria-controls="uninove">
+                          <strong>
+                            Uninove
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="uninove" class="accordion-collapse collapse" aria-labelledby="flush-uninove" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="dropdown mb-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Semestres
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quintoSemestre">
+                                <strong>
+                                  5º Semestre
+                                </strong>
+                              </a></li>
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#quartoSemestre">
+                                <strong>
+                                  4º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#terceiroSemestre">
+                                <strong>
+                                  3º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#segundoSemestre">
+                                <strong>
+                                  2º Semestre
+                                </strong>
+                              </a></li>                                
+                              <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#primeiroSemestre">
+                                <strong>
+                                  1º Semestre
+                                </strong>
+                              </a></li>
+                            </ul>
+                          </div>
+                          <p>
+                            <strong>Grade de Ensino: </strong>
+                            Conhecimentos e estudos adquiridos nesta graduação. Universidade Nove de Julho.
+                          </p>
+                            
+                            <div class="modal fade" id="quintoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      5º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      DESENVOLVIMENTO DE SISTEMAS MÓVEIS<br />
+                                      DESENVOLVIMENTO DE SERVIÇOS WEB<br />
+                                      PROGRAMAÇÃO DE PORTAIS CORPORATIVOS<br />
+                                      PROGRAMAÇÃO PARA WEB EM AMBIENTE PROPRIETÁRIO<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+                            <div class="modal fade" id="quartoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      4º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      PROGRAMAÇÃO PARA WEB EM AMBIENTE LIVRE<br />
+                                      RECURSOS DE APOIO À PROGRAMAÇÃO<br />
+                                      PROGRAMAÇÃO DE COMÉRCIO ELETRÔNICO<br />
+                                      SERVIDORES DE APLICAÇÃO<br />
+                                      PROGRAMAÇÃO DE INTERFACES RESPONSIVAS<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+                            <div class="modal fade" id="terceiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      3º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      EPVA - INFORMÁTICA<br />
+                                      DESENVOLVIMENTO DE INTERFACES ESTÁTICAS<br />
+                                      INTERAÇÃO HUMANO COMPUTADOR<br />
+                                      ARQUITETURA DE SOFTWARE<br />
+                                      GESTÃO DE PROJETOS DE SOFTWARE<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+                            <div class="modal fade" id="segundoSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      2º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      QUALIDADE DE SOFTWARE<br />
+                                      ENGENHARIA DE SOFTWARE<br />
+                                      ARQUITETURA DA INFORMAÇÃO<br />
+                                      SISTEMAS DISTRIBUÍDOS<br />
+                                      FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+        
+                            <div class="modal fade" id="primeiroSemestre" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <strong>
+                                      1º - SEMESTRE UNINOVE
+                                    </strong>
+                                  </div>
+                                  <div class="modal-body">
+                                    <h5><strong>Módulos Estudados</strong></h5>
+                                    <p>
+                                      FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS<br />
+                                      LÓGICA DE PROGRAMAÇÃO<br />
+                                      MODELAGEM DE INTERFACES<br />
+                                      DESENVOLVIMENTO DE INTERFACES DINÂMICAS<br />
+                                      PROGRAMAÇÃO DE INTERFACES<br />
+                                    </p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                      </div>
+                    </div>
+        
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-senai">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#senai" aria-expanded="false" aria-controls="senai">
+                          <strong>
+                            SENAI
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="senai" class="accordion-collapse collapse" aria-labelledby="flush-senai" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="accordion-body">
+                            <div class="dropdown mb-2">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Módulos
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#programacao">
+                                  <strong>
+                                    Programação
+                                  </strong>
+                                </a></li>
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#infraestrutura">
+                                  <strong>
+                                    Infraestrutura
+                                  </strong>
+                                </a></li>
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#sistemaead">
+                                  <strong>
+                                    Tecnologia (EAD)
+                                  </strong>
+                                </a></li>
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#logicadeprogramacao">
+                                  <strong>
+                                    Lógica de Programação (EAD)
+                                  </strong>
+                                </a></li>
+                              </ul>
+                            </div>
+                            <p>
+                              <strong>Grade de Ensino: </strong>
+                              Estudo Técnico Mantenedor e Programador de Microcomputadores SENAI
+                            </p>
+                              
+                              <div class="modal fade" id="programacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        SISTEMAS E PROGRAMAÇÃO
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        INF - Informática<br />
+                                        LOP - Logica de Programação<br />
+                                        LIP - Linguagem de Programação<br />
+                                        BCD - Banco de Dados<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="modal fade" id="infraestrutura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        MANUTENÇÃO E INFRAESTRUTURA
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        INF - Informática<br />
+                                        ELB - Eletrônica Basica<br />
+                                        SOP - Sistemas Operacionais<br />
+                                        MIB - Microcomputador Básico<br />
+                                        MSM - Manutenção de Sistemas de Microcomputador<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="modal fade" id="sistemaead" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        TECNOLOGIA DA INFORMAÇÃO
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        O que são as TIC<br />
+                                        Conceitos de ambiente virtual, comunidade virtual, internet.<br />
+                                        Conceitos de SOFTWARE e HARDWARE<br />
+                                        Evolução e tendencia das TIC<br />
+                                        Uso de ferramentas da internet para pesquisa e importância da seleção e organização das Informações<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="modal fade" id="logicadeprogramacao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        LÓGICA DE PROGRAMAÇÃO
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        Introdução - Representações<br />
+                                        Tipos de Dados (Inteiro, Real, Literal, Lógico)<br />
+                                        Variáveis<br />
+                                        Expressões Aritméticas<br />
+                                        Expressões Lógicas<br />
+                                        Estrutura de Repetição<br />
+                                        Estrutura de Condição<br />
+                                        Variáveis Indexadas<br />
+                                        Revisão - Sub-Algoritimo<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        
+        
+        
+        
+        
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-udemy">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#udemy" aria-expanded="false" aria-controls="udemy">
+                          <strong>
+                            Udemy
+                          </strong>
+                        </button>
+                      </h2>
+                      <div id="udemy" class="accordion-collapse collapse" aria-labelledby="flush-udemy" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="accordion-body">
+                            <div class="dropdown mb-2">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#phpCompleto">
+                                  <strong>
+                                    Curso de PHP
+                                  </strong>
+                                </a></li>
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#cursoAngular">
+                                  <strong>
+                                    Curso de Angular 10
+                                  </strong>
+                                </a></li>
+                                <!-- <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#sistemaead">
+                                  <strong>
+                                    Tecnologia (EAD)
+                                  </strong>
+                                </a></li> -->
+                                <!-- <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#logicadeprogramacao">
+                                  <strong>
+                                    Lógica de Programação (EAD)
+                                  </strong>
+                                </a></li> -->
+                              </ul>
+                            </div>
+                            <p>
+                              <strong>Grade de Ensino: </strong>
+                              Cursos de Desenvolvimento e Programação (EAD) Udemy.
+                            </p>
+                              
+                              <div class="modal fade" id="phpCompleto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        PHP Completo
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        Curso de PHP Completo<br />
+                                        Projeto E-Commerce<br />
+                                        Administração e Site<br />
+                                        Estrutura de controle e laços de repetição, Arrays, Sessão, Funções, Date.<br />
+                                        Banco de dados MYSQL<br />
+                                        Banco de dados PDO<br />
+                                        Banco de dados PDO<br />
+                                        E-mail com PHPMailer<br />
+                                        Segurança No PHP 7<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="modal fade" id="cursoAngular" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        ANGULAR 10
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>Curso administrado com desenvolvimento de projetos</p>
+                                      <p>
+                                        Primeiro Projeto - Olá Mundo<br />
+                                        Segundo Projeto - Calculadora<br />
+                                        Terceiro Projeto - Gerenciador de Tarefas<br />
+                                        Quarto Projeto - Jogo da Velha<br />
+                                        Quinto Projeto - Conversor de Moedas<br />
+                                        Sexto Projeto - Dashboard<br />
+                                        Primeiro Projeto - Unificação dos projetos<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              
+                          </div>
+                        
+        
+        
+                        </div>
+                      </div>
+                    </div>
 
-      navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-          if (window.innerWidth <= 768) {
-            navMenu.classList.remove('active');
-          }
-        });
-      });
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-cursos">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cursos" aria-expanded="false" aria-controls="cursos">
+                          <strong>
+                            Cursos Livres - BREVE
+                          </strong>
+                        </button>
+                      </h2>
+                      <!-- <div id="cursos" class="accordion-collapse collapse" aria-labelledby="flush-cursos" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="accordion-body">
+                            <div class="dropdown mb-2">
+                              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                              </button>
+                              <ul class="dropdown-menu">
 
-      window.addEventListener('resize', function () {
-        if (window.innerWidth > 768) {
-          navMenu.classList.remove('active');
-        }
-      });
-    });
-  </script> -->
-</body>
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#horaDeCodar">
+                                  <strong>
+                                    Hora de Codar
+                                  </strong>
+                                </a></li>
 
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#rocketseat">
+                                  <strong>
+                                    Rocketseat
+                                  </strong>
+                                </a></li>
+
+                                <li><a href="" class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#dominicode">
+                                  <strong>
+                                    Domini Code
+                                  </strong>
+                                </a></li>
+                               
+                              </ul>
+                            </div>
+                            <p>
+                              <strong>Grade de Ensino: </strong>
+                              Todos tipos de cursos e estudos ao qual busquei ter conhecimento ou curiosidade no assunto. Cursos e Eventos onlines específicos para desenvolvimentos, plataformas diversas
+                            </p>
+                              
+                              <div class="modal fade" id="horaDeCodar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        Cursos e Eventos - Hora de Codar
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        Breve<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+        
+                              <div class="modal fade" id="rocketseat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        Ignite
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        Breve<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="modal fade" id="dominicode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <strong>
+                                        Angular - Curso em Espanhol
+                                      </strong>
+                                    </div>
+                                    <div class="modal-body">
+                                      <h5><strong>Módulos Estudados</strong></h5>
+                                      <p>
+                                        Breve<br />
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              
+                          </div>
+                        
+        
+        
+                        </div>
+                      </div> -->
+                    </div>
+        
+                  
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end perfil -->
+
+    <!-- start quem sou -->
+    <section id="quem-sou">
+      <div class="align-items-center">
+        <div class="row justify-content-between">
+          
+          <div class="col-sm-6">
+            <div class="quem-sou-eu">
+              <div class="title-quem-sou">
+                <h2>
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=#FFF 
+                    class="bi bi-file-earmark-code" viewBox="0 0 16 16">
+                    <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+                    <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
+                  </svg>&#160;&#160;&#160;&#160;
+                  Clerison Oliveira
+                </h2>
+                <p>
+                  Nasci dia 01/04/1984. Casado e uma filha linda.
+                </p>
+                <p>
+                  Desde pequeno tinha curiosidade sobre a tecnologia, e foi em meio a isso que veio o desejo de entender o funcionamento dos equipamentos e assim, fiz a inclusão da informática em meus estudos.
+                </p>
+                <p>
+                  Minha primeira formação na área de tecnologia foi em 2001. Contudo foi passeando por vários setores. Como a tecnologia existem vários setores profissionais para se atuar, e em meio a diversos trabalhos migrei várias vezes pelos setores ao qual obtive a oportunidade, contudo buscando e estudando para exercer tais funções ao qual me trouxe um amplo conhecimento, ou seja, obtendo várias profissões na área tecnológica.
+                </p>
+                <p>
+                  Conhecendo vários setores conquistei não só nos estudos, mas na experiencia profissional a vivencia como Analista de Suporte Técnico Pleno, e Analista e Desenvolvimento de Sistemas. Não desmerecendo as demais profissões que tenho, por que como um todo faz parte da minha grade curricular, ao qual também foram degraus para alcançar meus estudos e minhas metas.
+                </p>
+                <p>
+                  Hoje com uma visão e conhecimentos mais amplos alcanço não só o entendimento do meu setor de atuação como também setores administrativos, ao qual necessitam de uma análise, sendo verificado o seu pleno funcionamento e eliminando redundâncias ou resistências no seu funcionamento. O qual tem a chance de evoluir e melhorar o seu desempenho, qualidade, e maturidade profissional, assim tornando uma empresa completamente preparada para um funcionamento robusto e evitando falhas ou erros que a maioria dos profissionais tem vivenciado, desde um funcionário de cargo inicial ao CEO da empresa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="slide-text">
+              <div class="banner active">
+                  <h2>Força Foco e 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z"/>
+                    <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z"/>
+                  </svg> 
+                </h2>
+                <p>
+                    Se almeja alcançar algo, é ficando de pé e continuando a caminhar.
+                </p>
+              </div>
+              <div class="banner">
+                  <h2>Profissionalismo</h2>
+                  <p>
+                      Não é o que você faz, e sim como você faz a sua PROFISSÃO. 🤨
+                  </p>
+              </div>
+              <div class="banner">
+                  <h2>Qualidade de vida</h2>
+                  <p>
+                    Desfrutar daquilo que você buscou e conquistou. Viver!!!
+                  </p>
+              </div>
+              <div class="banner">
+                  <h2>Se nada der certo hoje</h2>
+                  <p>
+                    Amanhã eu levanto mais cedo e tento de novo!
+                  </p>
+              </div>
+              <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end quem sou -->
+
+    <!-- start projetos -->
+    <section id="projetos">
+      <div class="align-items-center">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-6">
+            <div class="meus-projetos">
+              <div class="title-projetos text-center">
+                <h1 class="title-portifolio"><strong><em>PROJETOS</em></strong></h1>
+                <article>
+                  <h2 class="text-center">
+                    Tecnologia da informação é o caminho ao qual<br /> a evolução vem surfando!
+                  </h2>
+                  <h4 class="text-justify">
+                    Ela vem brincando em meio as ondas do conhecimento, porem se não cair no percurso de sua rota... E mergulhar durante a queda nunca vai entender o que há por debaixo das ondas.
+                    <strong>
+                      Clerison Oliveira da Silva.
+                    </strong>
+                  </h4>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="meus-projetos">
+                <div class="container title-projetos text-center">
+                  <div class="entire-content">
+                    <div class="content-carrousel mb-1">
+                        <figure class="shadow"><img src="./assets/img/projetos/siteVacinar.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/ecommerce.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/profissionaisSa.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/pumaHardSoft.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/vmsVacinar.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/ecommerce.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/profissionaisSa.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/pumaHardSoft.jpg" /></figure>
+                        <figure class="shadow"><img src="./assets/img/projetos/vmsVacinar.jpg" /></figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end projetos -->
+
+    <!-- start currículo -->
+    <section id="curriculo">
+      <div class="container align-items-center">
+        <div class="row justify-content-between">
+          <div class="title-meu-curriculo">
+            <h3 class="text-center"><strong>Meu perfil Curricular e o caminho para alcançar meus estudos e objetivos.</strong></h3>
+          </div>
+
+         
+
+          <div class="col-sm-6">
+            <div class="meu-curriculo">
+              <div class="list-curriculo">
+
+                <!-- Vacinar -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2022 - Vacinar Clinica de Imunização</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Desenvolvimento Junior: </strong>
+                        ( MYSQL – PHP – ANGULAR – CSS – HTML – Bootstrap - GIT - DOCKER ) <br />
+                        Atuação nas tarefas de manutenção dos sistemas administrativos e clientes, participação ativa nos projetos de desenvolvimento dos sistemas administrativos, clientes e documentação. Sistemas desenvolvidos = Sistema Administrativo, Acesso Clientes Administrativos, Adesão de Clientes, Sistema de Aplicação VMS.  
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#clinica-vacinar">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="clinica-vacinar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2022 - Vacinar Clinica de Imunização
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Não só uma empresa onde atender todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Engefogo -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2020 - ENGEFOGO Soluções Contra Incêndios</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Desenvolvimento Junior: </strong>
+                            ( MYSQL – PHP – HTML - CSS - GIT - DOCKER )
+                            Freelance - Atuação em tarefas no desenvolvimento no back-end e front-end, sistema administrativo de cadastros e gerenciamentos.
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#engefogo">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="engefogo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2020 - ENGEFOGO – Soluções Contra Incêndios
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Freelance ao qual estava auxiliando no desenvolvimento do sistema administrativo, onde o mesmo abordava toda a administração e estoque dos produtos, peças e equipamentos utilizados pela empresa e clientes.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Profissionais -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2020 - PROFISSIONAIS - SA – Palestras</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Desenvolvimento Junior: </strong>
+                            ( ANGULAR - HTML - CSS - GIT - DOCKER )
+                            Freelance - Participação de tarefas no desenvolvimento do front-end.
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#profissionais-sa">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="profissionais-sa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2020 - PROFISSIONAIS - SA – Palestras
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                        Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvimentos do web designer.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                     
+                </div>
+
+                 <!-- Contern -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2017 - Contern Construção e Comercio LTDA</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Suporte Técnico Pleno: </strong>
+                            Coordenação de analistas TI em filiais (OBRAS) gerenciamento switches Cisco, telefonia IP, Access Point, servidores, acompanhamento de chamado e recursos de rede, atendimento direto e indireto aos colaboradores da empresa, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, rotina de Backup, Aplicativos diversos, Atualização de sistemas, help-desk, acesso remoto, desenvolvimento de tutoriais, gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios), negociação e análise de contratos, controle de equipamentos e patrimônio.  
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#contern">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="contern" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2017 - Contern Construção e Comercio LTDA
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer de 2012 a 2017.<br />Quando fui dispensado da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico.  Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                     
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="meu-curriculo">
+              <div class="list-curriculo">
+
+                 <!-- Icomon -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2012 - ICOMON Tecnologia LTDA.</strong></h5>
+                        <p class="card-text">
+                          <strong>IRLA - Instalador e Reparador de Linhas e Aparelhos: </strong>
+                          Atuando na Infraestrutura de redes de telefonia. Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
+                          Executando ordens de Instalação, Reparos ou Chamados de urgência com ordens da ANATEL.
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#icomon">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="icomon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2012 - ICOMON Tecnologia LTDA.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Empresa que competiu usar meus conhecimentos tecnológicos em redes, e aplicando seus conceitos na área de telefonia, possui ótimas experiencias em atendimentos aos clientes. Atuando no dia a dia aprendi os conceitos e aplicações da infraestrutura da operadora de telefonia e internet em varias cidades por onde atuei como técnico em telefonia.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                     
+                </div>
+
+                 <!-- Puma Hard Soft -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2008 - Puma Hard & Soft</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Suporte Técnico Junior: </strong>
+                          Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva.
+                          Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento balcão. 
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#pumaHardSoft">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="pumaHardSoft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2008 - Puma Hard & Soft
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Projeto de futuro montado enquanto eu estudava tecnologia, juntamente com um amigo seguimos uma sociedade buscando o nosso desenvolvimento profissional e pessoal. Está loja demostrou o quanto eu estava disposto e capacitado para enfrentar o mercado e suas dificuldades, atendimento a clientes físicos e empresas, trouxe não só um fortalecimento profissional e também por sua vez um ótimo crescimento pessoal. Investimentos e administração da mesma.<br />
+                          A primeira decepção e uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Cyber Sapo Djon -->
+                 <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2005 - Cyber sapo D´Jow</strong></h5>
+                        <p class="card-text">
+                          <strong>Atendimento e manutenção: </strong>
+                          Tarefas diárias de atendimento ao cliente, efetuando manutenção e instalação dos jogos solicitados pelos clientes, auxiliando em duvidas e usabilidade dos usuários.
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#cyberSapoDjow">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="cyberSapoDjow" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2005 - Cyber sapo D´Jow
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Hoje em dia só os lendários lembram de utilizar Cyber Café, Lan House e etc..., participei de uma sociedade com um amigo onde usufruíamos de um espaço em uma empresa para disponibilizar equipamentos para clientes utilizar internet, Office e games.
+                          <br />Foi uma ótima experiencia com clientes e aprendendo juntamente com os mesmos com as dúvidas e dificuldades que aparecia no dia a dia, tanto na área tecnológica como auxílio aos usuários.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Cyber Sapo Djon -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2003 - SAO Informática LTDA</strong></h5>
+                        <p class="card-text">
+                          <strong>Analista Suporte Técnico: </strong>
+                          Atendimento ao cliente, tarefas efetuadas no atendimento de chamados de pessoas físicas e empresas, manutenção e auxilio ao usuário.
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#saoInformatica">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="saoInformatica" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2003 - SAO Informática LTDA.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Primeira experiencia atuando como técnico em informática, aprendendo e crescendo profissionalmente, atendimento de chamados a clientes e empresas. Usufruindo dos meios que tinha na época para executar as tarefas diárias com meus estudos e trabalho.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cyber Sapo Djon -->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>2003 - Elite Cursos</strong></h5>
+                        <p class="card-text">
+                          <strong>Instruto de informática: </strong>
+                          Elaboração de apostila, ensino e abordagem dos conceitos de manutenção de microcomputador, laboratório de peças de hardware e informática básica
+                        <a href="#" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#eliteCursos">Detalhes</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal fade" id="eliteCursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2003 - Elite Cursos
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Primeira experiencia em curto período atuando como instrutor de informática e manutenção de microcomputador, mesmo ainda nao sentindo firmeza em meus conhecimentos, me esforçava para transmitir o que eu havia aprendido em estudos.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lian Videos -->
+                <!-- <article>
+                  <h5><strong>2022 - Vacinar Clinica de Imunização</strong></h5>
+                  <button class="col-md-12 button-curriculo" href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    2022 - Vacinar Clinica de Imunização
+                  </button>
+                    <strong>
+                      2004 - Locadora Lian Videos
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Atendimento: </strong>
+                    Atendimento ao Cliente, tarefas diárias de organização e higienização do local de trabalho e DVD's e Fitas Cassete. Auxilio nas indicações de filmes, analise do cliente e indicação através das sinopses dos filmes 
+                  <a href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">Detalhes</a>
+                  </p>
+                  
+                  <div class="modal fade" id="locadoraLianVideos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2004 - Locadora Lian Videos
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Trabalhar em uma locadora de vídeos e games, trouxe um crescimento maravilhoso no relacionamento com pessoas, isto fez com que aprendesse no dia a dia como abordar ou auxiliar cada um de acordo com o seu perfil e gostos, procurar compreender e entender este tipo de empresa foi muito bom, e a experiência de usar um sistema rodando em Windows 95. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article> -->
+
+                
+                <!-- Retifica -->
+                <!-- <article>
+                  <h5><strong>2022 - Vacinar Clinica de Imunização</strong></h5>
+                  <button class="col-md-12 button-curriculo" href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    2022 - Vacinar Clinica de Imunização
+                  </button>
+                    <strong>
+                      2003 - Retifica Vilkas
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Retificador: </strong>
+                    Atendimento ao cliente, auxiliando na manutenção e retifica de cabeçote e blocos de motores de veículos leves, Atuando na organização e limpeza das maquinas
+                  </p>
+                  <button class="button" href="" data-bs-toggle="modal" data-bs-target="#engefogo">Detalhes</button>
+                  
+                  <div class="modal fade" id="retificaVilkas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2003 - Retifica Vilkas
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Empresa em que fui escalado para auxiliar nos serviços de mecânica retificadora, está por hora foi uma das empresas que atuei enquanto estava estudando no SENAI, estudava na parte da manha e na parte da tarde eu trabalhava e aprendia tudo sobre o setor de atuação. 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article> -->
+
+                <!-- elite Cursos -->
+                <!-- <article>
+                  <button class="col-md-12 button-curriculo" href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    2022 - Vacinar Clinica de Imunização
+                  </button>
+                    <strong>
+                      2002 - Elit Cursos Profissionalizantes
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Instrutor: </strong>
+                    Elaboração de apostila e atuando como instrutor de Manutenção de Microcomputadores.
+                  </p>
+                  <button class="button" href="" data-bs-toggle="modal" data-bs-target="#engefogo">Detalhes</button>
+                  
+                  <div class="modal fade" id="eliteCursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2002 - Elit Cursos Profissionalizantes
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Foi rápida, mas foi legal, estudar e estruturar apostila do curso de manutenção de micro, com esses conhecimentos pude lecionar utilizando os equipamentos, matérias e peças utilizadas na época, que hoje em dia pode se dizer que é relíquia KKKKK.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article> -->
+                
+                <!-- Alvorada -->
+                <!-- <article>
+                  <button class="col-md-12 button-curriculo" href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    2022 - Vacinar Clinica de Imunização
+                  </button>
+                    <strong>
+                      2000 - Alvorada Mecânica Funilaria e Pintura
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Ajudante: </strong>
+                    Auxiliar na desmontagem de peças e limpeza, Sistema de busca e entrega de veículos, auxilio na compra de peças. Organização e higienização do local de trabalho.
+                  </p>
+                  <button class="button" href="" data-bs-toggle="modal" data-bs-target="#engefogo">Detalhes</button>
+                  
+                  <div class="modal fade" id="mecanicaAlvorada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            2000 - Alvorada - Mecânica Funilaria e Pintura
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Oficina mecânica do meu pai, trabalhar auxiliando na empresa da família, mesmo não me identificando com o setor pude aprender muito sobre está área.
+                          <br />
+                          Juntamente aprendendo os conceitos da ética profissional e responsabilidades desta profissão.
+                          <br />Neste período meus estudos eram somente por livros, por não ter computador eu aproveitava os finais de semana para fazer trabalhos de escola no computador da minha prima onde me deixava e me incentivava nos estudos e é claro aproveitava para jogar RSRSR, comprava na banca e utilizava o que aprendia aos finais de semana.
+                          <br />O que eu ganhava eu comprava revistas e livros de tecnologia.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article> -->
+
+                <!-- papelaria -->
+                <!-- <article>
+                  <button class="col-md-12 button-curriculo" href="" data-bs-toggle="modal" data-bs-target="#clinica-vacinar">
+                    2022 - Vacinar Clinica de Imunização
+                  </button>
+                    <strong>
+                      1998 - Papelaria Marli Yoshimoto ME.
+                    </strong>
+                  </a>
+                  <p>
+                    <strong>Atendente: </strong>
+                    Atendimento ao cliente, verificação de estoque e serviços de office boy, tarefas de higienização do local de trabalho e auxilio nas encomendas de enfeites para eventos.
+                  </p>
+                  <button class="button" href="" data-bs-toggle="modal" data-bs-target="#engefogo">Detalhes</button>
+                  
+                  <div class="modal fade" id="papelariaYoshimoto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <strong>
+                            1998 - Papelaria Marli Yoshimoto ME.
+                          </strong>
+                        </div>
+                        <div class="modal-body">
+                          Meu primeiro emprego, muito bom, aprendi o que era responsabilidade com patrão, com empresa e com os clientes. Minha primeira professora no ramo de atendimento e relação com clientes, ela tinha elaborado uma apostila de como era o funcionamento da papelaria desde sua administração ate o atendimento.
+                          <br />Ela por sua vez tinha amplo conhecimento em administração por ter atuado trabalhando em banco. E com isso obtive um conhecimento diferenciado com esta experiencia profissional
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article> -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end currículo -->
+
+    <!-- start contatos -->
+    <section id="contatos">
+      <div class="container align-items-center">
+        <div class="row justify-content-between">
+          <div class="title-meu-contatos">
+            <h1 class="text-center"><strong><em>Contatos</em></strong></h1>
+          </div>
+
+          <div class="row">
+            <div class="meu-contatos mt-4">
+              <div class="list-contatos">
+                <div class="row text-center">
+                
+                <!-- facebook -->
+                <div class="col-md-3">
+                  <a href="https://www.facebook.com/Pumahs" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+                      <defs>
+                      </defs>
+                      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                        <path d="M 51.214 90 c -0.478 0 -0.942 -0.171 -1.309 -0.487 c -0.439 -0.38 -0.691 -0.932 -0.691 -1.513 V 58.396 c 0 -1.104 0.896 -2 2 -2 h 8.612 l 1.04 -8.106 h -9.652 c -1.104 0 -2 -0.896 -2 -2 v -7.729 c 0 -3.389 0.826 -7.894 7.968 -7.894 l 4.377 -0.001 v -7.02 c -1.735 -0.14 -4.385 -0.287 -7.292 -0.287 c -8.446 0 -13.488 5.234 -13.488 14.002 v 8.928 c 0 1.104 -0.896 2 -2 2 H 30.38 v 8.106 h 8.398 c 1.104 0 2 0.896 2 2 v 29.603 c 0 0.581 -0.252 1.133 -0.692 1.513 c -0.439 0.38 -1.021 0.549 -1.597 0.467 C 16.547 86.78 0 67.542 0 45.228 C 0 20.289 20.187 0 45 0 c 24.813 0 45 20.289 45 45.228 c 0 22.317 -16.551 41.557 -38.498 44.752 C 51.406 89.993 51.31 90 51.214 90 z M 53.214 60.396 V 85.62 C 72.061 81.755 86 64.789 86 45.228 C 86 22.495 67.607 4 45 4 S 4 22.495 4 45.228 c 0 19.559 13.936 36.523 32.778 40.392 V 60.396 H 28.38 c -1.104 0 -2 -0.896 -2 -2 V 46.29 c 0 -1.104 0.896 -2 2 -2 h 8.398 v -6.928 c 0 -11.104 6.701 -18.002 17.488 -18.002 c 4.782 0 8.598 0.366 9.557 0.495 c 0.994 0.133 1.735 0.98 1.735 1.982 v 10.828 c 0 1.104 -0.895 2 -1.999 2 l -6.377 0.002 c -3.594 0 -3.969 1.187 -3.969 3.894 v 5.729 h 9.925 c 0.575 0 1.122 0.247 1.502 0.679 c 0.379 0.432 0.555 1.005 0.481 1.576 l -1.553 12.106 c -0.128 0.998 -0.978 1.745 -1.983 1.745 H 53.214 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #1976D2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      </g>
+                    </svg>
+                  </a>
+                  <BR />
+                  <label>Facebook</label>
+                </div>
+
+                <!-- Instagram -->
+                <div class="col-md-3">
+                  <a href="https://www.instagram.com/cosclerison/" target="_blank">
+                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-46.0041" y1="634.1208" x2="-32.9334" y2="647.1917" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <path style="fill:url(#SVGID_1_);" d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192
+                    c88.352,0,160-71.648,160-160V160C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112
+                    V160C48,98.24,98.24,48,160,48h192c61.76,0,112,50.24,112,112V352z"/>
+                  <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-42.2971" y1="637.8279" x2="-36.6404" y2="643.4846" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <path style="fill:url(#SVGID_2_);" d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128
+                    S326.688,128,256,128z M256,336c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80
+                    C336,300.096,300.096,336,256,336z"/>
+                  <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-35.5456" y1="644.5793" x2="-34.7919" y2="645.3331" gradientTransform="matrix(32 0 0 -32 1519 20757)">
+                    <stop  offset="0" style="stop-color:#FFC107"/>
+                    <stop  offset="0.507" style="stop-color:#F44336"/>
+                    <stop  offset="0.99" style="stop-color:#9C27B0"/>
+                  </linearGradient>
+                  <circle style="fill:url(#SVGID_3_);" cx="393.6" cy="118.4" r="17.056"/>
+                  </svg>
+                  </a>
+                  <BR />
+                  <label>Instagram</label>
+                </div>
+
+                <!-- Linkedin -->
+                <div class="col-md-3">
+                  <a href="https://www.linkedin.com/in/cosclerison/" target="_blank">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <rect x="23.24" y="37.45" rx="0" ry="0" width="9.33" height="30" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #1976D2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+                      <path d="M 27.904 33.356 c -2.988 0 -5.404 -2.423 -5.404 -5.406 c 0 -2.986 2.417 -5.41 5.405 -5.41 c 2.982 0 5.405 2.423 5.405 5.41 C 33.309 30.933 30.885 33.356 27.904 33.356 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #1976D2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 67.5 67.46 h -9.321 V 52.869 c 0 -3.48 -0.06 -7.956 -4.847 -7.956 c -4.853 0 -5.594 3.793 -5.594 7.706 V 67.46 h -9.321 V 37.455 h 8.945 v 4.103 h 0.127 c 1.245 -2.36 4.288 -4.847 8.824 -4.847 c 9.444 0 11.187 6.213 11.187 14.292 V 67.46 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #1976D2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 6 C 23.495 6 6 23.495 6 45 s 17.495 39 39 39 s 39 -17.495 39 -39 S 66.505 6 45 6 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #1976D2; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+                    </a>
+                    <BR />
+                    <label>Linkedin<label>
+                </div>
+                
+                <!-- GIT -->
+                <div class="col-md-3">
+                  <a href="https://github.com/cosclerison" target="_blank">
+
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill=#fff>
+                    <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm3.163 21.783h-.093a.513.513 0 0 1-.382-.14.513.513 0 0 1-.14-.372v-1.406c.006-.467.01-.94.01-1.416a3.693 3.693 0 0 0-.151-1.028 1.832 1.832 0 0 0-.542-.875 8.014 8.014 0 0 0 2.038-.471 4.051 4.051 0 0 0 1.466-.964c.407-.427.71-.943.885-1.506a6.77 6.77 0 0 0 .3-2.13 4.138 4.138 0 0 0-.26-1.476 3.892 3.892 0 0 0-.795-1.284 2.81 2.81 0 0 0 .162-.582c.033-.2.05-.402.05-.604 0-.26-.03-.52-.09-.773a5.309 5.309 0 0 0-.221-.763.293.293 0 0 0-.111-.02h-.11c-.23.002-.456.04-.674.111a5.34 5.34 0 0 0-.703.26 6.503 6.503 0 0 0-.661.343c-.215.127-.405.249-.573.362a9.578 9.578 0 0 0-5.143 0 13.507 13.507 0 0 0-.572-.362 6.022 6.022 0 0 0-.672-.342 4.516 4.516 0 0 0-.705-.261 2.203 2.203 0 0 0-.662-.111h-.11a.29.29 0 0 0-.11.02 5.844 5.844 0 0 0-.23.763c-.054.254-.08.513-.081.773 0 .202.017.404.051.604.033.199.086.394.16.582A3.888 3.888 0 0 0 5.702 10a4.142 4.142 0 0 0-.263 1.476 6.871 6.871 0 0 0 .292 2.12c.181.563.483 1.08.884 1.516.415.422.915.75 1.466.964.653.25 1.337.41 2.033.476a1.828 1.828 0 0 0-.452.633 2.99 2.99 0 0 0-.2.744 2.754 2.754 0 0 1-1.175.27 1.788 1.788 0 0 1-1.065-.3 2.904 2.904 0 0 1-.752-.824 3.1 3.1 0 0 0-.292-.382 2.693 2.693 0 0 0-.372-.343 1.841 1.841 0 0 0-.432-.24 1.2 1.2 0 0 0-.481-.101c-.04.001-.08.005-.12.01a.649.649 0 0 0-.162.02.408.408 0 0 0-.13.06.116.116 0 0 0-.06.1.33.33 0 0 0 .14.242c.093.074.17.131.232.171l.03.021c.133.103.261.214.382.333.112.098.213.209.3.33.09.119.168.246.231.381.073.134.15.288.231.463.188.474.522.875.954 1.145.453.243.961.364 1.476.351.174 0 .349-.01.522-.03.172-.028.343-.057.515-.091v1.743a.5.5 0 0 1-.533.521h-.062a10.286 10.286 0 1 1 6.324 0v.005z"/>
+                  </svg>
+                  </a>
+                  <BR />
+                  <label>git</label>
+                </div>
+                
+                <!-- whatsapp -->
+                <div class="col-md-3">
+                  <a href="https://wa.me/5511998901467?text=Olá, vejo que pegou meu contato no portifolio. Obrigado pelo contato. retornarei o mais breve possivel." target="_blank">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" fill=#7AD06D viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+                  </a>
+                  <BR />
+                  <label>Whatsapp</label>
+                </div>
+                
+                <!-- youtube -->
+                <div class="col-md-3">
+                  <a href="https://www.youtube.com/@cosclerison" target="_blank">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 44.661 34.775 c 0.451 0 0.767 -0.233 0.946 -0.7 c 0.179 -0.467 0.268 -1.229 0.268 -2.288 v -4.459 c 0 -1.027 -0.09 -1.778 -0.268 -2.253 c -0.179 -0.475 -0.494 -0.712 -0.946 -0.712 c -0.436 0 -0.743 0.237 -0.922 0.712 c -0.179 0.475 -0.268 1.226 -0.268 2.253 v 4.459 c 0 1.059 0.085 1.821 0.257 2.288 C 43.898 34.541 44.209 34.775 44.661 34.775 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 45 0 C 20.147 0 0 20.147 0 45 c 0 24.853 20.147 45 45 45 s 45 -20.147 45 -45 C 90 20.147 69.853 0 45 0 z M 50.792 22.423 h 3.222 V 32.93 c 0 0.638 0.07 1.094 0.21 1.366 c 0.14 0.273 0.374 0.409 0.7 0.409 c 0.28 0 0.549 -0.085 0.806 -0.257 c 0.257 -0.171 0.447 -0.389 0.572 -0.654 v -11.37 h 3.222 v 14.312 h -2.522 l -0.28 -1.751 h -0.07 c -0.685 1.323 -1.713 1.984 -3.082 1.984 c -0.95 0 -1.65 -0.311 -2.101 -0.934 c -0.452 -0.622 -0.677 -1.595 -0.677 -2.919 V 22.423 z M 42.128 22.785 c 0.661 -0.428 1.529 -0.642 2.603 -0.642 c 1.058 0 1.907 0.218 2.545 0.654 c 0.638 0.436 1.105 1.117 1.401 2.043 c 0.296 0.926 0.444 2.16 0.444 3.701 v 2.078 c 0 1.526 -0.144 2.751 -0.432 3.677 c -0.288 0.926 -0.755 1.603 -1.401 2.031 c -0.646 0.428 -1.522 0.642 -2.627 0.642 c -1.136 0 -2.028 -0.218 -2.673 -0.654 c -0.646 -0.435 -1.105 -1.113 -1.378 -2.031 c -0.273 -0.918 -0.409 -2.14 -0.409 -3.666 v -2.078 c 0 -1.541 0.155 -2.779 0.467 -3.712 C 40.98 23.895 41.466 23.214 42.128 22.785 z M 33.675 17.146 l 1.284 6.001 c 0.327 1.479 0.568 2.74 0.724 3.782 h 0.093 c 0.109 -0.747 0.35 -2 0.724 -3.759 l 1.331 -6.024 h 3.199 l -3.712 13.238 v 6.351 h -3.175 v -6.351 l -3.666 -13.238 H 33.675 z M 73.021 63.077 c 0 4.295 -3.482 7.776 -7.776 7.776 h -40.49 c -4.295 0 -7.776 -3.482 -7.776 -7.776 V 49.913 c 0 -4.295 3.482 -7.776 7.776 -7.776 h 40.49 c 4.295 0 7.776 3.482 7.776 7.776 V 63.077 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 58.727 60.452 v 0.724 c 0 0.919 0.027 1.607 0.082 2.066 c 0.054 0.459 0.167 0.794 0.339 1.004 c 0.171 0.21 0.435 0.315 0.794 0.315 c 0.482 0 0.813 -0.187 0.992 -0.56 c 0.179 -0.374 0.276 -0.996 0.292 -1.868 l 2.778 0.163 c 0.015 0.125 0.023 0.296 0.023 0.514 c 0 1.323 -0.362 2.312 -1.086 2.965 c -0.724 0.654 -1.747 0.981 -3.07 0.981 c -1.588 0 -2.701 -0.498 -3.339 -1.494 c -0.638 -0.996 -0.957 -2.537 -0.957 -4.623 V 58.14 c 0 -2.148 0.331 -3.716 0.992 -4.705 c 0.661 -0.988 1.794 -1.483 3.397 -1.483 c 1.105 0 1.953 0.203 2.545 0.607 c 0.591 0.405 1.008 1.035 1.249 1.891 C 64 55.308 64.121 56.491 64.121 58 v 2.452 H 58.727 z M 59.136 54.428 c -0.163 0.202 -0.272 0.533 -0.327 0.992 c -0.055 0.459 -0.082 1.156 -0.082 2.09 v 1.027 h 2.358 V 57.51 c 0 -0.918 -0.031 -1.615 -0.093 -2.09 c -0.062 -0.475 -0.175 -0.809 -0.339 -1.004 c -0.164 -0.195 -0.417 -0.292 -0.759 -0.292 C 59.552 54.125 59.299 54.226 59.136 54.428 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 43.2 52.223 v 14.312 h -2.522 l -0.28 -1.751 h -0.07 c -0.685 1.323 -1.713 1.985 -3.082 1.985 c -0.95 0 -1.65 -0.311 -2.101 -0.934 c -0.452 -0.622 -0.677 -1.595 -0.677 -2.919 V 52.223 h 3.222 v 10.507 c 0 0.638 0.07 1.094 0.21 1.366 c 0.14 0.273 0.374 0.409 0.7 0.409 c 0.28 0 0.549 -0.085 0.806 -0.257 c 0.257 -0.171 0.447 -0.389 0.572 -0.654 v -11.37 H 43.2 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 35.429 49.538 H 32.23 v 16.997 h -3.152 V 49.538 h -3.199 v -2.592 h 9.549 V 49.538 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 53.864 54.511 c -0.195 -0.903 -0.51 -1.556 -0.946 -1.961 c -0.436 -0.405 -1.035 -0.607 -1.798 -0.607 c -0.592 0 -1.144 0.167 -1.658 0.502 c -0.514 0.335 -0.911 0.775 -1.191 1.319 h -0.024 l 0 -7.542 h -3.105 v 20.313 h 2.662 l 0.327 -1.354 h 0.07 c 0.249 0.483 0.622 0.864 1.121 1.144 c 0.498 0.28 1.051 0.42 1.658 0.42 c 1.089 0 1.891 -0.502 2.405 -1.506 c 0.514 -1.004 0.771 -2.572 0.771 -4.705 V 58.27 C 54.156 56.667 54.058 55.414 53.864 54.511 z M 50.911 60.349 c 0 1.043 -0.043 1.86 -0.128 2.451 c -0.086 0.592 -0.23 1.012 -0.432 1.261 c -0.202 0.249 -0.475 0.374 -0.817 0.374 c -0.265 0 -0.51 -0.062 -0.735 -0.187 c -0.226 -0.124 -0.409 -0.311 -0.549 -0.56 v -8.125 c 0.109 -0.389 0.295 -0.708 0.56 -0.957 c 0.264 -0.249 0.552 -0.374 0.864 -0.374 c 0.327 0 0.58 0.128 0.759 0.385 c 0.179 0.257 0.303 0.689 0.374 1.296 c 0.07 0.607 0.105 1.471 0.105 2.592 V 60.349 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(254,0,1); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+                  </a>
+                    <BR />
+                    <label>You-Tube</label>
+                </div>
+                
+                <!-- telegram -->
+                <div class="col-md-3">
+                  <a href="https://t.me/username/cosclerison" target="_blank">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 89.981 6.2 C 90 6.057 90.001 5.915 89.979 5.775 c -0.003 -0.021 -0.001 -0.041 -0.005 -0.062 c -0.033 -0.163 -0.098 -0.317 -0.183 -0.462 c -0.009 -0.016 -0.01 -0.033 -0.019 -0.049 c -0.015 -0.024 -0.039 -0.036 -0.055 -0.059 c -0.034 -0.048 -0.06 -0.102 -0.101 -0.146 c -0.051 -0.056 -0.113 -0.097 -0.17 -0.144 c -0.031 -0.025 -0.058 -0.054 -0.09 -0.076 c -0.134 -0.093 -0.28 -0.164 -0.436 -0.209 c -0.028 -0.008 -0.056 -0.009 -0.084 -0.015 c -0.132 -0.03 -0.267 -0.041 -0.404 -0.034 c -0.046 0.002 -0.089 0.006 -0.135 0.012 c -0.039 0.006 -0.079 0.002 -0.118 0.01 l -87 19.456 c -0.611 0.137 -1.073 0.639 -1.159 1.259 c -0.085 0.62 0.224 1.229 0.775 1.525 l 23.523 12.661 l 7.327 23.36 c 0.008 0.025 0.025 0.043 0.034 0.067 c 0.021 0.056 0.052 0.106 0.08 0.16 c 0.059 0.114 0.127 0.218 0.211 0.312 c 0.022 0.025 0.03 0.057 0.054 0.08 c 0.022 0.021 0.05 0.028 0.073 0.048 c 0.099 0.086 0.207 0.155 0.325 0.213 c 0.047 0.023 0.088 0.053 0.136 0.07 c 0.164 0.061 0.336 0.1 0.517 0.1 c 0.011 0 0.022 0 0.033 0 c 0.179 -0.004 0.349 -0.044 0.509 -0.107 c 0.041 -0.016 0.075 -0.044 0.114 -0.063 c 0.127 -0.063 0.244 -0.139 0.349 -0.235 c 0.02 -0.018 0.046 -0.024 0.065 -0.044 l 12.009 -12.209 l 23.18 12.477 c 0.221 0.119 0.466 0.18 0.711 0.18 c 0.188 0 0.378 -0.035 0.557 -0.107 c 0.412 -0.164 0.73 -0.504 0.869 -0.926 L 89.93 6.473 c 0.014 -0.044 0.015 -0.09 0.025 -0.135 C 89.966 6.292 89.975 6.247 89.981 6.2 z M 77.435 10.018 L 25.58 36.717 L 5.758 26.047 L 77.435 10.018 z M 74.32 14.997 L 36.813 43.768 c -0.003 0.002 -0.005 0.006 -0.007 0.008 c -0.112 0.087 -0.209 0.194 -0.294 0.314 c -0.018 0.025 -0.035 0.05 -0.051 0.076 c -0.017 0.028 -0.039 0.052 -0.055 0.081 c -0.054 0.1 -0.093 0.204 -0.122 0.309 c -0.001 0.005 -0.005 0.009 -0.006 0.014 L 32.96 56.977 l -5.586 -17.809 L 74.32 14.997 z M 35.992 57.249 l 2.693 -10.072 l 4.717 2.539 L 35.992 57.249 z M 69.177 60.184 L 40.479 44.737 l 45.09 -34.588 L 69.177 60.184 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #59AAE7; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 12.9 85.482 c -0.38 0 -0.76 -0.144 -1.052 -0.431 c -0.591 -0.581 -0.599 -1.53 -0.018 -2.121 l 14.292 -14.528 c 0.581 -0.592 1.531 -0.598 2.121 -0.018 c 0.591 0.581 0.599 1.53 0.018 2.121 L 13.97 85.034 C 13.676 85.333 13.288 85.482 12.9 85.482 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #59AAE7; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 36.431 79.593 c -0.38 0 -0.76 -0.144 -1.052 -0.431 c -0.591 -0.581 -0.599 -1.53 -0.018 -2.121 l 14.291 -14.527 c 0.582 -0.591 1.531 -0.598 2.121 -0.018 c 0.591 0.581 0.599 1.53 0.018 2.121 L 37.501 79.145 C 37.207 79.443 36.819 79.593 36.431 79.593 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #59AAE7; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 8.435 67.229 c -0.38 0 -0.76 -0.144 -1.052 -0.431 c -0.591 -0.581 -0.599 -1.53 -0.018 -2.121 l 10.445 -10.618 c 0.581 -0.591 1.531 -0.598 2.121 -0.018 c 0.591 0.581 0.599 1.53 0.018 2.121 L 9.505 66.78 C 9.211 67.079 8.823 67.229 8.435 67.229 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #59AAE7; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+                  </a>
+                    <BR />
+                    <label>Telegram</label>
+                </div>
+                
+                <!-- email -->
+                <div class="col-md-3">
+                  <a href="mailto:cosclerison@gmail.com" target="_blank">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 82.127 71.258 H 26.728 c -4.341 0 -7.873 -3.532 -7.873 -7.873 v -10.16 c 0 -0.828 0.671 -1.5 1.5 -1.5 s 1.5 0.672 1.5 1.5 v 10.16 c 0 2.687 2.186 4.873 4.873 4.873 h 55.399 c 2.687 0 4.873 -2.187 4.873 -4.873 v -36.77 c 0 -2.687 -2.187 -4.873 -4.873 -4.873 H 26.728 c -2.687 0 -4.873 2.186 -4.873 4.873 v 10.038 c 0 0.829 -0.671 1.5 -1.5 1.5 s -1.5 -0.671 -1.5 -1.5 V 26.615 c 0 -4.341 3.532 -7.873 7.873 -7.873 h 55.399 c 4.341 0 7.873 3.532 7.873 7.873 v 36.77 C 90 67.726 86.468 71.258 82.127 71.258 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 63.732 45 l 16.726 -15.344 c 0.61 -0.56 0.651 -1.509 0.092 -2.12 c -0.56 -0.61 -1.508 -0.65 -2.119 -0.091 L 54.427 49.466 L 30.425 27.445 c -0.611 -0.559 -1.559 -0.519 -2.12 0.091 c -0.56 0.61 -0.519 1.56 0.091 2.12 L 45.122 45 L 28.396 60.345 c -0.61 0.561 -0.651 1.509 -0.091 2.119 c 0.296 0.323 0.7 0.486 1.106 0.486 c 0.362 0 0.726 -0.131 1.014 -0.395 l 16.916 -15.52 l 6.072 5.571 c 0.286 0.263 0.65 0.395 1.014 0.395 s 0.728 -0.132 1.014 -0.395 l 6.073 -5.571 l 16.917 15.52 c 0.288 0.264 0.651 0.395 1.014 0.395 c 0.405 0 0.81 -0.163 1.105 -0.486 c 0.56 -0.61 0.519 -1.559 -0.092 -2.119 L 63.732 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 25.423 46.5 H 7.539 c -0.829 0 -1.5 -0.671 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 17.885 c 0.829 0 1.5 0.671 1.5 1.5 S 26.252 46.5 25.423 46.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 12.497 36.016 H 1.5 c -0.829 0 -1.5 -0.671 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 10.997 c 0.829 0 1.5 0.671 1.5 1.5 S 13.326 36.016 12.497 36.016 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <path d="M 12.497 56.984 H 4.394 c -0.829 0 -1.5 -0.672 -1.5 -1.5 s 0.671 -1.5 1.5 -1.5 h 8.104 c 0.829 0 1.5 0.672 1.5 1.5 S 13.326 56.984 12.497 56.984 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: #fff; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+                  </a>
+                    <br />
+                    <label>E-Mail</label>
+                </div>
+
+              </div>
+              </div>
+            </div>
+          </div>
+
+         
+
+         
+        </div>
+      </div>
+    </section>
+    <!-- end contatos -->
+
+    <!-- start icon flutuante -->
+    <div id="whatsapp" class="whatsapp">
+      <a href="https://wa.me/5511998901467?text=Olá, vejo que pegou meu contato no portifolio. Obrigado pelo contato. retornarei o mais breve possivel." target="_blank">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="50" 
+          height="50" 
+          fill="currentColor" 
+          viewBox="0 0 16 16">
+          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+      </a>
+    </div>
+    <!-- end icons flutuantes -->
+
+  </body>
 </html>
