@@ -1,0 +1,181 @@
+:root {
+    --neon-red: #ff1744;
+    --dark-bg: #121212;
+    --light-text: #f5f5f5;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .navbar {
+    background-color: var(--dark-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(255, 23, 68, 0.3);
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neon-red);
+    text-shadow: 0 0 10px var(--neon-red);
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar-item {
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-item:hover, .navbar-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+  } */
+
+  .navbar {
+    background-color: var(--dark-bg);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(255, 23, 68, 0.3);
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neon-red);
+    text-shadow: 0 0 10px var(--neon-red);
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .navbar-item {
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-item:hover, .navbar-item.active {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-item svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--light-text);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    color: var(--neon-red);
+    text-shadow: 0 0 10px var(--neon-red);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .profissao-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profissao-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: var(--dark-bg);
+      padding: 1rem;
+    }
+
+    .navbar-menu.active {
+      display: flex;
+    }
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-item {
+      justify-content: center;
+    }
+
+    .navbar-item span {
+      display: none;
+    }
+
+    .navbar-item svg {
+      display: block;
+      margin-right: 0;
+    }
+  }

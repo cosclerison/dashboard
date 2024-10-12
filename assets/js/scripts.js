@@ -1,369 +1,469 @@
-// Seleção de elementos
-const menuBtn = document.querySelector("#menu");
-const closeMenuBtn = document.querySelector("#close-menu");
-const menu = document.querySelector("#mobile-navbar");
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-const desktopLinks = document.querySelectorAll("#navbar a");
-const mobileLinks = document.querySelectorAll("#mobile-navbar a");
-const allLinks = [...desktopLinks, ...mobileLinks];
-
-const slides = document.querySelectorAll(".banner");
-const dots = document.querySelectorAll(".dot");
-let slideIndex = 0;
-
-// Funções
-function smoothScroll(e) {
-  e.preventDefault();
-
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth",
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
-
-  setTimeout(() => {
-    if (menu.classList.contains("menu-active")) {
-      menu.classList.remove("menu-active");
-    }
-  }, 500);
-}
-
-function showSlides() {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-    dots[i].classList.remove("active");
-  }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].classList.add("active");
-  dots[slideIndex - 1].classList.add("active");
-
-  setTimeout(showSlides, 3000);
-}
-
-// Eventos
-// [menuBtn, closeMenuBtn].forEach((btn) => {
-//   btn.addEventListener("click", (e) => {
-//     menu.classList.toggle("menu-active");
-//   });
-// });
-
-allLinks.forEach((link) => {
-  link.addEventListener("click", smoothScroll);
 });
 
-// Inicialização
-showSlides();
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const navLinks = document.querySelectorAll('#nav-menu a');
 
-// NOTICE!!! Initially embedded in our docs this JavaScript
-// file contains elements that can help you create reproducible
-// use cases in StackBlitz for instance.
-// In a real project please adapt this content to your needs.
-// ++++++++++++++++++++++++++++++++++++++++++
+  navToggle.addEventListener('click', function () {
+    navMenu.classList.toggle('active');
+  });
 
-/*!
- * JavaScript for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- * For details, see https://creativecommons.org/licenses/by/3.0/.
- */
-
-/* global bootstrap: false */
-
-(() => {
-  'use strict'
-
-  // --------
-  // Tooltips
-  // --------
-  // Instantiate all tooltips in a docs or StackBlitz page
-  document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    .forEach(tooltip => {
-      new bootstrap.Tooltip(tooltip)
-    })
-
-  // --------
-  // Popovers
-  // --------
-  // Instantiate all popovers in a docs or StackBlitz page
-  document.querySelectorAll('[data-bs-toggle="popover"]')
-    .forEach(popover => {
-      new bootstrap.Popover(popover)
-    })
-
-  // -------------------------------
-  // Toasts
-  // -------------------------------
-  // Used by 'Placement' example in docs or StackBlitz
-  const toastPlacement = document.getElementById('toastPlacement')
-  if (toastPlacement) {
-    document.getElementById('selectToastPlacement').addEventListener('change', function () {
-      if (!toastPlacement.dataset.originalClass) {
-        toastPlacement.dataset.originalClass = toastPlacement.className
+  navLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      if (window.innerWidth <= 768) {
+        navMenu.classList.remove('active');
       }
+    });
+  });
 
-      toastPlacement.className = `${toastPlacement.dataset.originalClass} ${this.value}`
-    })
-  }
-
-  // Instantiate all toasts in a docs page only
-  document.querySelectorAll('.bd-example .toast')
-    .forEach(toastNode => {
-      const toast = new bootstrap.Toast(toastNode, {
-        autohide: false
-      })
-
-      toast.show()
-    })
-
-  // Instantiate all toasts in a docs page only
-  const toastTrigger = document.getElementById('liveToastBtn')
-  const toastLiveExample = document.getElementById('liveToast')
-  if (toastTrigger) {
-    toastTrigger.addEventListener('click', () => {
-      const toast = new bootstrap.Toast(toastLiveExample)
-
-      toast.show()
-    })
-  }
-
-  // -------------------------------
-  // Alerts
-  // -------------------------------
-  // Used in 'Show live toast' example in docs or StackBlitz
-  const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-  const alertTrigger = document.getElementById('liveAlertBtn')
-
-  const appendAlert = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
-
-    alertPlaceholder.append(wrapper)
-  }
-
-  if (alertTrigger) {
-    alertTrigger.addEventListener('click', () => {
-      appendAlert('Nice, you triggered this alert message!', 'success')
-    })
-  }
-
-  // -------------------------------
-  // Checks & Radios
-  // -------------------------------
-  // Indeterminate checkbox example in docs and StackBlitz
-  document.querySelectorAll('.bd-example-indeterminate [type="checkbox"]')
-    .forEach(checkbox => {
-      if (checkbox.id.includes('Indeterminate')) {
-        checkbox.indeterminate = true
-      }
-    })
-
-  // -------------------------------
-  // Links
-  // -------------------------------
-  // Disable empty links in docs examples only
-  document.querySelectorAll('.bd-content [href="#"]')
-    .forEach(link => {
-      link.addEventListener('click', event => {
-        event.preventDefault()
-      })
-    })
-
-  // -------------------------------
-  // Modal
-  // -------------------------------
-  // Modal 'Varying modal content' example in docs and StackBlitz
-  const exampleModal = document.getElementById('exampleModal')
-  if (exampleModal) {
-    exampleModal.addEventListener('show.bs.modal', event => {
-      // Button that triggered the modal
-      const button = event.relatedTarget
-      // Extract info from data-bs-* attributes
-      const recipient = button.getAttribute('data-bs-whatever')
-
-      // Update the modal's content.
-      const modalTitle = exampleModal.querySelector('.modal-title')
-      const modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-      modalTitle.textContent = `New message to ${recipient}`
-      modalBodyInput.value = recipient
-    })
-  }
-
-  // -------------------------------
-  // Offcanvas
-  // -------------------------------
-  // 'Offcanvas components' example in docs only
-  const myOffcanvas = document.querySelectorAll('.bd-example-offcanvas .offcanvas')
-  if (myOffcanvas) {
-    myOffcanvas.forEach(offcanvas => {
-      offcanvas.addEventListener('show.bs.offcanvas', event => {
-        event.preventDefault()
-      }, false)
-    })
-  }
-})()
-
-
-
-// Dígitos que ja estão sendo calculados ou ja estão sendo usados
-const previousOperationText = document.querySelector("#previous-operation");
-// Dígitos que estão sendo inseridos no calculo 
-const currentOperationText = document.querySelector("#current-operation");
-// seleciona todos os botões
-const buttons = document.querySelectorAll("#buttons-container button");
-
-class Calculator {
-  constructor(previousOperationText, currentOperationText){
-    this.previousOperationText = previousOperationText;
-    this.currentOperationText = currentOperationText;
-    this.currentOperation = "";
-  }
-
-  // add digit to calculator screen
-  addDigit(digit) {
-    // check if current operations already hs a dot
-    if(digit === '.' && this.currentOperationText.innerText.includes(".")){
-      // caso o digito ponto ja tenha sido utilizado ele nao deixa inserir outro ponte
-      return;
-    }
-    this.currentOperation = digit;
-    this.updateScreen();
-  }
-
-  // Process all calculator operations
-  processOperation(operation) {
-    // check if current is empty / ou se esta sendo usado a função "C"
-    if(this.currentOperationText.innerText === "" && operation !== "C") {
-      // change operations
-      if(this.previousOperationText.innerText !== "") {
-        this.changeOperation(operation);
-      }
-      // não retorna nenhuma ação para evitar o erro
-      return;
-    }
-
-    // Get current and previous value
-    let operationValue;
-    const previous = +this.previousOperationText.innerText.split(" ")[0];
-    const current = +this.currentOperationText.innerText;
-
-    switch (operation) {
-      case "+":
-        operationValue = previous + current;
-        this.updateScreen(operationValue, operation, current, previous);
-        break;
-      case "-":
-        operationValue = previous - current;
-        this.updateScreen(operationValue, operation, current, previous);
-        break;
-      case "*":
-        operationValue = previous * current;
-        this.updateScreen(operationValue, operation, current, previous);
-        break;
-      case "/":
-        operationValue = previous / current;
-        this.updateScreen(operationValue, operation, current, previous);
-        break;
-      case "DEL":
-        this.processDelOperations();
-        break;
-      case "CE":
-        this.processaClearCurrentOperation();
-        break;
-      case "C":
-        this.processaClearOperation();
-        break;
-      case "=":
-        this.processaEqualOperation();
-        break;
-      default:
-        return;
-    }
-  }
-
-  // Change values of the calculator screen
-  updateScreen(
-    operationValue = null,
-    operation = null,
-    current = null,
-    previous = null
-  ){
-    // console.log(operationValue, operation, previous, current);
-    if(operationValue === null) {
-      this.currentOperationText.innerText += this.currentOperation;
-    } else {
-      // check if value is zero, if it is just add current value
-      if(previous === 0) {
-       operationValue = current;
-      }
-
-      // Add current value to previous
-      this.previousOperationText.innerText = `${operationValue} ${operation}`;
-      this.currentOperationText.innerText = "";
-    }
-  }
-
-  // Change math operation
-  changeOperation(operation) {
-    const mathOperations = ["*", "/", "+", "-"]
-
-    if(!mathOperations.includes(operation)) {
-      return;
-    }
-    //  Apaga o ultimo operador utilizado no calculo
-    this.previousOperationText.innerText = this.previousOperationText.innerText.slice(0, -1) + operation;
-  }
-
-  // Função DELETE - Delete the last digit
-  processDelOperations() {
-    this.currentOperationText.innerText =
-    this.currentOperationText.innerText.slice(0, -1);
-  }
-
-  // Clear current operation
-  processaClearCurrentOperation() {
-    this.currentOperationText.innerText = '';
-  }
-
-  // Clear all operation
-  processaClearOperation() {
-    this.currentOperationText.innerText = '';
-    this.previousOperationText.innerText = '';
-  }
-
-  // Process an operation
-  processaEqualOperation()  {
-    const operation = previousOperationText.innerText.split(" ")[1];
-
-    this.processOperation(operation);
-  }
-}
-
-const calc = new Calculator(previousOperationText, currentOperationText);
-
-buttons.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    const value = e.target.innerText;
-
-    if(+value >= 0 || value === '.') {
-      calc.addDigit(value);
-    } else {
-      calc.processOperation(value)
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 768) {
+      navMenu.classList.remove('active');
     }
   });
 });
 
+// Highlight active navigation item
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('nav ul li a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navItems.forEach(item => {
+    item.classList.remove('active');
+    if (item.getAttribute('href').slice(1) === current) {
+      item.classList.add('active');
+    }
+  });
+});
+
+// Modal functionality
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDetails = document.getElementById("modal-details");
+const closeBtns = document.getElementsByClassName("close");
+
+// Project details
+const projectDetails = {
+  vacinar: {
+    title: "Sistema Vacinar",
+    details: `
+          <p>O Sistema Vacinar é uma solução completa para gerenciamento de vacinação desenvolvida para a Vacinar Clínica de Imunização.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Cadastro de pacientes e histórico de vacinação</li>
+            <li>Agendamento de vacinas</li>
+            <li>Controle de estoque de vacinas</li>
+            <li>Relatórios e estatísticas de vacinação</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: Angular, Bootstrap</li>
+            <li>Back-end: Node.js, Express</li>
+            <li>Banco de dados: MongoDB</li>
+          </ul>
+        `
+  },
+  ecommerce: {
+    title: "Plataforma E-commerce",
+    details: `
+          <p>Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
+          <h3>Recursos principais:</h3>
+          <ul>
+            <li>Catálogo de produtos com categorias e filtros</li>
+            <li>Carrinho de compras e checkout seguros</li>
+            <li>Integração com gateways de pagamento</li>
+            <li>Painel de administração para gerenciamento de produtos e pedidos</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: React, Redux, Styled Components</li>
+            <li>Back-end: PHP, Laravel</li>
+            <li>Banco de dados: MySQL</li>
+          </ul>
+        `
+  },
+  profissionais: {
+    title: "Profissionais SA",
+    details: `
+          <p>Site institucional para empresa de palestras e treinamentos profissionais, com foco em experiência do usuário e design moderno.</p>
+          <h3>Características principais:</h3>
+          <ul>
+            <li>Design responsivo e intuitivo</li>
+            <li>Catálogo de palestrantes e cursos</li>
+            <li>Sistema de agendamento de palestras</li>
+            <li>Blog com artigos sobre desenvolvimento profissional</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>WordPress personalizado</li>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>PHP para funcionalidades personalizadas</li>
+          </ul>
+        `
+  },
+  fitness: {
+    title: "App Fitness",
+    details: `
+          <p>Aplicativo móvel para acompanhamento de treinos e dieta.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Criação de planos de treino personalizados</li>
+            <li>Registro de refeições e cálculo de macronutrientes</li>
+            <li>Integração com dispositivos wearables</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>React Native</li>
+            <li>Firebase</li>
+            <li>API de reconhecimento de alimentos</li>
+          </ul>
+        `
+  },
+  redepets: {
+    title: "Rede Social para Pets",
+    details: `
+          <p>Plataforma web para compartilhamento de fotos e informações sobre animais de estimação.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Perfis personalizados para pets</li>
+            <li>Feed de notícias e sistema de curtidas/comentários</li>
+            <li>Marketplace para produtos pet</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Vue.js</li>
+            <li>Node.js com Express</li>
+            <li>MongoDB</li>
+          </ul>
+        `
+  },
+  financas: {
+    title: "Sistema de Gestão Financeira",
+    details: `
+          <p>Aplicação web para controle de despesas e investimentos pessoais.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Registro de receitas e despesas</li>
+            <li>Geração de relatórios e gráficos</li>
+            <li>Planejamento de metas financeiras</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Angular</li>
+            <li>ASP.NET Core</li>
+            <li>SQL Server</li>
+          </ul>
+        `
+  },
+  blogtech: {
+    title: "Blog Tech",
+    details: `
+          <p>Blog sobre tecnologia e programação com sistema de gerenciamento de conteúdo personalizado.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Sistema de publicação de artigos</li>
+            <li>Categorização e tags para posts</li>
+            <li>Sistema de comentários e moderação</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>WordPress (tema e plugins personalizados)</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+        `
+  },
+  biblioteca: {
+    title: "Biblioteca Virtual",
+    details: `
+          <p>Sistema de gerenciamento de livros e empréstimos para bibliotecas.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Catálogo de livros com sistema de busca</li>
+            <li>Controle de empréstimos e devoluções</li>
+            <li>Geração de relatórios de utilização</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>React</li>
+            <li>Django</li>
+            <li>PostgreSQL</li>
+          </ul>
+        `
+  },
+  quiz: {
+    title: "Quiz Educativo",
+    details: `
+          <p>Aplicativo de perguntas e respostas para auxiliar no estudo de diversas disciplinas.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Quizzes por disciplina e nível de dificuldade</li>
+            <li>Sistema de pontuação e ranking</li>
+            <li>Modo de estudo com explicações detalhadas</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>API de Text-to-Speech</li>
+          </ul>
+        `
+  }
+};
+
+const experienceDetails = {
+  analistaMV: {
+    title: "Analista De Sistemas - Modelo Vencedor",
+    details: `
+          <p>Atuação: Backend - Automação</p>
+          <ul>
+            <li>Analise e desenvolvimento de sistemas WEB</li>
+            <li>Manutenção de Portais WEB</li>
+            <li>Automação com N8N (JS)</li>
+            <li>Servidores Linux</li>
+            <li>Backend</li>
+          </ul>
+            Habilidades: PHP-(Laravel), Node, N8N, JavaScript, HTML, CSS, MySQL, Oracle, Twig, Bootstrap, Git, Apache
+        `
+  },
+  vacinarImunizacao: {
+    title: "Analista De Desenvolvimento De Sistemas FullStack - Vacinar Centro De Imunização",
+    details: `
+          <p>Atuação: Backend - Frontend</p>
+          <p>Participação ativa nos projetos e manutenção dos sistemas desenvolvidos para atender as demandas e tarefas diárias de clientes e funcionários. Atuando diretamente nas melhorias para atender os contratos de cada clientes de acordo com a sua utilização e documentação.
+          </p>
+          <p>
+          Não só uma empresa onde atender todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
+          </p>
+
+          <ul>
+            <li>Analise De Desenvolvimento De Sistema WEB</li>
+            <li>SGC Sistema Administrativo De Vacinação</li>
+            <li>SGC Sistema De Clientes </li>
+            <li>SGC Sistema De Aplicação VMS</li>
+            <li>SGC Sistema De Adesão De Vacinação</li>
+            <li>SCE Sistema Administrativo Vacinar</li>
+            <li>Trabalho em equipe utilizando metodologias ágeis</li>
+          </ul>
+          Habilidades: PHP-(Phalcon), Node, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab, Apache, Angular-(V12 - V18), Docker
+        `
+  },
+  engefogo: {
+    title: "Analista De Desenvolvimento Jr - Engefogo",
+    details: `
+          <p>2020 - Freelance</p>
+          <p>
+            Freelance ao qual estava auxiliando no desenvolvimento do sistema administrativo, onde o mesmo abordava toda a administração de estoque dos produtos, peças e equipamentos utilizados pela empresa e clientes. abordando com detalhes cada item utilizado e comercializado.
+          </p>
+          <ul>
+            <li>Postal Administrativo</li>
+            <li>Banco de Dados MySQl</li>
+          </ul>
+          Habilidades: PHP, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab, Docker
+        `
+  },
+  profissionaisSA: {
+    title: "Analista De Desenvolvimento Jr - Profissionais - SA",
+    details: `
+          <p>2020 - Freelance</p>
+          <p>
+            Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvimentos do web designer.
+          </p>
+          <ul>
+            <li>Estruturação do Frontend e responsividade Mobile</li>
+          </ul>
+          Habilidades: JavaScript, HTML, CSS, Bootstrap, GitLab, Docker
+        `
+  },
+  contern: {
+    title: "Analista De Suporte Técnico Pleno - Contern Construção e Comercio LTDA",
+    details: `
+          <p>Fev 2013 - Dez 2017</p>
+          <p>
+            Coordenação de analistas TI em filiais (OBRAS) gerenciamento switches Cisco, telefonia IP, Access Point, servidores, acompanhamento de chamado e recursos de rede, atendimento direto e indireto aos colaboradores da empresa, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, rotina de Backup, Aplicativos diversos, Atualização de sistemas, help-desk, acesso remoto, desenvolvimento de tutoriais, gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios), negociação e análise de contratos, controle de equipamentos e patrimônio.
+          </p>
+          <p>
+          Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer de 2012 a 2017. Quando solicitei a minha dispensa da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico. Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
+          </p>
+          <ul>
+            <li>Gestão De Infraestrutura</li>
+            <li>Analise de Projetos e Custos</li>
+            <li>Controle de Patrimonio</li>
+            <li>Gestão de Contratos</li>
+          </ul>
+        `
+  },
+  icomon: {
+    title: "ICOMON Tecnologia LTDA.",
+    details: `
+          <p>2011 - 2012</p>
+          <p>
+            IRLA - Instalador e Reparador de Linhas e Aparelhos: Atuando na Infraestrutura de redes de telefonia. Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva. Executando ordens de Instalação, Reparos ou Chamados de urgência com ordens da ANATEL.
+          </p>
+          <p>
+            Empresa que competiu usar meus conhecimentos tecnológicos em redes, e aplicando seus conceitos na área de telefonia, possui ótimas experiencias em atendimentos aos clientes. Atuando no dia a dia aprendi os conceitos e aplicações da infraestrutura da operadora de telefonia e internet em varias cidades por onde atuei como técnico em telefonia.
+          </p>
+          <ul>
+            <li>Gestão de Rede de Telefonia</li>
+            <li>Suporte e Reparo de Linha Telefonia</li>
+            <li>Reagrupamento de Rede</li>
+            <li>Atendimento Direto ao Cliente</li>
+            <li>Gestão de Materiais e Ferramental</li>
+          </ul>
+        `
+  },
+  puma_hard_soft: {
+    title: "Puma Hard & Soft.",
+    details: `
+          <p>2005 - 2008</p>
+          <p>
+            Analista Suporte Técnico Junior: Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva. Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento balcão. 
+          </p>
+          <p>
+            Projeto de futuro montado enquanto eu estudava tecnologia, juntamente com um amigo seguimos uma sociedade buscando o nosso desenvolvimento profissional e pessoal. Está loja demostrou o quanto eu estava disposto e capacitado para enfrentar o mercado e suas dificuldades, atendimento a clientes físicos e empresas, trouxe não só um fortalecimento profissional e também por sua vez um ótimo crescimento pessoal. Investimentos e administração da mesma. 
+            <br />
+            A primeira decepção e uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
+          </p>
+          <ul>
+            <li>Atendimento ao Cliente</li>
+            <li>Gestão e Administração de Suprimentos</li>
+            <li>Manutenção de Microcomputadores</li>
+            <li>Suporte de informática</li>
+          </ul>
+        `
+  }
+};
+
+const educationDetails = {
+  bacharelado: {
+    title: "Bacharelado em Sistemas de Informação",
+    details: `
+          <h4>Universidade Federal do Estado</h4>
+          <p>2015 - 2019</p>
+          <ul>
+            <li>Principais disciplinas: Programação, Banco de Dados, Engenharia de Software</li>
+            <li>Projeto de conclusão: Desenvolvimento de um sistema de gerenciamento de projetos</li>
+            <li>Participação em projetos de extensão e iniciação científica</li>
+          </ul>
+        `
+  },
+  tecnico: {
+    title: "Técnico em Informática",
+    details: `
+          <h4>Instituto Técnico Estadual</h4>
+          <p>2013 - 2014</p>
+          <ul>
+            <li>Fundamentos de programação e lógica</li>
+            <li>Manutenção de hardware e redes</li>
+            <li>Desenvolvimento de aplicações web básicas</li>
+          </ul>
+        `
+  },
+  uxui: {
+    title: "Curso de Especialização em UX/UI Design",
+    details: `
+          <h4>Instituto de Design Digital</h4>
+          <p>2020 - 2021</p>
+          <ul>
+            <li>Princípios de design centrado no usuário</li>
+            <li>Prototipagem e testes de usabilidade</li>
+            <li>Design de interfaces responsivas</li>
+            <li>Projeto final: Redesign de um aplicativo mobile</li>
+          </ul>
+        `
+  },
+  scrum: {
+    title: "Certificação em Scrum Master",
+    details: `
+          <h4>Scrum Alliance</h4>
+          <p>2019</p>
+          <ul>
+            <li>Fundamentos do Scrum e metodologias ágeis</li>
+            <li>Facilitação de eventos Scrum</li>
+            <li>Remoção de impedimentos e coaching de equipes</li>
+            <li>Certificação obtida após exame teórico e prático</li>
+          </ul>
+        `
+  },
+  ingles: {
+    title: "Curso de Inglês Avançado",
+    details: `
+          <h4>English School</h4>
+          <p>2016 - 2018</p>
+          <ul>
+            <li>Desenvolvimento de habilidades de comunicação em inglês</li>
+            <li>Foco em vocabulário técnico e de negócios</li>
+            <li>Preparação para certificações internacionais</li>
+            <li>Intercâmbio cultural com falantes nativos</li>
+          </ul>
+        `
+  },
+  mobile: {
+    title: "Curso de Desenvolvimento Mobile",
+    details: `
+          <h4>Tech Academy</h4>
+          <p>2017</p>
+          <ul>
+            <li>Introdução ao desenvolvimento para iOS e Android</li>
+            <li>Criação de interfaces nativas e híbridas</li>
+            <li>Integração com APIs e serviços em nuvem</li>
+            <li>Projeto final: Desenvolvimento de um aplicativo funcional</li>
+          </ul>
+        `
+  }
+};
+
+// Modify the existing event listener for 'saiba-mais-btn'
+document.querySelectorAll('.saiba-mais-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    let details;
+    if (this.hasAttribute('data-project')) {
+      const project = this.getAttribute('data-project');
+      details = projectDetails[project];
+    } else if (this.hasAttribute('data-experience')) {
+      const experience = this.getAttribute('data-experience');
+      details = experienceDetails[experience];
+    } else if (this.hasAttribute('data-education')) {
+      const education = this.getAttribute('data-education');
+      details = educationDetails[education];
+    }
+
+    if (details) {
+      modalTitle.textContent = details.title;
+      modalDetails.innerHTML = details.details;
+      modal.style.display = "block";
+    }
+  });
+});
+
+// Close modal
+for (let i = 0; i < closeBtns.length; i++) {
+  closeBtns[i].onclick = function () {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
