@@ -113,11 +113,27 @@ nav ul li a:hover {
   nav ul li a span {
     display: none;
   }
+
+  .right{
+    width: 90%;
+  }
+  
+  .left{
+    width: 90%;
+  }
 }
 
 @media (min-width: 769px) {
   nav ul li a i {
     display: none;
+  }
+
+  .right{
+    width: 90%;
+  }
+  
+  .left{
+    width: 90%;
   }
 }
 
@@ -456,6 +472,19 @@ footer {
   header {
     padding: 0.25rem 0;
     /* Reduced header padding */
+  }
+
+  .timeline::after {
+    display: none;
+  }
+
+  .right{
+    width: 90%;
+    left: 0;
+  }
+  
+  .left{
+    width: 90%;
   }
 
 }
