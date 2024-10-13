@@ -354,82 +354,143 @@ const experienceDetails = {
 };
 
 const educationDetails = {
-  bacharelado: {
-    title: "Bacharelado em Sistemas de Informação",
+  uninove: {
+    title: "Graduação - Analise Desenvolvimento de Sistemas",
     details: `
-          <h4>Universidade Federal do Estado</h4>
-          <p>2015 - 2019</p>
+          <h4>Universidade Nove de Julho</h4>
+          <p>2020 - 2023</p>
+          <p>Grade de Ensino: Conhecimentos e estudos adquiridos nesta graduação. Universidade Nove de Julho.</p>
           <ul>
-            <li>Principais disciplinas: Programação, Banco de Dados, Engenharia de Software</li>
-            <li>Projeto de conclusão: Desenvolvimento de um sistema de gerenciamento de projetos</li>
-            <li>Participação em projetos de extensão e iniciação científica</li>
+            <li>DESENVOLVIMENTO DE INTERFACES DINÂMICAS</li>
+            <li>MODELAGEM DE INTERFACES</li>
+            <li>PROGRAMAÇÃO DE INTERFACES</li>
+            <li>ARQUITETURA DA INFORMAÇÃO</li>
+            <li>ATIVIDADES COMPLEMENTARES CUMPRIU 40h</li>
+            <li>FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO</li>
+            <li>FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS</li>
+            <li>LÓGICA DE PROGRAMAÇÃO</li>
+            <li>SISTEMAS DISTRIBUÍDOS</li>
+            <li>ARQUITETURA DE SOFTWARE</li>
+            <li>ENGENHARIA DE SOFTWARE</li>
+            <li>GESTÃO DE PROJETOS DE SOFTWARE</li>
+            <li>INTERAÇÃO HUMANO COMPUTADOR</li>
+            <li>QUALIDADE DE SOFTWARE</li>
+            <li>DESENVOLVIMENTO DE INTERFACES ESTÁTICAS</li>
+            <li>PROGRAMAÇÃO DE COMÉRCIO ELETRÔNICO</li>
+            <li>PROGRAMAÇÃO DE INTERFACES RESPONSIVAS</li>
+            <li>RECURSOS DE APOIO À PROGRAMAÇÃO</li>
+            <li>SERVIDORES DE APLICAÇÃO</li>
+            <li>ATIVIDADES COMPLEMENTARES CUMPRIU 40h</li>
+            <li>DESENVOLVIMENTO DE SERVIÇOS WEB</li>
+            <li>DESENVOLVIMENTO DE SISTEMAS MÓVEIS</li>
+            <li>PROGRAMAÇÃO DE PORTAIS CORPORATIVOS</li>
+            <li>PROGRAMAÇÃO PARA WEB EM AMBIENTE LIVRE</li>
+            <li>PROGRAMAÇÃO PARA WEB EM AMBIENTE PROPRIETÁRIO</li>
+            <li>DESENVOLVIMENTO DE APLICAÇÕES WEB</li>
+            <li>INTEGRAÇÃO DE SISTEMAS </li>
           </ul>
         `
   },
-  tecnico: {
-    title: "Técnico em Informática",
+  senai: {
+    title: "Técnico Mantenedor e Programador de Microcomputadores",
     details: `
-          <h4>Instituto Técnico Estadual</h4>
-          <p>2013 - 2014</p>
-          <ul>
-            <li>Fundamentos de programação e lógica</li>
-            <li>Manutenção de hardware e redes</li>
-            <li>Desenvolvimento de aplicações web básicas</li>
-          </ul>
+          <h4>SENAI - Luis Eulalio de Bueno Vidigal Filho</h4>
+          <p>2002 - 2003</p>
+          <p>Grade de Ensino: Conhecimentos e estudos adquiridos nesta curso técnico no instituto de ensino SENAI</p>
+          <p>
+            <strong>SISTEMAS E PROGRAMAÇÃO</strong>
+            <ul>
+              <li>INF - Informática</li>
+              <li>LOP - Logica de Programação</li>
+              <li>LIP - Linguagem de Programação</li>
+              <li>BCD - Banco de Dados</li>
+            </ul>
+          </p>
+          <p>
+          <strong>MANUTENÇÃO E INFRAESTRUTURA</strong>
+            <ul>
+              <li>INF - Informática</li>
+              <li>ELB - Eletrônica Básica</li>
+              <li>OS  - Sistemas Operacionais</li>
+              <li>MIB - Microcomputador Básico</li>
+              <li>MSM - Manutenção de Sistemas de Microcomputador</li>
+            </ul>
+          </p>
+          <p>
+          <strong>TECNOLOGIA DA INFORMAÇÃO  </strong>
+            <ul>
+              <li>O que são as TIC</li>
+              <li>Conceitos de ambiente virtual, comunidade virtual, internet.</li>
+              <li>Conceitos de SOFTWARE e HARDWARE</li>
+              <li>Evolução e tendencia das TIC</li>
+              <li>Uso de ferramentas da internet para pesquisa e importância da seleção e organização das Informações</li>
+            </ul>
+          </p>
+          <p>
+          <strong>LÓGICA DE PROGRAMAÇÃO</strong>
+            <ul>
+              <li>Introdução - Representações</li>
+              <li>Tipos de Dados (Inteiro, Real, Literal, Lógico)</li>
+              <li>Variáveis</li>
+              <li>Expressões Aritméticas</li>
+              <li>Expressões Lógicas</li>
+              <li>Estrutura de Repetição</li>
+              <li>Estrutura de Condição</li>
+              <li>Variáveis Indexadas</li>
+              <li>Revisão - Sub-Algorítimo</li>
+            </ul>
+          </p>
         `
   },
-  uxui: {
-    title: "Curso de Especialização em UX/UI Design",
+  udemy: {
+    title: "Programação",
     details: `
-          <h4>Instituto de Design Digital</h4>
-          <p>2020 - 2021</p>
-          <ul>
-            <li>Princípios de design centrado no usuário</li>
-            <li>Prototipagem e testes de usabilidade</li>
-            <li>Design de interfaces responsivas</li>
-            <li>Projeto final: Redesign de um aplicativo mobile</li>
-          </ul>
+          <h4>Udemy plataforma EAD</h4>
+          <p>2019 - 2020</p>
+          <p>Grade de Ensino: Conhecimentos e estudos adquiridos nesta plataforma de ensino a distancia.</p>
+          <p>
+            <strong>PHP Completo com Projeto E-Commerce</strong>
+            <ul>
+              <li>Curso de PHP Completo</li>
+              <li>Projeto E-Commerce</li>
+              <li>Administração e Site</li>
+              <li>Estrutura de controle e laços de repetição, Arrays, Sessão, Funções, Date.</li>
+              <li>Banco de dados MYSQL</li>
+              <li>Banco de dados PDO</li>
+              <li>Banco de dados PDO</li>
+              <li>E-mail com PHPMailer</li>
+              <li>Segurança No PHP 7</li>
+            </ul>
+          </p>
+          <p>
+            <strong>ANGULAR 10 com 7 mini projetos</strong>
+            <ul>
+              <li>Primeiro Projeto - Olá Mundo</li>
+              <li>Segundo Projeto - Calculadora</li>
+              <li>Terceiro Projeto - Gerenciador de Tarefas</li>
+              <li>Quarto Projeto - Jogo da Velha</li>
+              <li>Quinto Projeto - Conversor de Moedas</li>
+              <li>Sexto Projeto - Dashboard</li>
+              <li>Primeiro Projeto - Unificação dos projetos</li>
+            </ul>
+          </p>
         `
   },
-  scrum: {
-    title: "Certificação em Scrum Master",
+  cursos: {
+    title: "Cursos Variados",
     details: `
-          <h4>Scrum Alliance</h4>
-          <p>2019</p>
-          <ul>
-            <li>Fundamentos do Scrum e metodologias ágeis</li>
-            <li>Facilitação de eventos Scrum</li>
-            <li>Remoção de impedimentos e coaching de equipes</li>
-            <li>Certificação obtida após exame teórico e prático</li>
-          </ul>
+          <h4>Instituições de Ensinos</h4>
+          <p>2019 - 2020</p>
+          <p>Grade de Ensino: Conhecimentos e estudos variados.</p>
+          <p>
+            <strong>Em Breve mais cursos listados</strong>
+            <ul>
+              <li>?????</li>
+            </ul>
+          </p>
         `
   },
-  ingles: {
-    title: "Curso de Inglês Avançado",
-    details: `
-          <h4>English School</h4>
-          <p>2016 - 2018</p>
-          <ul>
-            <li>Desenvolvimento de habilidades de comunicação em inglês</li>
-            <li>Foco em vocabulário técnico e de negócios</li>
-            <li>Preparação para certificações internacionais</li>
-            <li>Intercâmbio cultural com falantes nativos</li>
-          </ul>
-        `
-  },
-  mobile: {
-    title: "Curso de Desenvolvimento Mobile",
-    details: `
-          <h4>Tech Academy</h4>
-          <p>2017</p>
-          <ul>
-            <li>Introdução ao desenvolvimento para iOS e Android</li>
-            <li>Criação de interfaces nativas e híbridas</li>
-            <li>Integração com APIs e serviços em nuvem</li>
-            <li>Projeto final: Desenvolvimento de um aplicativo funcional</li>
-          </ul>
-        `
-  }
+
 };
 
 // Modify the existing event listener for 'saiba-mais-btn'
