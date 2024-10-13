@@ -417,21 +417,21 @@ footer {
   padding: 4rem 0;
   height: 100%;
   margin-top: 1rem;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
 #formacao {
-  padding: 2rem 0;
+  padding: 4rem 0;
   height: 100%;
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
 #projetos {
-  padding: 2rem 0;
+  padding: 4rem 0;
   height: 100%;
   margin-top: 4rem;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
 .language-icons {
@@ -457,4 +457,5 @@ footer {
     padding: 0.25rem 0;
     /* Reduced header padding */
   }
+
 }

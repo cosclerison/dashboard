@@ -61,175 +61,7 @@ const modalTitle = document.getElementById("modal-title");
 const modalDetails = document.getElementById("modal-details");
 const closeBtns = document.getElementsByClassName("close");
 
-// Project details
-const projectDetails = {
-  vacinar: {
-    title: "Sistema Vacinar",
-    details: `
-          <p>O Sistema Vacinar é uma solução completa para gerenciamento de vacinação desenvolvida para a Vacinar Clínica de Imunização.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Cadastro de pacientes e histórico de vacinação</li>
-            <li>Agendamento de vacinas</li>
-            <li>Controle de estoque de vacinas</li>
-            <li>Relatórios e estatísticas de vacinação</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>Front-end: Angular, Bootstrap</li>
-            <li>Back-end: Node.js, Express</li>
-            <li>Banco de dados: MongoDB</li>
-          </ul>
-        `
-  },
-  ecommerce: {
-    title: "Plataforma E-commerce",
-    details: `
-          <p>Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
-          <h3>Recursos principais:</h3>
-          <ul>
-            <li>Catálogo de produtos com categorias e filtros</li>
-            <li>Carrinho de compras e checkout seguros</li>
-            <li>Integração com gateways de pagamento</li>
-            <li>Painel de administração para gerenciamento de produtos e pedidos</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>Front-end: React, Redux, Styled Components</li>
-            <li>Back-end: PHP, Laravel</li>
-            <li>Banco de dados: MySQL</li>
-          </ul>
-        `
-  },
-  profissionais: {
-    title: "Profissionais SA",
-    details: `
-          <p>Site institucional para empresa de palestras e treinamentos profissionais, com foco em experiência do usuário e design moderno.</p>
-          <h3>Características principais:</h3>
-          <ul>
-            <li>Design responsivo e intuitivo</li>
-            <li>Catálogo de palestrantes e cursos</li>
-            <li>Sistema de agendamento de palestras</li>
-            <li>Blog com artigos sobre desenvolvimento profissional</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>WordPress personalizado</li>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>PHP para funcionalidades personalizadas</li>
-          </ul>
-        `
-  },
-  fitness: {
-    title: "App Fitness",
-    details: `
-          <p>Aplicativo móvel para acompanhamento de treinos e dieta.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Criação de planos de treino personalizados</li>
-            <li>Registro de refeições e cálculo de macronutrientes</li>
-            <li>Integração com dispositivos wearables</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>React Native</li>
-            <li>Firebase</li>
-            <li>API de reconhecimento de alimentos</li>
-          </ul>
-        `
-  },
-  redepets: {
-    title: "Rede Social para Pets",
-    details: `
-          <p>Plataforma web para compartilhamento de fotos e informações sobre animais de estimação.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Perfis personalizados para pets</li>
-            <li>Feed de notícias e sistema de curtidas/comentários</li>
-            <li>Marketplace para produtos pet</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>Vue.js</li>
-            <li>Node.js com Express</li>
-            <li>MongoDB</li>
-          </ul>
-        `
-  },
-  financas: {
-    title: "Sistema de Gestão Financeira",
-    details: `
-          <p>Aplicação web para controle de despesas e investimentos pessoais.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Registro de receitas e despesas</li>
-            <li>Geração de relatórios e gráficos</li>
-            <li>Planejamento de metas financeiras</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>Angular</li>
-            <li>ASP.NET Core</li>
-            <li>SQL Server</li>
-          </ul>
-        `
-  },
-  blogtech: {
-    title: "Blog Tech",
-    details: `
-          <p>Blog sobre tecnologia e programação com sistema de gerenciamento de conteúdo personalizado.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Sistema de publicação de artigos</li>
-            <li>Categorização e tags para posts</li>
-            <li>Sistema de comentários e moderação</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>WordPress (tema e plugins personalizados)</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
-        `
-  },
-  biblioteca: {
-    title: "Biblioteca Virtual",
-    details: `
-          <p>Sistema de gerenciamento de livros e empréstimos para bibliotecas.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Catálogo de livros com sistema de busca</li>
-            <li>Controle de empréstimos e devoluções</li>
-            <li>Geração de relatórios de utilização</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>React</li>
-            <li>Django</li>
-            <li>PostgreSQL</li>
-          </ul>
-        `
-  },
-  quiz: {
-    title: "Quiz Educativo",
-    details: `
-          <p>Aplicativo de perguntas e respostas para auxiliar no estudo de diversas disciplinas.</p>
-          <h3>Funcionalidades principais:</h3>
-          <ul>
-            <li>Quizzes por disciplina e nível de dificuldade</li>
-            <li>Sistema de pontuação e ranking</li>
-            <li>Modo de estudo com explicações detalhadas</li>
-          </ul>
-          <h3>Tecnologias utilizadas:</h3>
-          <ul>
-            <li>Flutter</li>
-            <li>Firebase</li>
-            <li>API de Text-to-Speech</li>
-          </ul>
-        `
-  }
-};
-
+// Experiências Profissionais
 const experienceDetails = {
   analistaMV: {
     title: "Analista De Sistemas - Modelo Vencedor",
@@ -353,6 +185,7 @@ const experienceDetails = {
   }
 };
 
+// Formações e Cursos
 const educationDetails = {
   uninove: {
     title: "Graduação - Analise Desenvolvimento de Sistemas",
@@ -449,7 +282,7 @@ const educationDetails = {
           <p>2019 - 2020</p>
           <p>Grade de Ensino: Conhecimentos e estudos adquiridos nesta plataforma de ensino a distancia.</p>
           <p>
-            <strong>PHP Completo com Projeto E-Commerce</strong>
+            <strong>PHP-7 Completo com Projeto E-Commerce</strong>
             <ul>
               <li>Curso de PHP Completo</li>
               <li>Projeto E-Commerce</li>
@@ -463,7 +296,7 @@ const educationDetails = {
             </ul>
           </p>
           <p>
-            <strong>ANGULAR 10 com 7 mini projetos</strong>
+            <strong>ANGULAR 13 com 7 mini projetos</strong>
             <ul>
               <li>Primeiro Projeto - Olá Mundo</li>
               <li>Segundo Projeto - Calculadora</li>
@@ -491,6 +324,66 @@ const educationDetails = {
         `
   },
 
+};
+
+// Project details
+const projectDetails = {
+  vacinar_sistema_project: {
+    title: "Sistema Vacinar",
+    details: `
+          <p>O Sistema Vacinar é uma solução completa para gerenciamento de vacinação desenvolvida para a Vacinar Clínica de Imunização.</p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Cadastro de pacientes e histórico de vacinação</li>
+            <li>Agendamento de vacinas</li>
+            <li>Controle de estoque de vacinas</li>
+            <li>Relatórios e estatísticas de vacinação</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: Angular, HTML, CSS, Angular, Bootstrap, Material</li>
+            <li>Back-end: PHP, Docker</li>
+            <li>Banco de dados: Mysql, Postgres</li>
+          </ul>
+        `
+  },
+  ecommerce: {
+    title: "Plataforma E-commerce",
+    details: `
+          <p>Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
+          <h3>Recursos principais:</h3>
+          <ul>
+            <li>Catálogo de produtos com categorias e filtros</li>
+            <li>Carrinho de compras e checkout seguros</li>
+            <li>Integração com gateways de pagamento</li>
+            <li>Painel de administração para gerenciamento de produtos e pedidos</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: React, Redux, Styled Components</li>
+            <li>Back-end: PHP, Laravel</li>
+            <li>Banco de dados: MySQL</li>
+          </ul>
+        `
+  },
+  profissionais_project: {
+    title: "Profissionais SA",
+    details: `
+          <p>Site institucional para empresa de palestras e treinamentos profissionais, com foco em experiência do usuário e design moderno.</p>
+          <h3>Características principais:</h3>
+          <ul>
+            <li>Design responsivo e intuitivo</li>
+            <li>Catálogo de palestrantes e cursos</li>
+            <li>Sistema de agendamento de palestras</li>
+            <li>Blog com artigos sobre desenvolvimento profissional</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+          </ul>
+        `
+  },
+  
 };
 
 // Modify the existing event listener for 'saiba-mais-btn'
