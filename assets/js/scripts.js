@@ -84,7 +84,7 @@ const experienceDetails = {
           <p>Participação ativa nos projetos e manutenção dos sistemas desenvolvidos para atender as demandas e tarefas diárias de clientes e funcionários. Atuando diretamente nas melhorias para atender os contratos de cada clientes de acordo com a sua utilização e documentação.
           </p>
           <p>
-          Não só uma empresa onde atender todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
+          Não só uma empresa onde atende todo nosso pais, mas uma empresa com um ambiente familiar e acolhedor, trouxe desafios para equipe de desenvolvimento, onde seu intuito é aprimorar cada vez mais os sistemas para atender com qualidade e desempenho todos os clientes e proporcionando uma ótima experiencia em seus serviços.
           </p>
 
           <ul>
@@ -96,7 +96,7 @@ const experienceDetails = {
             <li>SCE Sistema Administrativo Vacinar</li>
             <li>Trabalho em equipe utilizando metodologias ágeis</li>
           </ul>
-          Habilidades: PHP-(Phalcon), Node, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab, Apache, Angular-(V12 - V18), Docker
+          Habilidades: PHP-(Phalcon), Node, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab, Apache, Angular-(V12 - V18) e Docker
         `
   },
   engefogo: {
@@ -107,10 +107,10 @@ const experienceDetails = {
             Freelance ao qual estava auxiliando no desenvolvimento do sistema administrativo, onde o mesmo abordava toda a administração de estoque dos produtos, peças e equipamentos utilizados pela empresa e clientes. abordando com detalhes cada item utilizado e comercializado.
           </p>
           <ul>
-            <li>Postal Administrativo</li>
-            <li>Banco de Dados MySQl</li>
+            <li>Portal WEB Administrativo</li>
+            <li>Banco de Dados - MySQl</li>
           </ul>
-          Habilidades: PHP, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab, Docker
+          Habilidades: PHP, JavaScript, HTML, CSS, MySQL, Bootstrap, Git, GitLab e Docker
         `
   },
   profissionaisSA: {
@@ -118,12 +118,12 @@ const experienceDetails = {
     details: `
           <p>2020 - Freelance</p>
           <p>
-            Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvimentos do web designer.
+            Freelance ao qual estava auxiliando no desenvolvimento front-end, tarefas de criação dos componentes usados no site, apresentação de conteúdos, aplicação do projeto seguindo de acordo com o desenvolvido pelo setor  web-designer.
           </p>
           <ul>
             <li>Estruturação do Frontend e responsividade Mobile</li>
           </ul>
-          Habilidades: JavaScript, HTML, CSS, Bootstrap, GitLab, Docker
+          Habilidades: JavaScript, HTML, CSS, Bootstrap, GitLab e Docker
         `
   },
   contern: {
@@ -131,10 +131,10 @@ const experienceDetails = {
     details: `
           <p>Fev 2013 - Dez 2017</p>
           <p>
-            Coordenação de analistas TI em filiais (OBRAS) gerenciamento switches Cisco, telefonia IP, Access Point, servidores, acompanhamento de chamado e recursos de rede, atendimento direto e indireto aos colaboradores da empresa, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, rotina de Backup, Aplicativos diversos, Atualização de sistemas, help-desk, acesso remoto, desenvolvimento de tutoriais, gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios), negociação e análise de contratos, controle de equipamentos e patrimônio.
+            Coordenação de analistas TI em filiais (OBRAS) gerenciamentos de switches Cisco, telefonia IP(VOIP), Access Point, servidores, acompanhamento de aberturas de chamados e recursos de rede, atendimento direto e indireto aos colaboradores da empresa e terceiros, Desktop, Notebook, Celulares, Tablet, Ipad, Iphone, Impressoras, Rotina de Backup, Aplicativos diversos com e sem Licenças, Atualização de Sistemas, Help-Desk, Acesso Remoto, Desenvolvimento de Tutoriais, Gerenciamento SLA – em conjunto com provedores e terceiros. Gerenciamento de infraestrutura em filiais (Escritórios) e Canteiros de Obras (Escritórios temporários), Negociação e análise de Contratos, Controle de Equipamentos e Gestão de Patrimônio.
           </p>
           <p>
-          Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer de 2012 a 2017. Quando solicitei a minha dispensa da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico. Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
+          Sem duvidas está e uma das empresas que mais trouxe crescimento para minha vida profissional, rebaixei o meu currículo para participar do processo seletivo e entrei na empresa como Auxiliar de informática, no decorrer da minha atuação na empresa de 2012 a 2017. Quando solicitei a minha dispensa da mesma já estava na gestão tecnológica da empresa e seus recursos em obras e projetos aplicados para o seu desenvolvimento tecnológico. Exigiu muito dos meus conhecimentos, onde investi em vários cursos na área de infraestrutura e conhecimentos aplicados por todos setores administrativos.
           </p>
           <ul>
             <li>Gestão De Infraestrutura</li>
@@ -168,12 +168,12 @@ const experienceDetails = {
     details: `
           <p>2005 - 2008</p>
           <p>
-            Analista Suporte Técnico Junior: Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção preventiva. Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento balcão. 
+            Analista Suporte Técnico Junior: Atendimento direto e indireto ao cliente, buscando soluções e possíveis reparos de manutenção de preservação dos equipamentos. Atuando nas areas de Manutenção e atendimento de chamados, pessoas físicas e empresas, orçamentos e auxiliando no atendimento recepção. 
           </p>
           <p>
             Projeto de futuro montado enquanto eu estudava tecnologia, juntamente com um amigo seguimos uma sociedade buscando o nosso desenvolvimento profissional e pessoal. Está loja demostrou o quanto eu estava disposto e capacitado para enfrentar o mercado e suas dificuldades, atendimento a clientes físicos e empresas, trouxe não só um fortalecimento profissional e também por sua vez um ótimo crescimento pessoal. Investimentos e administração da mesma. 
             <br />
-            A primeira decepção e uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
+            A primeira decepção em uma bruta situação que veio sobre esta empresa foi devido ao furto ocorrido em uma madrugada, onde perdi tudo que havíamos conquistado materialmente. Infelizmente veio a falência da empresa e suas consequências devido as perdas nossas e de clientes. E finalizando nossa sociedade nesta empresa. Contudo através de anos de trabalho venci utilizando os conhecimentos adquiridos e apoios de amigos e familiares
           </p>
           <ul>
             <li>Atendimento ao Cliente</li>
@@ -198,7 +198,7 @@ const educationDetails = {
             <li>MODELAGEM DE INTERFACES</li>
             <li>PROGRAMAÇÃO DE INTERFACES</li>
             <li>ARQUITETURA DA INFORMAÇÃO</li>
-            <li>ATIVIDADES COMPLEMENTARES CUMPRIU 40h</li>
+            <li>ATIVIDADES COMPLEMENTARES 40h</li>
             <li>FERRAMENTAS DE GERENCIAMENTO DE CONTEÚDO</li>
             <li>FERRAMENTAS DE TRATAMENTO DE IMAGENS E VÍDEOS</li>
             <li>LÓGICA DE PROGRAMAÇÃO</li>
@@ -213,7 +213,7 @@ const educationDetails = {
             <li>PROGRAMAÇÃO DE INTERFACES RESPONSIVAS</li>
             <li>RECURSOS DE APOIO À PROGRAMAÇÃO</li>
             <li>SERVIDORES DE APLICAÇÃO</li>
-            <li>ATIVIDADES COMPLEMENTARES CUMPRIU 40h</li>
+            <li>ATIVIDADES COMPLEMENTARES MÓDULOS AVANÇADOS 40h</li>
             <li>DESENVOLVIMENTO DE SERVIÇOS WEB</li>
             <li>DESENVOLVIMENTO DE SISTEMAS MÓVEIS</li>
             <li>PROGRAMAÇÃO DE PORTAIS CORPORATIVOS</li>
@@ -229,12 +229,12 @@ const educationDetails = {
     details: `
           <h4>SENAI - Luis Eulalio de Bueno Vidigal Filho</h4>
           <p>2002 - 2003</p>
-          <p>Grade de Ensino: Conhecimentos e estudos adquiridos nesta curso técnico no instituto de ensino SENAI</p>
+          <p>Grade de Ensino: Conhecimentos e estudos adquiridos neste curso técnico no instituto de ensino SENAI</p>
           <p>
             <strong>SISTEMAS E PROGRAMAÇÃO</strong>
             <ul>
               <li>INF - Informática</li>
-              <li>LOP - Logica de Programação</li>
+              <li>LOG - Logica de Programação</li>
               <li>LIP - Linguagem de Programação</li>
               <li>BCD - Banco de Dados</li>
             </ul>
@@ -290,9 +290,8 @@ const educationDetails = {
               <li>Estrutura de controle e laços de repetição, Arrays, Sessão, Funções, Date.</li>
               <li>Banco de dados MYSQL</li>
               <li>Banco de dados PDO</li>
-              <li>Banco de dados PDO</li>
               <li>E-mail com PHPMailer</li>
-              <li>Segurança No PHP 7</li>
+              <li>Segurança No PHP-7</li>
             </ul>
           </p>
           <p>
@@ -347,7 +346,7 @@ const projectDetails = {
           </ul>
         `
   },
-  ecommerce: {
+  ecommerce_project: {
     title: "Plataforma E-commerce",
     details: `
           <p>Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
@@ -355,14 +354,36 @@ const projectDetails = {
           <ul>
             <li>Catálogo de produtos com categorias e filtros</li>
             <li>Carrinho de compras e checkout seguros</li>
-            <li>Integração com gateways de pagamento</li>
+            <li>Integração com gateways de pagamento, Pag-Seguro e PayPal</li>
             <li>Painel de administração para gerenciamento de produtos e pedidos</li>
           </ul>
           <h3>Tecnologias utilizadas:</h3>
           <ul>
-            <li>Front-end: React, Redux, Styled Components</li>
-            <li>Back-end: PHP, Laravel</li>
+            <li>Front-end: HTML, CSS, Bootstrap</li>
+            <li>Back-end: PHP-7</li>
             <li>Banco de dados: MySQL</li>
+          </ul>
+        `
+  },
+  vacinar_sistema_website: {
+    title: "WEBSITE Vacinar",
+    details: `
+          <p>
+            Restruturação do Site Oficial, buscando melhorar desempenho e usabilidade com responsividade e segurança, alcançando melhor engajamento nas ferramentas de busca do google
+          </p>
+          <h3>Funcionalidades principais:</h3>
+          <ul>
+            <li>Site Clean</li>
+            <li>Site Clean Code</li>
+            <li>Usabilidade</li>
+            <li>Informação de Campanhas</li>
+            <li>Cadastro de Participantes de treinamentos</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: HTML, CSS, JavaScript</li>
+            <li>Back-end: PHP</li>
+            <li>Banco de dados: Mysql</li>
           </ul>
         `
   },
