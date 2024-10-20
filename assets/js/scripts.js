@@ -349,7 +349,7 @@ const projectDetails = {
   ecommerce_project: {
     title: "Plataforma E-commerce",
     details: `
-          <p>Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
+          <p>Curso EAD Udemy - Uma plataforma de comércio eletrônico robusta e escalável com funcionalidades completas de carrinho e pagamento.</p>
           <h3>Recursos principais:</h3>
           <ul>
             <li>Catálogo de produtos com categorias e filtros</li>
@@ -362,6 +362,24 @@ const projectDetails = {
             <li>Front-end: HTML, CSS, Bootstrap</li>
             <li>Back-end: PHP-7</li>
             <li>Banco de dados: MySQL</li>
+          </ul>
+        `
+  },
+  matrimoniall_project: {
+    title: "Matrimoniall Orquestra & Banda",
+    details: `
+          <p>Site Oficial de uma das melhores empresas de Cerimonias e eventos de São Paulo e região.</p>
+          <h3>Recursos principais:</h3>
+          <ul>
+            <li>Catálogo Planos de contratação</li>
+            <li>Apresentação tipos de serviços</li>
+            <li>Amplo conteúdo de Bandas e Orquestras</li>
+            <li>Depoimentos e fotos diversas</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: Angular, HTML, CSS, Bootstrap</li>
+            <li>Back-end: PHP-7</li>
           </ul>
         `
   },
@@ -404,7 +422,42 @@ const projectDetails = {
           </ul>
         `
   },
-  
+  bersali_project: {
+    title: "Otica Bersali",
+    details: `
+          <p>Site personalizado de acordo com as diretivas da empresa, mostrando os conteúdos e tipos de serviços disponibilizados.</p>
+          <h3>Características principais:</h3>
+          <ul>
+            <li>Design responsivo e intuitivo</li>
+            <li>Apresentação de Promoção</li>
+            <li>Visão da empresa</li>
+            <li>Tipos de produtos, marcas e serviços</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: Angulas, HTML, CSS, Bootstrap</li>
+            <li>Back-end: PHP</li>
+          </ul>
+        `
+  },  
+  douglas_box_project: {
+    title: "Douglas Box de Garagem",
+    details: `
+          <p>Site personalizado buscando mostrar a essência do esporte de garagem, boxe um esporte que exige disciplina e técnica.</p>
+          <h3>Características principais:</h3>
+          <ul>
+            <li>Design responsivo e intuitivo</li>
+            <li>Apresentação de Promoção</li>
+            <li>Apresentação do esporte</li>
+            <li>Tipos de produtos, marcas e serviços</li>
+          </ul>
+          <h3>Tecnologias utilizadas:</h3>
+          <ul>
+            <li>Front-end: Angulas, HTML, CSS, Bootstrap</li>
+          </ul>
+        `
+  },
+
 };
 
 // Modify the existing event listener for 'saiba-mais-btn'
